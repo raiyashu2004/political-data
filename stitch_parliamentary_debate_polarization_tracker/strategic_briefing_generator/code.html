@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LokaSent | Strategic Briefing Generator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .stepper-line::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 100%;
+            height: 2px;
+            background-color: #e0e3e5;
+            z-index: -1;
+        }
+        .active-step-circle {
+            box-shadow: 0 0 0 4px rgba(0, 74, 198, 0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#b4c5ff",
+                        "surface-container": "#eceef0",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f2f4f6",
+                        "outline": "#737686",
+                        "on-surface-variant": "#434655",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c1e",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c3c6d7",
+                        "background": "#f7f9fb",
+                        "surface-container-highest": "#e0e3e5",
+                        "primary": "#004ac6",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "tertiary": "#4d556b",
+                        "surface-tint": "#0053db",
+                        "on-tertiary-fixed-variant": "#3f465c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "primary-container": "#2563eb",
+                        "on-primary-fixed": "#00174b",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary-fixed": "#dae2fd",
+                        "secondary": "#515f74",
+                        "secondary-fixed-dim": "#b9c7df",
+                        "surface-container-high": "#e6e8ea",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#eeefff",
+                        "tertiary-container": "#656d84",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#131b2e",
+                        "tertiary-fixed-dim": "#bec6e0",
+                        "on-secondary-container": "#57657a",
+                        "on-surface": "#191c1e",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#eef0ff",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2d3133",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed": "#d5e3fc",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-dim": "#d8dadc",
+                        "secondary-container": "#d5e3fc",
+                        "surface": "#f7f9fb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "space-md": "16px",
+                        "sidebar-width": "280px",
+                        "space-sm": "8px",
+                        "space-xl": "48px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "margin-page": "32px",
+                        "space-lg": "24px",
+                        "space-xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+                        "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Side Navigation Bar -->
+<aside class="w-[280px] h-screen fixed left-0 top-0 bg-surface-container-lowest dark:bg-surface-dim border-r border-outline-variant dark:border-outline flex flex-col py-space-md z-50">
+<div class="px-space-lg mb-space-xl">
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">LokaSent</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Parliamentary Intel</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center px-space-lg py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors cursor-pointer" href="#">
+<span class="material-symbols-outlined mr-3">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+<a class="flex items-center px-space-lg py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors cursor-pointer" href="#">
+<span class="material-symbols-outlined mr-3">groups</span>
+<span class="font-body-md text-body-md">Member Analysis</span>
+</a>
+<a class="flex items-center px-space-lg py-3 text-primary dark:text-inverse-primary font-bold border-l-4 border-primary dark:border-inverse-primary bg-surface-container-low dark:bg-surface-container-highest cursor-pointer" href="#">
+<span class="material-symbols-outlined mr-3">description</span>
+<span class="font-body-md text-body-md">Briefing Room</span>
+</a>
+<a class="flex items-center px-space-lg py-3 text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors cursor-pointer" href="#">
+<span class="material-symbols-outlined mr-3">inventory_2</span>
+<span class="font-body-md text-body-md">Global Archive</span>
+</a>
+</nav>
+<div class="px-space-lg mt-auto">
+<button class="w-full bg-primary-container text-on-primary-container py-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined">add</span>
+                New Analysis
+            </button>
+</div>
+</aside>
+<!-- Top Navigation Bar -->
+<header class="h-16 fixed top-0 right-0 left-[280px] z-40 bg-surface-container-lowest dark:bg-surface-dim border-b border-outline-variant dark:border-outline flex justify-between items-center px-gutter w-auto">
+<div class="flex items-center flex-1 max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-full pl-10 pr-4 py-2 text-body-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Search parliamentary records..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a senior parliamentary analyst with a sharp focus on their intelligent expression. The setting is a bright, modern corporate office with soft, neutral lighting and a palette of professional blues and whites, echoing a high-stakes intelligence environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6hoMScw3Klo5JmDJpXGHH4ELExBdGQP38Qy9B-ZeeA_9hKNK-jw2-lLrxEgygXeAkPh-pczC1ePqH4BLXsQd5aJ8lN7RqCkgHmLy1VgbPZ9OyheJFYKhOfXFqnqh0pvbTXGdACtTeWbqw4fT7yduupgYJlDTzn51WmukgV5gfyKhNQH-47AoFZ97-6eOKPJROgz8P83xHlGtzOEdM7uryddJdQF9JJ6FTiI8vBD2LsubB5UjaA-dS1A"/>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="ml-[280px] pt-16 min-h-screen">
+<div class="max-w-[1440px] mx-auto p-margin-page">
+<!-- Page Header & Stepper -->
+<div class="mb-space-xl flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Strategic Briefing Generator</h2>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl">Create high-density intelligence reports for legislative sessions. Define your scope, select target entities, and customize analysis depth.</p>
+</div>
+<div class="flex items-center gap-12 relative pb-2">
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold active-step-circle">1</div>
+<span class="font-label-md text-label-md text-primary">Scope</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold">2</div>
+<span class="font-label-md text-label-md">Entities</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold">3</div>
+<span class="font-label-md text-label-md">Depth</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Form Section -->
+<section class="lg:col-span-7 bg-surface-container-lowest border border-outline-variant rounded-xl p-8">
+<form class="space-y-8">
+<!-- Step 1: Scope -->
+<div class="space-y-6" id="step-scope">
+<div class="flex items-center gap-3 border-b border-outline-variant pb-4">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Briefing Scope</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Legislative House</label>
+<select class="w-full h-11 bg-surface-container-low border-outline-variant rounded-lg text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none px-4">
+<option>Lok Sabha (Lower House)</option>
+<option>Rajya Sabha (Upper House)</option>
+<option>Joint Committee</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Session Period</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-sm">calendar_month</span>
+<input class="w-full h-11 bg-surface-container-low border-outline-variant rounded-lg text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none px-4" placeholder="Winter Session 2024" type="text"/>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Primary Focus Areas</label>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/10 text-primary border border-primary/20 px-3 py-1.5 rounded-full text-label-md flex items-center gap-1 cursor-pointer">
+                                        Infrastructure <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<span class="bg-primary/10 text-primary border border-primary/20 px-3 py-1.5 rounded-full text-label-md flex items-center gap-1 cursor-pointer">
+                                        Digital Economy <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<button class="bg-surface-container text-on-surface-variant border border-outline-variant px-3 py-1.5 rounded-full text-label-md hover:bg-surface-container-high transition-colors">
+                                        + Add Focus
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Step 2: Entities -->
+<div class="space-y-6 pt-4" id="step-entities">
+<div class="flex items-center gap-3 border-b border-outline-variant pb-4">
+<span class="material-symbols-outlined text-primary">groups_2</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Target Entities</h3>
+</div>
+<div class="space-y-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">person_search</span>
+<input class="w-full h-11 bg-surface-container-low border-outline-variant rounded-lg pl-10 pr-4 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="Search MPs or Political Parties..." type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<label class="flex items-center p-3 border border-outline-variant rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary border-outline-variant rounded focus:ring-primary" type="checkbox"/>
+<div class="ml-3">
+<p class="font-label-md text-label-md text-on-surface">Ruling Coalition</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Major Party</p>
+</div>
+</label>
+<label class="flex items-center p-3 border border-outline-variant rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<input class="w-4 h-4 text-primary border-outline-variant rounded focus:ring-primary" type="checkbox"/>
+<div class="ml-3">
+<p class="font-label-md text-label-md text-on-surface">Leader of Opposition</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Key MP</p>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Step 3: Depth -->
+<div class="space-y-6 pt-4" id="step-depth">
+<div class="flex items-center gap-3 border-b border-outline-variant pb-4">
+<span class="material-symbols-outlined text-primary">layers</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Analysis Depth</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="relative group cursor-pointer">
+<input class="peer absolute opacity-0" name="depth" type="radio"/>
+<div class="p-4 border border-outline-variant rounded-xl peer-checked:border-primary peer-checked:bg-primary/5 transition-all group-hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">summarize</span>
+<p class="font-label-md text-label-md mt-2">Executive Summary</p>
+<p class="text-[10px] text-on-surface-variant mt-1 leading-tight">Key takeaways only (2-4 pages)</p>
+</div>
+</label>
+<label class="relative group cursor-pointer">
+<input checked="" class="peer absolute opacity-0" name="depth" type="radio"/>
+<div class="p-4 border border-outline-variant rounded-xl peer-checked:border-primary peer-checked:bg-primary/5 transition-all group-hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">article</span>
+<p class="font-label-md text-label-md mt-2">Standard Analysis</p>
+<p class="text-[10px] text-on-surface-variant mt-1 leading-tight">Balanced context and data (10-15 pages)</p>
+</div>
+</label>
+<label class="relative group cursor-pointer">
+<input class="peer absolute opacity-0" name="depth" type="radio"/>
+<div class="p-4 border border-outline-variant rounded-xl peer-checked:border-primary peer-checked:bg-primary/5 transition-all group-hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">description</span>
+<p class="font-label-md text-label-md mt-2">Full Legislative Brief</p>
+<p class="text-[10px] text-on-surface-variant mt-1 leading-tight">Deep dive with historical trends (25+ pages)</p>
+</div>
+</label>
+</div>
+</div>
+<div class="pt-6 flex items-center justify-between">
+<button class="px-6 py-2 border border-outline-variant text-on-surface-variant rounded-lg font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">Save as Draft</button>
+<button class="px-8 py-3 bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-2 hover:bg-primary/90 shadow-sm active:scale-95 transition-all" type="button">
+                                Generate Briefing
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Live Preview Panel -->
+<aside class="lg:col-span-5 sticky top-24">
+<div class="bg-surface-container-high border border-outline-variant rounded-xl overflow-hidden flex flex-col shadow-sm">
+<div class="bg-surface-container-lowest border-b border-outline-variant p-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-lg">visibility</span>
+<span class="font-label-md text-label-md text-on-surface">Live Preview</span>
+</div>
+<button class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-2 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm">download</span>
+                                Export
+                            </button>
+</div>
+<!-- Preview Content (Simulated Document) -->
+<div class="bg-white m-6 p-8 shadow-md flex-1 min-h-[600px] border border-outline-variant select-none">
+<div class="border-b-2 border-primary pb-6 mb-8">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary font-bold">account_balance</span>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary">Confidential Parliamentary Intelligence</p>
+<p class="text-body-sm text-on-surface-variant">Report ID: LS-2024-WB-092</p>
+</div>
+</div>
+<h1 class="font-display-lg text-display-lg mt-6 leading-tight">Strategic Briefing: Infrastructure &amp; Digital Growth</h1>
+<p class="text-body-md text-on-surface-variant mt-2">Prepared for: Parliamentary Analysis Division</p>
+</div>
+<div class="space-y-6">
+<div>
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2">Executive Summary</h4>
+<div class="space-y-2">
+<div class="h-4 bg-surface-container-low rounded w-full"></div>
+<div class="h-4 bg-surface-container-low rounded w-5/6"></div>
+<div class="h-4 bg-surface-container-low rounded w-11/12"></div>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2">Key Stakeholders</h4>
+<div class="flex gap-4">
+<div class="flex-1 space-y-2">
+<div class="h-12 bg-surface-container-low rounded-lg"></div>
+</div>
+<div class="flex-1 space-y-2">
+<div class="h-12 bg-surface-container-low rounded-lg"></div>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2">Sentiment Distribution</h4>
+<div class="grid grid-cols-2 gap-4 h-32">
+<div class="bg-surface-container-low rounded-lg p-4 flex flex-col justify-end">
+<div class="w-full bg-primary/20 h-full rounded flex flex-col justify-end">
+<div class="bg-primary h-3/4 rounded-b"></div>
+</div>
+<p class="text-[8px] text-center mt-1 uppercase">Positive</p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-4 flex flex-col justify-end">
+<div class="w-full bg-secondary/20 h-full rounded flex flex-col justify-end">
+<div class="bg-secondary h-2/5 rounded-b"></div>
+</div>
+<p class="text-[8px] text-center mt-1 uppercase">Critical</p>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant">
+<p class="text-[9px] text-center text-outline uppercase tracking-widest italic">Generated via LokaSent Intelligence Platform — Proprietary and Confidential</p>
+</div>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low border-t border-outline-variant flex items-center justify-center gap-4">
+<button class="p-2 hover:bg-surface-container transition-colors rounded-full">
+<span class="material-symbols-outlined text-outline">chevron_left</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">Page 1 of 12</span>
+<button class="p-2 hover:bg-surface-container transition-colors rounded-full">
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<script>
+        // Simple micro-interaction for form focus
+        const inputs = document.querySelectorAll('input, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.closest('div').classList.add('ring-primary/5');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.closest('div').classList.remove('ring-primary/5');
+            });
+        });
+
+        // Simulating Export loading state
+        const exportBtn = document.querySelector('button:has(span:contains("download"))');
+        if (exportBtn) {
+            exportBtn.addEventListener('click', () => {
+                const originalContent = exportBtn.innerHTML;
+                exportBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-sm">sync</span> Processing...';
+                setTimeout(() => {
+                    exportBtn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Ready';
+                    setTimeout(() => {
+                        exportBtn.innerHTML = originalContent;
+                    }, 2000);
+                }, 1500);
+            });
+        }
+
+        // Custom selector logic for "contains" as standard contains isn't in CSS
+        document.querySelectorAll('button').forEach(btn => {
+           if(btn.innerText.includes('Export')) {
+                btn.addEventListener('click', () => {
+                    btn.classList.add('opacity-50');
+                    setTimeout(() => btn.classList.remove('opacity-50'), 1000);
+                });
+           }
+        });
+    </script>
+</body></html>

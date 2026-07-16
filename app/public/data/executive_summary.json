@@ -1,0 +1,205 @@
+{
+  "platform_title": "LokaSent Executive Dashboard",
+  "generated_at": "2026-07-06T21:32:38.930587",
+  "total_speeches_analyzed": 260,
+  "total_terms_covered": 4,
+  "overall_ppi": {
+    "ppi_score": 88.3,
+    "status": "Hyper-Polarized Gridlock",
+    "status_color": "#ba1a1a",
+    "mean_ruling_sentiment": 61.7,
+    "mean_opposition_sentiment": -62.0,
+    "ideological_gap": 123.6,
+    "ruling_speech_count": 129,
+    "opposition_speech_count": 131
+  },
+  "term_evolution": [
+    {
+      "term": "15th Lok Sabha (2009-2014)",
+      "short_term": "15th LS",
+      "years": "2009-2014",
+      "ppi_score": 84.4,
+      "status": "Hyper-Polarized Gridlock",
+      "status_color": "#ba1a1a",
+      "mean_ruling": 60.9,
+      "mean_opp": -57.3,
+      "speech_count": 63
+    },
+    {
+      "term": "16th Lok Sabha (2014-2019)",
+      "short_term": "16th LS",
+      "years": "2014-2019",
+      "ppi_score": 90.6,
+      "status": "Hyper-Polarized Gridlock",
+      "status_color": "#ba1a1a",
+      "mean_ruling": 65.6,
+      "mean_opp": -61.2,
+      "speech_count": 63
+    },
+    {
+      "term": "17th Lok Sabha (2019-2024)",
+      "short_term": "17th LS",
+      "years": "2019-2024",
+      "ppi_score": 85.1,
+      "status": "Hyper-Polarized Gridlock",
+      "status_color": "#ba1a1a",
+      "mean_ruling": 56.5,
+      "mean_opp": -62.6,
+      "speech_count": 67
+    },
+    {
+      "term": "18th Lok Sabha (2024-Present)",
+      "short_term": "18th LS",
+      "years": "2024-Present",
+      "ppi_score": 92.8,
+      "status": "Hyper-Polarized Gridlock",
+      "status_color": "#ba1a1a",
+      "mean_ruling": 63.8,
+      "mean_opp": -66.2,
+      "speech_count": 67
+    }
+  ],
+  "topic_distribution": [
+    {
+      "topic": "Data Privacy & Digital India",
+      "speech_count": 90,
+      "avg_coherence": 63.3,
+      "top_keywords": [
+        "ai",
+        "privacy",
+        "surveillance",
+        "data protection",
+        "personal data"
+      ],
+      "color": "#2563eb",
+      "icon": "ShieldCheck"
+    },
+    {
+      "topic": "Agriculture & Farm Reform",
+      "speech_count": 44,
+      "avg_coherence": 77.8,
+      "top_keywords": [
+        "farmer",
+        "agricultural",
+        "ai",
+        "msp",
+        "apmc"
+      ],
+      "color": "#16a34a",
+      "icon": "Tractor"
+    },
+    {
+      "topic": "Health, Education & Welfare",
+      "speech_count": 38,
+      "avg_coherence": 74.2,
+      "top_keywords": [
+        "health",
+        "education",
+        "ai",
+        "pds",
+        "nep"
+      ],
+      "color": "#0891b2",
+      "icon": "HeartHandshake"
+    },
+    {
+      "topic": "General Parliamentary Debate",
+      "speech_count": 35,
+      "avg_coherence": 50.0,
+      "top_keywords": [
+        "parliament",
+        "motion",
+        "speaker",
+        "debate"
+      ],
+      "color": "#64748b",
+      "icon": "FileText"
+    },
+    {
+      "topic": "National Security & Defence",
+      "speech_count": 29,
+      "avg_coherence": 70.9,
+      "top_keywords": [
+        "terrorism",
+        "ai",
+        "armed forces",
+        "national security",
+        "border defence"
+      ],
+      "color": "#dc2626",
+      "icon": "ShieldAlert"
+    },
+    {
+      "topic": "Union Budget & Fiscal Policy",
+      "speech_count": 13,
+      "avg_coherence": 78.3,
+      "top_keywords": [
+        "inflation",
+        "fiscal deficit",
+        "union budget",
+        "ai",
+        "unemployment"
+      ],
+      "color": "#d97706",
+      "icon": "TrendingUp"
+    },
+    {
+      "topic": "Judicial Reforms & Constitution",
+      "speech_count": 11,
+      "avg_coherence": 50.4,
+      "top_keywords": [
+        "penal code",
+        "ai",
+        "lac",
+        "ration",
+        "federalism"
+      ],
+      "color": "#7c3aed",
+      "icon": "Scale"
+    }
+  ],
+  "active_bill_categories": [
+    {
+      "category": "Agriculture & Farm Reform",
+      "ppi_score": 100,
+      "status": "Hyper-Polarized Gridlock",
+      "last_debated": "18th LS",
+      "speech_count": 44
+    },
+    {
+      "category": "Data Privacy & Digital India",
+      "ppi_score": 100,
+      "status": "Hyper-Polarized Gridlock",
+      "last_debated": "18th LS",
+      "speech_count": 44
+    },
+    {
+      "category": "Union Budget & Fiscal Policy",
+      "ppi_score": 100,
+      "status": "Hyper-Polarized Gridlock",
+      "last_debated": "18th LS",
+      "speech_count": 43
+    },
+    {
+      "category": "National Security & Defence",
+      "ppi_score": 57.9,
+      "status": "High Partisan Divergence",
+      "last_debated": "18th LS",
+      "speech_count": 42
+    },
+    {
+      "category": "Judicial Reforms & Constitution",
+      "ppi_score": 98.1,
+      "status": "Hyper-Polarized Gridlock",
+      "last_debated": "18th LS",
+      "speech_count": 44
+    },
+    {
+      "category": "Health, Education & Welfare",
+      "ppi_score": 48.9,
+      "status": "Moderate Legislative Debate",
+      "last_debated": "18th LS",
+      "speech_count": 43
+    }
+  ]
+}
