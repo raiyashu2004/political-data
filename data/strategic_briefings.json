@@ -1,0 +1,59 @@
+{
+  "briefings": [
+    {
+      "id": "BRF-2024-01",
+      "title": "18th Lok Sabha Polarization Analysis: Digital India Data Protection Bill",
+      "date": "August 10, 2024",
+      "category": "Data Privacy & Digital India",
+      "executive_summary": "The Digital India Data Protection Bill has generated high partisan divergence (PPI: 68.4) in the 18th Lok Sabha. While ruling bench members (BJP, TDP, JD(U)) commend the balance between digital startup innovation and cybersecurity, opposition benches (INC, AIMIM, TMC) strongly condemn executive surveillance exemptions and lack of Data Protection Board autonomy.",
+      "key_findings": [
+        "Ruling coalition speeches show +62.5 mean sentiment, emphasizing national cybersecurity and economic growth.",
+        "Opposition benches show -65.0 mean sentiment, focusing on privacy violations and demands for a Joint Parliamentary Committee (JPC).",
+        "OCR cleaning normalized 14 procedural interruptions and mapped 22 Hindi parliamentary idioms across debate records."
+      ],
+      "party_alignment_matrix": {
+        "Support": [
+          "BJP",
+          "TDP",
+          "JD(U)",
+          "SHS"
+        ],
+        "Oppose / Demand Amendments": [
+          "INC",
+          "AIMIM",
+          "TMC",
+          "DMK",
+          "SP"
+        ]
+      },
+      "recommended_strategy": "Engage opposition members on statutory independence of the Data Protection Board to reduce polarization index below 45.0."
+    },
+    {
+      "id": "BRF-2021-02",
+      "title": "Historical Retrospective: The 17th Lok Sabha Farm Laws Gridlock",
+      "date": "February 15, 2021",
+      "category": "Agriculture & Farm Reform",
+      "executive_summary": "The Agriculture & Farm Reform bills reached unprecedented hyper-polarized gridlock (PPI: 92.1) during the 17th Lok Sabha. The ideological gap between government claims of APMC liberation and opposition demands for statutory MSP guarantee resulted in continuous procedural disruptions and eventual repeal.",
+      "key_findings": [
+        "Highest recorded divergence across all 4 Lok Sabha terms analyzed.",
+        "Opposition speeches exhibited -85.2 mean sentiment, characterized by terms like 'black law', 'dismantle', and 'anti-farmer'.",
+        "Text cleaning engine stripped over 45% procedural disruption noise (table protests and adjournments) to isolate substantive policy arguments."
+      ],
+      "party_alignment_matrix": {
+        "Support": [
+          "BJP",
+          "JD(U)"
+        ],
+        "Oppose": [
+          "INC",
+          "SAD",
+          "TMC",
+          "DMK",
+          "SP",
+          "AAP"
+        ]
+      },
+      "recommended_strategy": "Future agricultural marketing reforms must incorporate formal state government consultation and minimum procurement price benchmarks prior to tabling."
+    }
+  ]
+}
