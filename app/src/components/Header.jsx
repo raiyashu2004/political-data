@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useAuth } from '../context/AuthContext';
 
-const Header = ({ searchQuery, setSearchQuery, selectedHouse, selectedTerm, darkMode, setDarkMode }) => {
+const Header = ({ searchQuery, setSearchQuery, selectedHouse, selectedTerm, darkMode, setDarkMode, onOpenLoginModal }) => {
+  const { user, lastLoginTime, logout } = useAuth();
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className="top-header">
       {/* Search Input */}
@@ -41,26 +45,116 @@ const Header = ({ searchQuery, setSearchQuery, selectedHouse, selectedTerm, dark
               {darkMode ? 'light_mode' : 'dark_mode'}
             </span>
           </button>
-          <span className="material-symbols-outlined" style={{ cursor: 'pointer' }}>notifications</span>
-          <span className="material-symbols-outlined" style={{ cursor: 'pointer' }}>settings</span>
-          <span className="material-symbols-outlined" style={{ cursor: 'pointer' }}>help_outline</span>
+          <span className="material-symbols-outlined" style={{ cursor: 'pointer' }} title="System Notifications">notifications</span>
+          <span className="material-symbols-outlined" style={{ cursor: 'pointer' }} title="Intelligence Vault Settings">settings</span>
         </div>
 
         <div style={{ height: 32, width: 1, backgroundColor: 'var(--outline-variant)' }} />
 
-        {/* User Headshot (Stitch Style) */}
-        <div className="flex items-center gap-3" style={{ cursor: 'pointer' }}>
-          <div style={{ textAlign: 'right' }}>
-            <p className="text-label-md" style={{ color: 'var(--on-surface)' }}>Admin Analyst</p>
-            <p style={{ fontSize: 10, color: 'var(--outline)', textTransform: 'uppercase' }}>PRS / Sansad Intel</p>
-          </div>
-          <div style={{ width: 40, height: 40, borderRadius: 'var(--radius-full)', overflow: 'hidden', border: '1px solid var(--outline-variant)', backgroundColor: 'var(--secondary-container)' }}>
-            <img 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1dSt4_UV7B1za0Tig15DcKLqwz-PmWWGQogZWKg23ODw10SvEl_0vI7_zisoOQ99EfkFt_Fp4MXhWTR9iM9KcCuWkpdJjDIYkPxWX7M_woqm1rVL5DYppT8AJbBvyQmsXNDmxRHTJjSvlFX0TEt3fgAAnld5czy4bB7FgjP8L_fwuWl4FZ2RVHKwkhglqQ-WaJnOpIKSqcUUdKnEJ_PvejrRS0X6XKJaw7kcE1MuY86nKOEkgLdfuqA" 
-              alt="Executive Profile" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-          </div>
+        {/* Authentication Section */}
+        <div style={{ position: 'relative' }}>
+          {user ? (
+            /* Logged In User Headshot & Menu Trigger */
+            <div>
+              <div 
+                className="flex items-center gap-3 auth-user-trigger" 
+                onClick={() => setShowMenu(!showMenu)}
+                style={{ cursor: 'pointer', padding: '4px 8px', borderRadius: 'var(--radius-md)' }}
+              >
+                <div style={{ textAlign: 'right' }}>
+                  <div className="flex items-center justify-end gap-1.5 mb-0.5">
+                    <span 
+                      className="auth-clearance-pill"
+                      style={{ backgroundColor: user.badgeColor || 'var(--primary)', color: '#fff' }}
+                    >
+                      L{user.clearance} {user.clearance === 4 ? 'EXEC' : user.clearance === 3 ? 'ANALYST' : 'STAFF'}
+                    </span>
+                    <p className="text-label-md font-bold" style={{ color: 'var(--on-surface)', margin: 0 }}>{user.name.split(' ')[0]}</p>
+                  </div>
+                  <p style={{ fontSize: 10, color: 'var(--outline)', textTransform: 'uppercase', margin: 0, letterSpacing: '0.5px' }}>
+                    {user.role}
+                  </p>
+                </div>
+                <div style={{ position: 'relative', width: 40, height: 40 }}>
+                  <div style={{ width: 40, height: 40, borderRadius: 'var(--radius-full)', overflow: 'hidden', border: '2px solid var(--primary)', backgroundColor: 'var(--secondary-container)' }}>
+                    <img 
+                      src={user.avatar || "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80"} 
+                      alt="Profile" 
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                  </div>
+                  <span className="auth-online-dot" />
+                </div>
+              </div>
+
+              {/* Dropdown Menu */}
+              {showMenu && (
+                <>
+                  <div className="auth-menu-backdrop" onClick={() => setShowMenu(false)} />
+                  <div className="auth-user-dropdown">
+                    <div className="auth-dropdown-header">
+                      <p className="text-label-md font-bold" style={{ color: 'var(--on-surface)' }}>{user.name}</p>
+                      <p className="text-label-sm" style={{ color: 'var(--on-surface-variant)' }}>{user.email}</p>
+                      <div className="flex items-center gap-2 mt-2">
+                        <span className="auth-clearance-pill" style={{ backgroundColor: user.badgeColor || 'var(--primary)', color: '#fff' }}>
+                          Level {user.clearance} Clearance
+                        </span>
+                        <span className="text-label-sm" style={{ color: 'var(--outline)' }}>{user.sessionId}</span>
+                      </div>
+                    </div>
+
+                    <div className="auth-dropdown-body">
+                      <div className="auth-info-row">
+                        <span className="material-symbols-outlined text-label-sm">domain</span>
+                        <span className="text-body-sm">{user.department}</span>
+                      </div>
+                      {lastLoginTime && (
+                        <div className="auth-info-row">
+                          <span className="material-symbols-outlined text-label-sm">schedule</span>
+                          <span className="text-body-sm">Logged: {lastLoginTime}</span>
+                        </div>
+                      )}
+                      <div className="auth-info-row">
+                        <span className="material-symbols-outlined text-label-sm" style={{ color: 'var(--success)' }}>verified</span>
+                        <span className="text-body-sm" style={{ color: 'var(--success)' }}>TLS 1.3 Active • Audited</span>
+                      </div>
+                    </div>
+
+                    <div className="auth-dropdown-actions">
+                      <button 
+                        className="auth-switch-role-btn"
+                        onClick={() => { setShowMenu(false); onOpenLoginModal(); }}
+                      >
+                        <span className="material-symbols-outlined" style={{ fontSize: 18 }}>switch_account</span>
+                        Switch Clearance Tier
+                      </button>
+                      <button 
+                        className="auth-logout-btn"
+                        onClick={() => { setShowMenu(false); logout(); }}
+                      >
+                        <span className="material-symbols-outlined" style={{ fontSize: 18 }}>logout</span>
+                        Sign Out / Terminate
+                      </button>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          ) : (
+            /* Logged Out Login Button */
+            <button 
+              className="auth-login-trigger-btn"
+              onClick={onOpenLoginModal}
+            >
+              <div className="auth-lock-circle">
+                <span className="material-symbols-outlined" style={{ fontSize: 18 }}>lock</span>
+              </div>
+              <div style={{ textAlign: 'left' }}>
+                <p className="text-label-md font-bold" style={{ margin: 0, lineHeight: 1.2 }}>Security Login</p>
+                <p style={{ fontSize: 10, color: 'var(--outline)', margin: 0, textTransform: 'uppercase' }}>Level 1 Public</p>
+              </div>
+            </button>
+          )}
         </div>
       </div>
     </header>
