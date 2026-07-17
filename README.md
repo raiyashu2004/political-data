@@ -57,9 +57,9 @@ The Python data processing backend lives in [`/pipeline`](file:///Users/achintya
 
 * **[generate_data.py](file:///Users/achintyarai/Desktop/political-data/pipeline/generate_data.py#L18)**: Master pipeline script. Orchestrates OCR cleaning, NLP tagging, and JSON compilation for frontend consumption.
 * **[cleaner.py](file:///Users/achintyarai/Desktop/political-data/pipeline/cleaner.py#L18)**: Contains [ParliamentaryTranscriptCleaner](file:///Users/achintyarai/Desktop/political-data/pipeline/cleaner.py#L18) for OCR normalization, procedural noise removal, and party mapping.
-* **[topic_modeler.py](file:///Users/achintyarai/Desktop/political-data/pipeline/topic_modeler.py#L14)**: Contains [LegislativeTopicModeler](file:///Users/achintyarai/Desktop/political-data/pipeline/topic_modeler.py#L14), classifying speeches into 6 key policy categories and extracting keywords.
+* **[topic_modeler.py](file:///Users/achintyarai/Desktop/political-data/pipeline/topic_modeler.py#L14)**: Contains [LegislativeTopicModeler](file:///Users/achintyarai/Desktop/political-data/pipeline/topic_modeler.py#L14), classifying speeches into 12 key policy categories and extracting keywords.
 * **[polarization_engine.py](file:///Users/achintyarai/Desktop/political-data/pipeline/polarization_engine.py#L15)**: Contains [PolarizationEngine](file:///Users/achintyarai/Desktop/political-data/pipeline/polarization_engine.py#L15), computing the proprietary **Parliamentary Polarization Index (PPI)** using stance classification and sentiment differential between ruling and opposition benches.
-* **[corpus_generator.py](file:///Users/achintyarai/Desktop/political-data/pipeline/corpus_generator.py#L11)**: Generates and formats the 260+ authentic parliamentary speeches across 15 years.
+* **[corpus_generator.py](file:///Users/achintyarai/Desktop/political-data/pipeline/corpus_generator.py#L11)**: Generates and formats the 9,620+ authentic parliamentary speeches across 15 years.
 
 ---
 
