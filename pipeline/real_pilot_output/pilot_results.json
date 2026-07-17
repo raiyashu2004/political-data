@@ -1,0 +1,457 @@
+{
+  "data_source": "VERIFIED_REAL_PILOT_DATA",
+  "is_simulated": false,
+  "mode": "pilot_demo",
+  "processed_records_count": 7,
+  "overall_ppi": {
+    "ppi_score": 31.5,
+    "composite_pi": 31.5,
+    "lds_score": 79.1,
+    "sds_score": 11.9,
+    "tas_score": 20.0,
+    "stds_score": 15.0,
+    "status": "Bipartisan Consensus",
+    "status_color": "#16a34a",
+    "mean_ruling_sentiment": 42.2,
+    "mean_opposition_sentiment": 25.6,
+    "ideological_gap": 16.6,
+    "ruling_speech_count": 2,
+    "opposition_speech_count": 5,
+    "submetric_weights": {
+      "lds": 0.25,
+      "sds": 0.25,
+      "tas": 0.25,
+      "stds": 0.25
+    }
+  },
+  "records": [
+    {
+      "id": "PRS-SUMMARY-digital-pe",
+      "speaker": "PRS Legislative Brief / Analytical Context",
+      "party": "NEUTRAL_ANALYST",
+      "house": "Lok Sabha",
+      "term": "17th Lok Sabha (2019-2024)",
+      "date": "2023-08-03",
+      "bill_category": "Data Privacy & Digital India",
+      "raw_text": "The Bill will apply to the processing of digital personal data within India where such data is collected online, or collected offline and is digitised. \u00a0It will also apply to such processing outside India, if it is for offering goods or services in India. Personal data may be processed only for a lawful purpose upon consent of an individual. \u00a0Consent may not be required for specified legitimate uses such as voluntary sharing of data by the individual or processing by the State for permits, licenses, benefits, and services. Data fiduciaries will be obligated to maintain the accuracy of data, keep data secure, and delete data once its purpose has been met. The Bill grants certain rights to individuals including the right to obtain information, seek correction and erasure, and grievance redressal.",
+      "data_source": "PRS_INDIA_VERIFIED_SUMMARY",
+      "cleaned_text": "The Bill will apply to the processing of digital personal data within India where such data is collected online, or collected offline and is digitised. It will also apply to such processing outside India, if it is for offering goods or services in India. Personal data may be processed only for a lawful purpose upon consent of an individual. Consent may not be required for specified legitimate uses such as voluntary sharing of data by the individual or processing by the State for permits, licenses, benefits, and services. Data fiduciaries will be obligated to maintain the accuracy of data, keep data secure, and delete data once its purpose has been met. The Bill grants certain rights to individuals including the right to obtain information, seek correction and erasure, and grievance redressal.",
+      "cleaning_metrics": {
+        "original_characters": 805,
+        "cleaned_characters": 803,
+        "noise_reduction_pct": "0.2%",
+        "ocr_artifacts_fixed": 0,
+        "procedural_interruptions_stripped": 0,
+        "multilingual_terms_mapped": 0
+      },
+      "extracted_keywords": [
+        "Personal Data"
+      ],
+      "topic_analysis": {
+        "primary_topic": "Data Privacy & Digital India",
+        "primary_score": 100,
+        "secondary_topic": "No-Confidence Motions & Governance",
+        "secondary_score": 100,
+        "topic_color": "#2563eb",
+        "topic_icon": "ShieldCheck",
+        "matched_keywords": [
+          "ai",
+          "ed",
+          "personal data"
+        ],
+        "all_topic_scores": {
+          "Agriculture & Farm Reform": 0.0,
+          "Data Privacy & Digital India": 100,
+          "Union Budget & Fiscal Policy": 0.0,
+          "National Security & Defence": 0.0,
+          "Judicial Reforms & Constitution": 0.0,
+          "Health, Education & Welfare": 0.0,
+          "Citizenship Amendment & Internal Security": 0.0,
+          "No-Confidence Motions & Governance": 100,
+          "Women's Reservation & Representation": 0.0,
+          "Uniform Civil Code & Civil Law": 0.0,
+          "Telecommunications & Broadcasting Reforms": 0.0,
+          "Environmental Protection & Clean Energy": 0.0
+        }
+      },
+      "tone_analysis": {
+        "polarity_score": 26.0,
+        "stance": "Moderate Support",
+        "stance_color": "#2563eb",
+        "bench_alignment": "Opposition Benches",
+        "support_keyword_hits": 1,
+        "oppose_keyword_hits": 0,
+        "intensity_index": 0.4
+      }
+    },
+    {
+      "id": "PRS-SUMMARY-the-farmer",
+      "speaker": "PRS Legislative Brief / Analytical Context",
+      "party": "NEUTRAL_ANALYST",
+      "house": "Lok Sabha",
+      "term": "17th Lok Sabha (2019-2024)",
+      "date": "2020-09-14",
+      "bill_category": "Agriculture & Farm Reform",
+      "raw_text": "NOTE:This Bill replaces the\u00a0Farmers\u2019 Produce Trade and Commerce (Promotion and Facilitation) Ordinance, 2020\u00a0. Therefore please refer to our legislative brief on the Agriculture Ordinances, 2020. Agricultural markets in India are mainly regulated by state Agriculture Produce Marketing Committee (APMC) laws. \u00a0APMCs were set up with the objective of ensuring fair trade between buyers and sellers for effective price discovery of farmers\u2019 produce.[1]APMCs can: (i) regulate the trade of farmers\u2019 produce by providing licenses to buyers, commission agents, and private markets, (ii) levy market fees or any other charges on such trade, and (iii) provide necessary infrastructure within their markets to facilitate the trade. The Standing Committee on Agriculture (2018-19) observed that the APMC laws are not implemented in their true sense and need to be reformed urgently. \u00a0Issues identified by the Committee include: (i) most APMCs have a limited number of traders operating, which leads to cartelization and reduces competition, and (ii) undue deductions in the form of commission charges and market fees.13Traders, commission agents, and other functionaries organise themselves into associations, which do not allow easy entry of new persons into market yards, stifling competition.[2]The Acts are highly restrictive in promotion of multiple channels of marketing (such as more buyers, private markets, direct sale to businesses and retail consumers, and online transactions) and competition in the system.13 During 2017-18, the central government released the model APMC and contract farming Acts to allow restriction-free trade of farmers\u2019 produce, promote competition through multiple marketing channels, and promote farming under pre-agreed contracts.[3],[4]The Standing Committee (2018-19) noted that states have not implemented several of the reforms suggested in the model Acts.13It recommended that the central government constitute a Committee of Agriculture Ministers of all states to arrive at a consensus and design a legal framework for agricultural marketing. \u00a0A\u00a0High Powered Committee of seven Chief Ministers was set up in July 2019 to discuss, among other things: (i) adoption and time-bound implementation of model Acts by states, and (ii) changes to the Essential Commodities Act, 1955 (which provides for control of production, supply, and trade of essential commodities) for attracting private investment in agricultural marketing and infrastructure.[5]",
+      "data_source": "PRS_INDIA_VERIFIED_SUMMARY",
+      "cleaned_text": "NOTE:This Bill replaces the Farmers\u2019 Produce Trade and Commerce (Promotion and Facilitation) Ordinance, 2020. Therefore please refer to our legislative brief on the Agriculture Ordinances, 2020. Agricultural markets in India are mainly regulated by state Agriculture Produce Marketing Committee (APMC) laws. APMCs were set up with the objective of ensuring fair trade between buyers and sellers for effective price discovery of farmers\u2019 produce.[1]APMCs can: (i) regulate the trade of farmers\u2019 produce by providing licenses to buyers, commission agents, and private markets, (ii) levy market fees or any other charges on such trade, and (iii) provide necessary infrastructure within their markets to facilitate the trade. The Standing Committee on Agriculture (2018-19) observed that the APMC laws are not implemented in their true sense and need to be reformed urgently. Issues identified by the Committee include: (i) most APMCs have a limited number of traders operating, which leads to cartelization and reduces competition, and (ii) undue deductions in the form of commission charges and market fees.13Traders, commission agents, and other functionaries organise themselves into associations, which do not allow easy entry of new persons into market yards, stifling competition.[2]The Acts are highly restrictive in promotion of multiple channels of marketing (such as more buyers, private markets, direct sale to businesses and retail consumers, and online transactions) and competition in the system.13 During 2017-18, the central government released the model APMC and contract farming Acts to allow restriction-free trade of farmers\u2019 produce, promote competition through multiple marketing channels, and promote farming under pre-agreed contracts.[3],[4]The Standing Committee (2018-19) noted that states have not implemented several of the reforms suggested in the model Acts.13It recommended that the central government constitute a Committee of Agriculture Ministers of all states to arrive at a consensus and design a legal framework for agricultural marketing. A High Powered Committee of seven Chief Ministers was set up in July 2019 to discuss, among other things: (i) adoption and time-bound implementation of model Acts by states, and (ii) changes to the Essential Commodities Act, 1955 (which provides for control of production, supply, and trade of essential commodities) for attracting private investment in agricultural marketing and infrastructure.[5]",
+      "cleaning_metrics": {
+        "original_characters": 2478,
+        "cleaned_characters": 2474,
+        "noise_reduction_pct": "0.2%",
+        "ocr_artifacts_fixed": 0,
+        "procedural_interruptions_stripped": 0,
+        "multilingual_terms_mapped": 0
+      },
+      "extracted_keywords": [
+        "APMC"
+      ],
+      "topic_analysis": {
+        "primary_topic": "Agriculture & Farm Reform",
+        "primary_score": 100,
+        "secondary_topic": "No-Confidence Motions & Governance",
+        "secondary_score": 100,
+        "topic_color": "#16a34a",
+        "topic_icon": "Tractor",
+        "matched_keywords": [
+          "ed",
+          "agricultural",
+          "apmc",
+          "farmer"
+        ],
+        "all_topic_scores": {
+          "Agriculture & Farm Reform": 100,
+          "Data Privacy & Digital India": 23.3,
+          "Union Budget & Fiscal Policy": 0.0,
+          "National Security & Defence": 7.8,
+          "Judicial Reforms & Constitution": 0.0,
+          "Health, Education & Welfare": 0.0,
+          "Citizenship Amendment & Internal Security": 0.0,
+          "No-Confidence Motions & Governance": 100,
+          "Women's Reservation & Representation": 0.0,
+          "Uniform Civil Code & Civil Law": 0.0,
+          "Telecommunications & Broadcasting Reforms": 0.0,
+          "Environmental Protection & Clean Energy": 0.0
+        }
+      },
+      "tone_analysis": {
+        "polarity_score": 92.0,
+        "stance": "Strong Support",
+        "stance_color": "#16a34a",
+        "bench_alignment": "Opposition Benches",
+        "support_keyword_hits": 6,
+        "oppose_keyword_hits": 0,
+        "intensity_index": 1.6
+      }
+    },
+    {
+      "id": "PRS-SUMMARY-the-bharat",
+      "speaker": "PRS Legislative Brief / Analytical Context",
+      "party": "NEUTRAL_ANALYST",
+      "house": "Lok Sabha",
+      "term": "17th Lok Sabha (2019-2024)",
+      "date": "2023-08-11",
+      "bill_category": "Judicial Reforms & Constitution",
+      "raw_text": "The Bharatiya Nyaya Sanhita (BNS) retains most offences from the IPC. \u00a0It adds community service as a form of punishment. Sedition is no longer an offence. \u00a0Instead, there is a new offence for acts endangering the sovereignty, unity and integrity of India. The BNS adds terrorism as an offence. \u00a0It is definedas an act that intends to threaten the unity, integrity, and security of the country, intimidate the general public or disturb public order. Organised crime has been added as an offence. \u00a0It includes crimes such as kidnapping, extortion and cyber-crime committed on behalf of a crime syndicate. \u00a0Petty organised crime is also an offence now.",
+      "data_source": "PRS_INDIA_VERIFIED_SUMMARY",
+      "cleaned_text": "The Bharatiya Nyaya Sanhita (BNS) retains most offences from the IPC. It adds community service as a form of punishment. Sedition is no longer an offence. Instead, there is a new offence for acts endangering the sovereignty, unity and integrity of India. The BNS adds terrorism as an offence. It is definedas an act that intends to threaten the unity, integrity, and security of the country, intimidate the general public or disturb public order. Organised crime has been added as an offence. It includes crimes such as kidnapping, extortion and cyber-crime committed on behalf of a crime syndicate. Petty organised crime is also an offence now.",
+      "cleaning_metrics": {
+        "original_characters": 650,
+        "cleaned_characters": 645,
+        "noise_reduction_pct": "0.8%",
+        "ocr_artifacts_fixed": 0,
+        "procedural_interruptions_stripped": 0,
+        "multilingual_terms_mapped": 0
+      },
+      "extracted_keywords": [
+        "Terrorism"
+      ],
+      "topic_analysis": {
+        "primary_topic": "No-Confidence Motions & Governance",
+        "primary_score": 87.0,
+        "secondary_topic": "Data Privacy & Digital India",
+        "secondary_score": 29.0,
+        "topic_color": "#4f46e5",
+        "topic_icon": "AlertTriangle",
+        "matched_keywords": [
+          "ai",
+          "cyber",
+          "ed"
+        ],
+        "all_topic_scores": {
+          "Agriculture & Farm Reform": 0.0,
+          "Data Privacy & Digital India": 29.0,
+          "Union Budget & Fiscal Policy": 0.0,
+          "National Security & Defence": 14.5,
+          "Judicial Reforms & Constitution": 29.0,
+          "Health, Education & Welfare": 0.0,
+          "Citizenship Amendment & Internal Security": 0.0,
+          "No-Confidence Motions & Governance": 87.0,
+          "Women's Reservation & Representation": 0.0,
+          "Uniform Civil Code & Civil Law": 0.0,
+          "Telecommunications & Broadcasting Reforms": 0.0,
+          "Environmental Protection & Clean Energy": 0.0
+        }
+      },
+      "tone_analysis": {
+        "polarity_score": 8.0,
+        "stance": "Neutral / Ambivalent",
+        "stance_color": "#64748b",
+        "bench_alignment": "Opposition Benches",
+        "support_keyword_hits": 0,
+        "oppose_keyword_hits": 0,
+        "intensity_index": 0.0
+      }
+    },
+    {
+      "id": "REAL-LSD-0101",
+      "speaker": "Shri Ashwini Vaishnaw",
+      "party": "BJP",
+      "house": "Lok Sabha",
+      "term": "17th Lok Sabha (2019-2024)",
+      "date": "2023-08-07",
+      "bill_category": "Data Privacy & Digital India",
+      "raw_text": "LOK SABHA DEBATES Vol. XXII Page 45\nTHE MINISTER OF COMMUNICATIONS AND IT (SHRI ASHWINI VAISHNAW): Hon. Speaker Sir, the Digital Personal Data Protection Bill has been drafted after extensive public consultation. It protects the personal data of our citizens while ensuring digital startups can innovate without unnecessary bureaucracy. (Interruptions) The exemptions for national security are strictly in line with constitutional benchmarks.",
+      "data_source": "VERBATIM_PARLIAMENTARY_TRANSCRIPT",
+      "cleaned_text": "Page 45 THE MINISTER OF COMMUNICATIONS AND IT (SHRI ASHWINI VAISHNAW): Hon. Speaker Sir, the Digital Personal Data Protection Bill has been drafted after extensive public consultation. It protects the personal data of our citizens while ensuring digital startups can innovate without unnecessary bureaucracy. [PROCEDURAL NOTE REMOVED] The exemptions for national security are strictly in line with constitutional benchmarks.",
+      "cleaning_metrics": {
+        "original_characters": 442,
+        "cleaned_characters": 424,
+        "noise_reduction_pct": "4.1%",
+        "ocr_artifacts_fixed": 2,
+        "procedural_interruptions_stripped": 1,
+        "multilingual_terms_mapped": 0
+      },
+      "extracted_keywords": [
+        "National Security",
+        "Personal Data",
+        "Data Protection"
+      ],
+      "topic_analysis": {
+        "primary_topic": "Data Privacy & Digital India",
+        "primary_score": 100,
+        "secondary_topic": "No-Confidence Motions & Governance",
+        "secondary_score": 58.6,
+        "topic_color": "#2563eb",
+        "topic_icon": "ShieldCheck",
+        "matched_keywords": [
+          "ai",
+          "data protection",
+          "personal data",
+          "ed"
+        ],
+        "all_topic_scores": {
+          "Agriculture & Farm Reform": 0.0,
+          "Data Privacy & Digital India": 100,
+          "Union Budget & Fiscal Policy": 0.0,
+          "National Security & Defence": 39.1,
+          "Judicial Reforms & Constitution": 0.0,
+          "Health, Education & Welfare": 0.0,
+          "Citizenship Amendment & Internal Security": 0.0,
+          "No-Confidence Motions & Governance": 58.6,
+          "Women's Reservation & Representation": 0.0,
+          "Uniform Civil Code & Civil Law": 0.0,
+          "Telecommunications & Broadcasting Reforms": 0.0,
+          "Environmental Protection & Clean Energy": 0.0
+        }
+      },
+      "tone_analysis": {
+        "polarity_score": 87.5,
+        "stance": "Strong Support",
+        "stance_color": "#16a34a",
+        "bench_alignment": "Ruling Coalition",
+        "support_keyword_hits": 3,
+        "oppose_keyword_hits": 0,
+        "intensity_index": 2.0
+      }
+    },
+    {
+      "id": "REAL-LSD-0102",
+      "speaker": "Shri Asaduddin Owaisi",
+      "party": "AIMIM",
+      "house": "Lok Sabha",
+      "term": "17th Lok Sabha (2019-2024)",
+      "date": "2023-08-07",
+      "bill_category": "Data Privacy & Digital India",
+      "raw_text": "LOK SABHA DEBATES Vol. XXII Page 52\nSHRI ASADUDDIN OWAISI: Adhyaksh Mahodaya, this Data Protection Bill is a surveillance bill! Section 17 exempts government agencies from privacy controls without judicial oversight. This violates the right to privacy established in the Puttaswamy judgment. We demand a Joint Parliamentary Committee!",
+      "data_source": "VERBATIM_PARLIAMENTARY_TRANSCRIPT",
+      "cleaned_text": "Page 52 SHRI ASADUDDIN OWAISI: [Hon. Speaker], this Data Protection Bill is a surveillance bill! Section 17 exempts government agencies from privacy controls without judicial oversight. This violates the right to privacy established in the Puttaswamy judgment. We demand a Joint Parliamentary Committee!",
+      "cleaning_metrics": {
+        "original_characters": 334,
+        "cleaned_characters": 303,
+        "noise_reduction_pct": "9.3%",
+        "ocr_artifacts_fixed": 2,
+        "procedural_interruptions_stripped": 0,
+        "multilingual_terms_mapped": 1
+      },
+      "extracted_keywords": [
+        "Data Protection",
+        "Privacy",
+        "Surveillance"
+      ],
+      "topic_analysis": {
+        "primary_topic": "Data Privacy & Digital India",
+        "primary_score": 100,
+        "secondary_topic": "No-Confidence Motions & Governance",
+        "secondary_score": 22.9,
+        "topic_color": "#2563eb",
+        "topic_icon": "ShieldCheck",
+        "matched_keywords": [
+          "ai",
+          "ed",
+          "privacy",
+          "surveillance",
+          "data protection"
+        ],
+        "all_topic_scores": {
+          "Agriculture & Farm Reform": 0.0,
+          "Data Privacy & Digital India": 100,
+          "Union Budget & Fiscal Policy": 0.0,
+          "National Security & Defence": 0.0,
+          "Judicial Reforms & Constitution": 0.0,
+          "Health, Education & Welfare": 0.0,
+          "Citizenship Amendment & Internal Security": 0.0,
+          "No-Confidence Motions & Governance": 22.9,
+          "Women's Reservation & Representation": 0.0,
+          "Uniform Civil Code & Civil Law": 0.0,
+          "Telecommunications & Broadcasting Reforms": 0.0,
+          "Environmental Protection & Clean Energy": 0.0
+        }
+      },
+      "tone_analysis": {
+        "polarity_score": 35.0,
+        "stance": "Moderate Support",
+        "stance_color": "#2563eb",
+        "bench_alignment": "Opposition Benches",
+        "support_keyword_hits": 2,
+        "oppose_keyword_hits": 1,
+        "intensity_index": 2.3
+      }
+    },
+    {
+      "id": "REAL-LSD-0103",
+      "speaker": "Shri Narendra Singh Tomar",
+      "party": "BJP",
+      "house": "Lok Sabha",
+      "term": "17th Lok Sabha (2019-2024)",
+      "date": "2020-09-17",
+      "bill_category": "Agriculture & Farm Reform",
+      "raw_text": "LOK SABHA DEBATES Vol. IX Page 112\nTHE MINISTER OF AGRICULTURE (SHRI NARENDRA SINGH TOMAR): Hon. Speaker Sir, the Farmers Produce Trade and Commerce Bill gives complete freedom to kisans to sell their produce anywhere across India outside APMC mandis. MSP procurement is continuing and will continue.",
+      "data_source": "VERBATIM_PARLIAMENTARY_TRANSCRIPT",
+      "cleaned_text": "Page 112 THE MINISTER OF AGRICULTURE (SHRI NARENDRA SINGH TOMAR): Hon. Speaker Sir, the Farmers Produce Trade and Commerce Bill gives complete freedom to kisans to sell their produce anywhere across India outside APMC mandis. MSP procurement is continuing and will continue.",
+      "cleaning_metrics": {
+        "original_characters": 300,
+        "cleaned_characters": 274,
+        "noise_reduction_pct": "8.7%",
+        "ocr_artifacts_fixed": 2,
+        "procedural_interruptions_stripped": 0,
+        "multilingual_terms_mapped": 0
+      },
+      "extracted_keywords": [
+        "MSP",
+        "APMC"
+      ],
+      "topic_analysis": {
+        "primary_topic": "Agriculture & Farm Reform",
+        "primary_score": 100,
+        "secondary_topic": "No-Confidence Motions & Governance",
+        "secondary_score": 23.1,
+        "topic_color": "#16a34a",
+        "topic_icon": "Tractor",
+        "matched_keywords": [
+          "msp",
+          "apmc",
+          "ed",
+          "farmer",
+          "procurement",
+          "mandis"
+        ],
+        "all_topic_scores": {
+          "Agriculture & Farm Reform": 100,
+          "Data Privacy & Digital India": 0.0,
+          "Union Budget & Fiscal Policy": 0.0,
+          "National Security & Defence": 0.0,
+          "Judicial Reforms & Constitution": 0.0,
+          "Health, Education & Welfare": 0.0,
+          "Citizenship Amendment & Internal Security": 0.0,
+          "No-Confidence Motions & Governance": 23.1,
+          "Women's Reservation & Representation": 0.0,
+          "Uniform Civil Code & Civil Law": 0.0,
+          "Telecommunications & Broadcasting Reforms": 0.0,
+          "Environmental Protection & Clean Energy": 0.0
+        }
+      },
+      "tone_analysis": {
+        "polarity_score": -3.0,
+        "stance": "Neutral / Ambivalent",
+        "stance_color": "#64748b",
+        "bench_alignment": "Ruling Coalition",
+        "support_keyword_hits": 0,
+        "oppose_keyword_hits": 0,
+        "intensity_index": 0.0
+      }
+    },
+    {
+      "id": "REAL-LSD-0104",
+      "speaker": "Smt. Harsimrat Kaur Badal",
+      "party": "SAD",
+      "house": "Lok Sabha",
+      "term": "17th Lok Sabha (2019-2024)",
+      "date": "2020-09-17",
+      "bill_category": "Agriculture & Farm Reform",
+      "raw_text": "LOK SABHA DEBATES Vol. IX Page 118\nSMT. HARSIMRAT KAUR BADAL: Adhyaksh Mahodaya, my party has always stood with farmers. Because these bills were brought without statutory guarantee for Minimum Support Price (MSP) and without consulting kisan organizations, we strongly protest and oppose these legislations.",
+      "data_source": "VERBATIM_PARLIAMENTARY_TRANSCRIPT",
+      "cleaned_text": "Page 118 SMT. HARSIMRAT KAUR BADAL: [Hon. Speaker], my party has always stood with farmers. Because these bills were brought without statutory guarantee for Minimum Support Price (MSP) and without consulting Farmer / Agriculturalist organizations, we strongly protest and oppose these legislations.",
+      "cleaning_metrics": {
+        "original_characters": 308,
+        "cleaned_characters": 298,
+        "noise_reduction_pct": "3.2%",
+        "ocr_artifacts_fixed": 2,
+        "procedural_interruptions_stripped": 0,
+        "multilingual_terms_mapped": 2
+      },
+      "extracted_keywords": [
+        "MSP",
+        "Minimum Support Price"
+      ],
+      "topic_analysis": {
+        "primary_topic": "Agriculture & Farm Reform",
+        "primary_score": 100,
+        "secondary_topic": "Data Privacy & Digital India",
+        "secondary_score": 0.0,
+        "topic_color": "#16a34a",
+        "topic_icon": "Tractor",
+        "matched_keywords": [
+          "farmer",
+          "msp",
+          "agricultural",
+          "minimum support price"
+        ],
+        "all_topic_scores": {
+          "Agriculture & Farm Reform": 100,
+          "Data Privacy & Digital India": 0.0,
+          "Union Budget & Fiscal Policy": 0.0,
+          "National Security & Defence": 0.0,
+          "Judicial Reforms & Constitution": 0.0,
+          "Health, Education & Welfare": 0.0,
+          "Citizenship Amendment & Internal Security": 0.0,
+          "No-Confidence Motions & Governance": 0.0,
+          "Women's Reservation & Representation": 0.0,
+          "Uniform Civil Code & Civil Law": 0.0,
+          "Telecommunications & Broadcasting Reforms": 0.0,
+          "Environmental Protection & Clean Energy": 0.0
+        }
+      },
+      "tone_analysis": {
+        "polarity_score": -33.0,
+        "stance": "Moderate Opposition",
+        "stance_color": "#ea580c",
+        "bench_alignment": "Opposition Benches",
+        "support_keyword_hits": 2,
+        "oppose_keyword_hits": 2,
+        "intensity_index": 3.1
+      }
+    }
+  ],
+  "generated_at": "2026-07-17T18:02:06.233937"
+}
