@@ -1,233 +1,235 @@
 #!/usr/bin/env python3
 """
-corpus_generator.py: Extended Parliamentary Speech & Landmark Debate Generator for LokaSent
-Generates over 250 authentic parliamentary debate speeches spanning 15 years (2009-2026),
-covering 4 Lok Sabha terms, Rajya Sabha sessions, 6 bill categories, and 15+ political parties.
+synthetic_fixture_generator.py: Synthetic Stress-Test & Benchmark Fixture Generator for LokaSent
+Generates 9,600+ simulated parliamentary debate speech turns across 12 categories and 4 Lok Sabha terms
+to benchmark and stress-test OCR cleaning (`cleaner.py`), 4-dimensional composite polarization scoring (`polarization_engine.py`),
+and NetworkX graph clustering (`network_analyzer.py`) before live API/scraper ingestion.
+NOTE: All speech text, MP names, and dates are simulated test fixtures and do not represent actual political quotes.
 """
 
 import random
 from datetime import datetime, timedelta
 
 def get_base_landmark_speeches():
-    """Returns hand-curated landmark parliamentary speeches with authentic OCR noise."""
+    """Returns simulated benchmark test speeches with representative OCR noise patterns."""
     return [
         # --- 17th Lok Sabha: Agriculture & Farm Reform ---
         {
             "id": "DEB-17-AGR-001",
-            "speaker": "Shri Rahul Gandhi",
+            "speaker": "[Opposition Representative 01 - INC Bench]",
             "party": "INC",
             "house": "Lok Sabha",
             "term": "17th Lok Sabha (2019-2024)",
             "date": "2021-02-11",
             "bill_category": "Agriculture & Farm Reform",
-            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XIV Page 102\nSHRI RAHUL GANDHI (INC): Adhyaksh Mahodaya, the government's three agri-\nculture farm laws are designed to dismantle the APMC mandi structure and destroy the livelihood of every kisan in this desh. (Interruptions)\nAn Hon. Member: Why did your government not enact MSP? (At this stage, several hon. Members came near the Table)\nSHRI RAHUL GANDHI: We demand a legal guarantee for Minimum Support Price (MSP)! This is a black law and the vipaksh will not surrender our farmers to corporate houses. We strongly oppose this bill!"
+            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XIV Page 102\n[OPPOSITION REPRESENTATIVE 01] (INC): Adhyaksh Mahodaya, the government's three agri-\nculture farm laws are designed to dismantle the APMC mandi structure and destroy the livelihood of every kisan in this desh. (Interruptions)\nAn Hon. Member: Why did your government not enact MSP? (At this stage, several hon. Members came near the Table)\n[OPPOSITION REPRESENTATIVE 01]: We demand a legal guarantee for Minimum Support Price (MSP)! This is a black law and the vipaksh will not surrender our farmers to corporate houses. We strongly oppose this bill!"
         },
         {
             "id": "DEB-17-AGR-002",
-            "speaker": "Shri Narendra Singh Tomar",
+            "speaker": "[Ruling Representative 01 - BJP Bench]",
             "party": "BJP",
             "house": "Lok Sabha",
             "term": "17th Lok Sabha (2019-2024)",
             "date": "2021-02-11",
             "bill_category": "Agriculture & Farm Reform",
-            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XIV Page 105\nTHE MINISTER OF AGRICULTURE (SHRI NARENDRA SINGH TOMAR): Hon. Speaker Sir, these historic farm laws will liberate the kisan from middlemen and transform agricultural trade across India. (Interruptions) The opposition is spreading false propaganda and misleading the farming community. MSP procurement has increased under our government and will continue. We commend this visionary reform that empowers Indian agriculture."
+            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XIV Page 105\n[RULING REPRESENTATIVE 01] (BJP): Hon. Speaker Sir, these historic farm laws will liberate the kisan from middlemen and transform agricultural trade across India. (Interruptions) The opposition is spreading false propaganda and misleading the farming community. MSP procurement has increased under our government and will continue. We commend this visionary reform that empowers Indian agriculture."
         },
         {
             "id": "DEB-17-AGR-003",
-            "speaker": "Smt. Harsimrat Kaur Badal",
+            "speaker": "[Regional Representative 01 - SAD Bench]",
             "party": "SAD",
             "house": "Lok Sabha",
             "term": "17th Lok Sabha (2019-2024)",
             "date": "2020-09-17",
             "bill_category": "Agriculture & Farm Reform",
-            "raw_text": "LOK SABHA DEBATES Series XVII Vol. IX Page 34\nSMT. HARSIMRAT KAUR BADAL: Adhyaksh Mahodaya, my party SAD has always stood with the kisan of Punjab and Haryana. Because these bills were brought without consultation with farmers and without statutory protection for MSP, we strongly protest and reject these legislations as disastrous for agricultural households."
+            "raw_text": "LOK SABHA DEBATES Series XVII Vol. IX Page 34\n[REGIONAL REPRESENTATIVE 01] (SAD): Adhyaksh Mahodaya, our party SAD has always stood with the kisan of Punjab and Haryana. Because these bills were brought without consultation with farmers and without statutory protection for MSP, we strongly protest and reject these legislations as disastrous for agricultural households."
         },
         
         # --- 18th Lok Sabha: Data Privacy & Digital India ---
         {
             "id": "DEB-18-DAT-001",
-            "speaker": "Shri Ashwini Vaishnaw",
+            "speaker": "[Ruling Representative 02 - BJP Bench]",
             "party": "BJP",
             "house": "Lok Sabha",
             "term": "18th Lok Sabha (2024-Present)",
             "date": "2024-08-08",
             "bill_category": "Data Privacy & Digital India",
-            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. III Page 12\nTHE MINISTER OF COMMUNICATIONS AND IT (SHRI ASHWINI VAISHNAW): Hon. Speaker Sir, the Digital India Data Protection Bill is a landmark legislation that balances individual personal data privacy with the innovation needs of our burgeoning tech startup ecosystem. It provides robust protection against cyber breaches and ensures national security without strangling digital economy growth. We welcome the consensus from industry and civil society."
+            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. III Page 12\n[RULING REPRESENTATIVE 02] (BJP): Hon. Speaker Sir, the Digital India Data Protection Bill is a landmark legislation that balances individual personal data privacy with the innovation needs of our burgeoning tech startup ecosystem. It provides robust protection against cyber breaches and ensures national security without strangling digital economy growth. We welcome the consensus from industry and civil society."
         },
         {
             "id": "DEB-18-DAT-002",
-            "speaker": "Shri Asaduddin Owaisi",
+            "speaker": "[Regional Representative 02 - AIMIM Bench]",
             "party": "AIMIM",
             "house": "Lok Sabha",
             "term": "18th Lok Sabha (2024-Present)",
             "date": "2024-08-08",
             "bill_category": "Data Privacy & Digital India",
-            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. III Page 18\nSHRI ASADUDDIN OWAISI: Adhyaksh Mahodaya, this Data Protection Bill is flawed and authoritarian! By exempting government surveillance agencies from privacy constraints, it violates the fundamental right to privacy established by the Supreme Court. We strongly condemn this state surveillance framework and demand it be referred to a Joint Parliamentary Committee!"
+            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. III Page 18\n[REGIONAL REPRESENTATIVE 02] (AIMIM): Adhyaksh Mahodaya, this Data Protection Bill is flawed and authoritarian! By exempting government surveillance agencies from privacy constraints, it violates the fundamental right to privacy established by the Supreme Court. We strongly condemn this state surveillance framework and demand it be referred to a Joint Parliamentary Committee!"
         },
         {
             "id": "DEB-18-DAT-003",
-            "speaker": "Shri Shashi Tharoor",
+            "speaker": "[Opposition Representative 02 - INC Bench]",
             "party": "INC",
             "house": "Lok Sabha",
             "term": "18th Lok Sabha (2024-Present)",
             "date": "2024-08-09",
             "bill_category": "Data Privacy & Digital India",
-            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. III Page 45\nSHRI SHASHI THAROOR: Hon. Speaker Sir, while we support the urgent need for a statutory data protection regime in India, the current draft weakens the independence of the Data Protection Board and grants excessive exemptions to the executive. We oppose these specific draconian clauses and urge the government to accept our constructive amendments to protect citizens' digital rights."
+            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. III Page 45\n[OPPOSITION REPRESENTATIVE 02] (INC): Hon. Speaker Sir, while we support the urgent need for a statutory data protection regime in India, the current draft weakens the independence of the Data Protection Board and grants excessive exemptions to the executive. We oppose these specific draconian clauses and urge the government to accept our constructive amendments to protect citizens' digital rights."
         },
 
         # --- 17th Lok Sabha: Union Budget & Fiscal Policy ---
         {
             "id": "DEB-17-BUD-001",
-            "speaker": "Smt. Nirmala Sitharaman",
+            "speaker": "[Ruling Representative 03 - BJP Bench]",
             "party": "BJP",
             "house": "Lok Sabha",
             "term": "17th Lok Sabha (2019-2024)",
             "date": "2023-02-01",
             "bill_category": "Union Budget & Fiscal Policy",
-            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XXI Page 1\nTHE MINISTER OF FINANCE (SMT. NIRMALA SITHARAMAN): Hon. Speaker Sir, this Union Budget lays the foundation for Amrit Kaal. Our fiscal deficit is strictly controlled while capital expenditure on infrastructure is increased by 33%. We have controlled mehangai and inflation compared to global economies, while expanding welfare subsidies and DBT to millions of households. I commend this progressive budget to the House."
+            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XXI Page 1\n[RULING REPRESENTATIVE 03] (BJP): Hon. Speaker Sir, this Union Budget lays the foundation for Amrit Kaal. Our fiscal deficit is strictly controlled while capital expenditure on infrastructure is increased by 33%. We have controlled mehangai and inflation compared to global economies, while expanding welfare subsidies and DBT to millions of households. I commend this progressive budget to the House."
         },
         {
             "id": "DEB-17-BUD-002",
-            "speaker": "Smt. Mahua Moitra",
+            "speaker": "[Regional Representative 03 - TMC Bench]",
             "party": "TMC",
             "house": "Lok Sabha",
             "term": "17th Lok Sabha (2019-2024)",
             "date": "2023-02-03",
             "bill_category": "Union Budget & Fiscal Policy",
-            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XXI Page 67\nSMT. MAHUA MOITRA: Adhyaksh Mahodaya, this budget is an illusion that ignores the crushing reality of mehangai and youth berojgari in our country! While corporate tax cuts are celebrated, rural welfare schemes and MGNREGA allocations have been ruthlessly slashed. We strongly condemn this anti-poor and discriminatory fiscal allocation against non-ruling states!"
+            "raw_text": "LOK SABHA DEBATES Series XVII Vol. XXI Page 67\n[REGIONAL REPRESENTATIVE 03] (TMC): Adhyaksh Mahodaya, this budget is an illusion that ignores the crushing reality of mehangai and youth berojgari in our country! While corporate tax cuts are celebrated, rural welfare schemes and MGNREGA allocations have been ruthlessly slashed. We strongly condemn this anti-poor and discriminatory fiscal allocation against non-ruling states!"
         },
 
         # --- 16th Lok Sabha: National Security & Defence ---
         {
             "id": "DEB-16-SEC-001",
-            "speaker": "Shri Rajnath Singh",
+            "speaker": "[Ruling Representative 04 - BJP Bench]",
             "party": "BJP",
             "house": "Lok Sabha",
             "term": "16th Lok Sabha (2014-2019)",
             "date": "2018-01-04",
             "bill_category": "National Security & Defence",
-            "raw_text": "LOK SABHA DEBATES Series XVI Vol. XIII Page 10\nTHE MINISTER OF HOME AFFAIRS (SHRI RAJNATH SINGH): Hon. Speaker Sir, the security and suraksha of our nation is paramount. Our armed forces and border defence forces have been given full freedom to respond decisively to cross-border terrorism. We welcome the bi-partisan support of this House whenever national security is challenged."
+            "raw_text": "LOK SABHA DEBATES Series XVI Vol. XIII Page 10\n[RULING REPRESENTATIVE 04] (BJP): Hon. Speaker Sir, the security and suraksha of our nation is paramount. Our armed forces and border defence forces have been given full freedom to respond decisively to cross-border terrorism. We welcome the bi-partisan support of this House whenever national security is challenged."
         },
         {
             "id": "DEB-16-SEC-002",
-            "speaker": "Shri Mallikarjun Kharge",
+            "speaker": "[Opposition Representative 03 - INC Bench]",
             "party": "INC",
             "house": "Lok Sabha",
             "term": "16th Lok Sabha (2014-2019)",
             "date": "2018-01-04",
             "bill_category": "National Security & Defence",
-            "raw_text": "LOK SABHA DEBATES Series XVI Vol. XIII Page 15\nSHRI MALLIKARJUN KHARGE: Hon. Speaker Sir, when it comes to defending our borders and supporting our armed forces against terrorism, the opposition stands completely united with the nation. We support the valour of our soldiers, even as we question the diplomatic strategy and budget utilization of the defence ministry."
+            "raw_text": "LOK SABHA DEBATES Series XVI Vol. XIII Page 15\n[OPPOSITION REPRESENTATIVE 03] (INC): Hon. Speaker Sir, when it comes to defending our borders and supporting our armed forces against terrorism, the opposition stands completely united with the nation. We support the valour of our soldiers, even as we question the diplomatic strategy and budget utilization of the defence ministry."
         },
 
         # --- 15th Lok Sabha: Health, Education & Welfare ---
         {
             "id": "DEB-15-WEL-001",
-            "speaker": "Shri Pranab Mukherjee",
+            "speaker": "[Ruling Representative 05 - INC Bench]",
             "party": "INC",
             "house": "Lok Sabha",
             "term": "15th Lok Sabha (2009-2014)",
             "date": "2013-08-26",
             "bill_category": "Health, Education & Welfare",
-            "raw_text": "LOK SABHA DEBATES Series XV Vol. XXXII Page 5\nTHE MINISTER OF FINANCE (SHRI PRANAB MUKHERJEE): Hon. Speaker Sir, the National Food Security Bill is an historic welfare enactment that guarantees subsidized food grains to over two-thirds of India's population. It empowers the poor and eradicates hunger. We commend this landmark social legislation to parliament."
+            "raw_text": "LOK SABHA DEBATES Series XV Vol. XXXII Page 5\n[RULING REPRESENTATIVE 05] (INC): Hon. Speaker Sir, the National Food Security Bill is an historic welfare enactment that guarantees subsidized food grains to over two-thirds of India's population. It empowers the poor and eradicates hunger. We commend this landmark social legislation to parliament."
         },
         {
             "id": "DEB-15-WEL-002",
-            "speaker": "Smt. Sushma Swaraj",
+            "speaker": "[Opposition Representative 04 - BJP Bench]",
             "party": "BJP",
             "house": "Lok Sabha",
             "term": "15th Lok Sabha (2009-2014)",
             "date": "2013-08-26",
             "bill_category": "Health, Education & Welfare",
-            "raw_text": "LOK SABHA DEBATES Series XV Vol. XXXII Page 22\nSMT. SUSHMA SWARAJ: Adhyaksh Mahodaya, while the BJP supports the principle of food security for every poor citizen, we oppose the hasty drafting and lack of consultation with state governments regarding PDS distribution infrastructure. We support the welfare intent but demand amendments to protect state federalism and farmer procurement rights."
+            "raw_text": "LOK SABHA DEBATES Series XV Vol. XXXII Page 22\n[OPPOSITION REPRESENTATIVE 04] (BJP): Adhyaksh Mahodaya, while the BJP supports the principle of food security for every poor citizen, we oppose the hasty drafting and lack of consultation with state governments regarding PDS distribution infrastructure. We support the welfare intent but demand amendments to protect state federalism and farmer procurement rights."
         },
 
         # --- 18th Lok Sabha: Judicial Reforms & Constitution ---
         {
             "id": "DEB-18-JUD-001",
-            "speaker": "Shri Amit Shah",
+            "speaker": "[Ruling Representative 06 - BJP Bench]",
             "party": "BJP",
             "house": "Lok Sabha",
             "term": "18th Lok Sabha (2024-Present)",
             "date": "2024-07-25",
             "bill_category": "Judicial Reforms & Constitution",
-            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. II Page 88\nTHE MINISTER OF HOME AFFAIRS (SHRI AMIT SHAH): Hon. Speaker Sir, the replacement of colonial penal laws with the Bharatiya Nyaya Sanhita (BNS) transforms our judicial system from punishment-oriented to justice-oriented kanoon. It integrates digital evidence, ensures speedy trials, and protects constitutional liberties. This visionary reform strengthens Indian democracy."
+            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. II Page 88\n[RULING REPRESENTATIVE 06] (BJP): Hon. Speaker Sir, the replacement of colonial penal laws with the Bharatiya Nyaya Sanhita (BNS) transforms our judicial system from punishment-oriented to justice-oriented kanoon. It integrates digital evidence, ensures speedy trials, and protects constitutional liberties. This visionary reform strengthens Indian democracy."
         },
         {
             "id": "DEB-18-JUD-002",
-            "speaker": "Shri Akhilesh Yadav",
+            "speaker": "[Regional Representative 04 - SP Bench]",
             "party": "SP",
             "house": "Lok Sabha",
             "term": "18th Lok Sabha (2024-Present)",
             "date": "2024-07-26",
             "bill_category": "Judicial Reforms & Constitution",
-            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. II Page 112\nSHRI AKHILESH YADAV: Adhyaksh Mahodaya, renaming laws in Hindi while increasing police detention powers without judicial oversight is unconstitutional and anti-citizen! We oppose this hasty implementation of new criminal codes that harass common people and violate federal principles. We demand an immediate review by a parliamentary committee!"
+            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. II Page 112\n[REGIONAL REPRESENTATIVE 04] (SP): Adhyaksh Mahodaya, renaming laws in Hindi while increasing police detention powers without judicial oversight is unconstitutional and anti-citizen! We oppose this hasty implementation of new criminal codes that harass common people and violate federal principles. We demand an immediate review by a parliamentary committee!"
         },
         {
             "id": "DEB-18-JUD-003",
-            "speaker": "Shri T.R. Baalu",
+            "speaker": "[Regional Representative 05 - DMK Bench]",
             "party": "DMK",
             "house": "Lok Sabha",
             "term": "18th Lok Sabha (2024-Present)",
             "date": "2024-07-26",
             "bill_category": "Judicial Reforms & Constitution",
-            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. II Page 119\nSHRI T.R. BAALU: Hon. Speaker Sir, imposing Sanskritized Hindi names on penal codes violates non-Hindi speaking states' rights and constitutional federalism! The DMK strongly condemns and rejects these authoritarian judicial bills that disrupt state legal administration."
+            "raw_text": "LOK SABHA DEBATES Series XVIII Vol. II Page 119\n[REGIONAL REPRESENTATIVE 05] (DMK): Hon. Speaker Sir, imposing Sanskritized Hindi names on penal codes violates non-Hindi speaking states' rights and constitutional federalism! The DMK strongly condemns and rejects these authoritarian judicial bills that disrupt state legal administration."
         },
 
         # --- Additional Landmark Speeches ---
         {
             "id": "DEB-17-JUD-004",
-            "speaker": "Shri Narendra Modi",
+            "speaker": "[Ruling Representative 07 - BJP Bench]",
             "party": "BJP",
             "house": "Lok Sabha",
             "term": "17th Lok Sabha (2019-2024)",
             "date": "2019-08-06",
             "bill_category": "Judicial Reforms & Constitution",
-            "raw_text": "LOK SABHA DEBATES Series XVII Vol. II Page 15\nTHE PRIME MINISTER (SHRI NARENDRA MODI): Hon. Speaker Sir, the abrogation of Article 370 is a monumental step towards national integration and constitutional equality. For decades, special provisions hindered social welfare and economic progress in Jammu and Kashmir. Now, every kanoon, constitutional liberty, and development scheme will reach every citizen equally across our desh."
+            "raw_text": "LOK SABHA DEBATES Series XVII Vol. II Page 15\n[RULING REPRESENTATIVE 07] (BJP): Hon. Speaker Sir, the abrogation of Article 370 is a monumental step towards national integration and constitutional equality. For decades, special provisions hindered social welfare and economic progress in Jammu and Kashmir. Now, every kanoon, constitutional liberty, and development scheme will reach every citizen equally across our desh."
         },
         {
             "id": "DEB-16-BUD-003",
-            "speaker": "Shri Arun Jaitley",
+            "speaker": "[Ruling Representative 08 - BJP Bench]",
             "party": "BJP",
             "house": "Rajya Sabha",
             "term": "16th Lok Sabha (2014-2019)",
             "date": "2017-06-30",
             "bill_category": "Union Budget & Fiscal Policy",
-            "raw_text": "RAJYA SABHA DEBATES Part II Page 42\nTHE MINISTER OF FINANCE (SHRI ARUN JAITLEY): Sabhapati Mahodaya, the Goods and Services Tax (GST) is the greatest tax reform since Independence, uniting India into a single national market. By replacing cascading indirect taxes with a transparent digital framework, we reduce corruption, enhance fiscal stability, and accelerate economic GDP growth."
+            "raw_text": "RAJYA SABHA DEBATES Part II Page 42\n[RULING REPRESENTATIVE 08] (BJP): Sabhapati Mahodaya, the Goods and Services Tax (GST) is the greatest tax reform since Independence, uniting India into a single national market. By replacing cascading indirect taxes with a transparent digital framework, we reduce corruption, enhance fiscal stability, and accelerate economic GDP growth."
         },
         {
             "id": "DEB-15-WEL-003",
-            "speaker": "Smt. Sonia Gandhi",
+            "speaker": "[Ruling Representative 09 - INC Bench]",
             "party": "INC",
             "house": "Lok Sabha",
             "term": "15th Lok Sabha (2009-2014)",
             "date": "2013-08-26",
             "bill_category": "Health, Education & Welfare",
-            "raw_text": "LOK SABHA DEBATES Series XV Vol. XXXII Page 12\nSMT. SONIA GANDHI: Adhyaksh Mahodaya, our government is committed to eradicating hunger through the National Food Security Bill. We must protect our most vulnerable citizens, especially rural women and children, by ensuring guaranteed subsidized food grains. This is a historic moral obligation for Indian democracy."
+            "raw_text": "LOK SABHA DEBATES Series XV Vol. XXXII Page 12\n[RULING REPRESENTATIVE 09] (INC): Adhyaksh Mahodaya, our government is committed to eradicating hunger through the National Food Security Bill. We must protect our most vulnerable citizens, especially rural women and children, by ensuring guaranteed subsidized food grains. This is a historic moral obligation for Indian democracy."
         },
         {
             "id": "DEB-17-DAT-004",
-            "speaker": "Shri Derek O'Brien",
+            "speaker": "[Regional Representative 06 - TMC Bench]",
             "party": "TMC",
             "house": "Rajya Sabha",
             "term": "17th Lok Sabha (2019-2024)",
             "date": "2021-12-15",
             "bill_category": "Data Privacy & Digital India",
-            "raw_text": "RAJYA SABHA DEBATES Part II Page 89\nSHRI DEREK O'BRIEN: Sabhapati Mahodaya, rushing digital surveillance bills without sending them to a parliamentary standing committee destroys our legislative norms! We strongly protest this authoritarian approach that dilutes citizen privacy and compromises digital freedom under the guise of state security."
+            "raw_text": "RAJYA SABHA DEBATES Part II Page 89\n[REGIONAL REPRESENTATIVE 06] (TMC): Sabhapati Mahodaya, rushing digital surveillance bills without sending them to a parliamentary standing committee destroys our legislative norms! We strongly protest this authoritarian approach that dilutes citizen privacy and compromises digital freedom under the guise of state security."
         },
         {
             "id": "DEB-18-AGR-004",
-            "speaker": "Shri Raghav Chadha",
+            "speaker": "[Regional Representative 07 - AAP Bench]",
             "party": "AAP",
             "house": "Rajya Sabha",
             "term": "18th Lok Sabha (2024-Present)",
             "date": "2024-07-30",
             "bill_category": "Agriculture & Farm Reform",
-            "raw_text": "RAJYA SABHA DEBATES Part II Page 104\nSHRI RAGHAV CHADHA: Sabhapati Mahodaya, our kisan are still waiting for a statutory guarantee on MSP! When agricultural input costs and rural mehangai are skyrocketing, the government's indifference to farmer procurement rights is unacceptable. We demand immediate agricultural debt relief and legal MSP enforcement."
+            "raw_text": "RAJYA SABHA DEBATES Part II Page 104\n[REGIONAL REPRESENTATIVE 07] (AAP): Sabhapati Mahodaya, our kisan are still waiting for a statutory guarantee on MSP! When agricultural input costs and rural mehangai are skyrocketing, the government's indifference to farmer procurement rights is unacceptable. We demand immediate agricultural debt relief and legal MSP enforcement."
         }
     ]
 
 def generate_parametric_speeches():
-    """Generates over 230 varied, authentic speeches across all terms, houses, parties, and categories."""
+    """Generates over 9,600 simulated benchmark speech turns across all terms, houses, parties, and categories."""
     terms = [
         {"name": "15th Lok Sabha (2009-2014)", "start_year": 2009, "end_year": 2014, "ruling_parties": ["INC", "DMK", "NCP"], "opp_parties": ["BJP", "SP", "SAD", "JD(U)", "CPI(M)", "BJD"]},
         {"name": "16th Lok Sabha (2014-2019)", "start_year": 2014, "end_year": 2019, "ruling_parties": ["BJP", "SHS", "SAD", "TDP"], "opp_parties": ["INC", "TMC", "SP", "AIMIM", "BJD", "CPI(M)"]},
@@ -250,31 +252,31 @@ def generate_parametric_speeches():
         "Environmental Protection & Clean Energy"
     ]
     
-    # Speaker pools
+    # Speaker pools (Anonymized benchmark identifiers for stress-testing without attributing fake quotes to real officials)
     ruling_mps = {
-        "BJP": ["Shri Narendra Modi", "Shri Amit Shah", "Smt. Nirmala Sitharaman", "Shri Rajnath Singh", "Shri Nitin Gadkari", "Shri Piyush Goyal", "Shri Ashwini Vaishnaw", "Shri Kiren Rijiju", "Shri Anurag Thakur", "Smt. Smriti Irani", "Shri Bhupender Yadav", "Shri Dharmendra Pradhan", "Shri S. Jaishankar", "Shri Hardeep Singh Puri"],
-        "INC": ["Shri Manmohan Singh", "Shri Pranab Mukherjee", "Shri P. Chidambaram", "Shri A.K. Antony", "Shri Kamal Nath", "Shri Salman Khurshid", "Shri Jairam Ramesh", "Shri Kapil Sibal", "Smt. Ambika Soni"],
-        "TDP": ["Shri Ram Mohan Naidu", "Shri Galla Jayadev", "Shri K. Rammohan Rao", "Shri Pemmasani Chandra Sekhar"],
-        "JD(U)": ["Shri Lalan Singh", "Shri Kaushalendra Kumar", "Shri Ramprit Mandal", "Shri Sunil Kumar Pintu"],
-        "SHS": ["Shri Shrikant Shinde", "Shri Rahul Shewale", "Shri Prataprao Jadhav"],
-        "DMK": ["Shri T.R. Baalu", "Shri Dayanidhi Maran", "Shri A. Raja", "Smt. Kanimozhi Karunanidhi"],
-        "NCP": ["Shri Sharad Pawar", "Shri Praful Patel", "Smt. Supriya Sule", "Shri Sunil Tatkare"]
+        "BJP": [f"[Synthetic Ruling Speaker {i:02d} - BJP]" for i in range(1, 15)],
+        "INC": [f"[Synthetic Ruling Speaker {i:02d} - INC]" for i in range(1, 10)],
+        "TDP": [f"[Synthetic Alliance Speaker {i:02d} - TDP]" for i in range(1, 6)],
+        "JD(U)": [f"[Synthetic Alliance Speaker {i:02d} - JD(U)]" for i in range(1, 6)],
+        "SHS": [f"[Synthetic Alliance Speaker {i:02d} - SHS]" for i in range(1, 5)],
+        "DMK": [f"[Synthetic Ruling Speaker {i:02d} - DMK]" for i in range(1, 6)],
+        "NCP": [f"[Synthetic Ruling Speaker {i:02d} - NCP]" for i in range(1, 5)]
     }
     
     opp_mps = {
-        "INC": ["Shri Rahul Gandhi", "Shri Mallikarjun Kharge", "Shri Shashi Tharoor", "Shri Adhir Ranjan Chowdhury", "Shri Gaurav Gogoi", "Shri Manish Tewari", "Shri Digvijaya Singh", "Smt. Priyanka Gandhi", "Shri K.C. Venugopal", "Shri Ravneet Singh Bittu"],
-        "BJP": ["Smt. Sushma Swaraj", "Shri Arun Jaitley", "Shri L.K. Advani", "Shri Yashwant Sinha", "Shri Ravi Shankar Prasad", "Shri Ananth Kumar"],
-        "TMC": ["Smt. Mahua Moitra", "Shri Derek O'Brien", "Shri Kalyan Banerjee", "Shri Saugata Roy", "Shri Abhishek Banerjee", "Smt. Kakoli Ghosh Dastidar", "Shri Sukhendu Sekhar Roy", "Smt. Satabdi Roy"],
-        "DMK": ["Shri T.R. Baalu", "Smt. Kanimozhi Karunanidhi", "Shri Tiruchi Siva", "Shri A. Raja", "Shri Dayanidhi Maran", "Shri K. Kanimozhi"],
-        "SP": ["Shri Akhilesh Yadav", "Shri Ram Gopal Yadav", "Smt. Dimple Yadav", "Shri Shafiqur Rahman Barq", "Shri S.T. Hasan", "Shri Awadhesh Prasad"],
-        "SAD": ["Smt. Harsimrat Kaur Badal", "Shri Sukhbir Singh Badal", "Shri Naresh Gujral"],
-        "AIMIM": ["Shri Asaduddin Owaisi", "Shri Imtiaz Jaleel", "Shri Syed Imtiaz Jaleel"],
-        "AAP": ["Shri Raghav Chadha", "Shri Sanjay Singh", "Shri Bhagwant Mann", "Shri Sandeep Pathak"],
-        "BJD": ["Shri Bhartruhari Mahtab", "Shri Pinaki Misra", "Shri Sasmit Patra", "Smt. Sarmistha Sethi"],
-        "CPI(M)": ["Shri Sitaram Yechury", "Shri Elamaram Kareem", "Shri John Brittas", "Shri A.M. Ariff"],
-        "RJD": ["Shri Manoj Jha", "Shri Misa Bharti", "Shri Abhay Kumar Sinha"],
-        "JD(U)": ["Shri Sharad Yadav", "Shri R.C.P. Singh", "Shri Harivansh Narayan Singh"],
-        "YSRCP": ["Shri V. Vijayasai Reddy", "Shri P.V. Midhun Reddy", "Shri Margani Bharat"]
+        "INC": [f"[Synthetic Opposition Speaker {i:02d} - INC]" for i in range(1, 12)],
+        "BJP": [f"[Synthetic Opposition Speaker {i:02d} - BJP]" for i in range(1, 8)],
+        "TMC": [f"[Synthetic Regional Speaker {i:02d} - TMC]" for i in range(1, 10)],
+        "DMK": [f"[Synthetic Regional Speaker {i:02d} - DMK]" for i in range(1, 8)],
+        "SP": [f"[Synthetic Regional Speaker {i:02d} - SP]" for i in range(1, 8)],
+        "SAD": [f"[Synthetic Regional Speaker {i:02d} - SAD]" for i in range(1, 5)],
+        "AIMIM": [f"[Synthetic Regional Speaker {i:02d} - AIMIM]" for i in range(1, 5)],
+        "AAP": [f"[Synthetic Regional Speaker {i:02d} - AAP]" for i in range(1, 6)],
+        "BJD": [f"[Synthetic Regional Speaker {i:02d} - BJD]" for i in range(1, 6)],
+        "CPI(M)": [f"[Synthetic Regional Speaker {i:02d} - CPI(M)]" for i in range(1, 6)],
+        "RJD": [f"[Synthetic Regional Speaker {i:02d} - RJD]" for i in range(1, 5)],
+        "JD(U)": [f"[Synthetic Opposition Speaker {i:02d} - JD(U)]" for i in range(1, 5)],
+        "YSRCP": [f"[Synthetic Regional Speaker {i:02d} - YSRCP]" for i in range(1, 5)]
     }
     
     # Vocabulary & template pools with OCR artifacts and Hindi terms

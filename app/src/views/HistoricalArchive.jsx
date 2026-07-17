@@ -68,17 +68,47 @@ const HistoricalArchive = ({ archiveData, selectedCategory, setSelectedCategory,
 
   return (
     <div className="space-y-6">
+      {/* Synthetic Benchmark Disclaimer Banner */}
+      {(archiveData?.is_simulated || archiveData?.data_source === 'SYNTHETIC_TEST_FIXTURE') && (
+        <div style={{
+          backgroundColor: 'var(--surface-container-high)',
+          border: '1px solid var(--primary)',
+          borderLeft: '5px solid var(--primary)',
+          borderRadius: 'var(--radius-md)',
+          padding: '16px 20px',
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '14px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
+        }}>
+          <span className="material-symbols-outlined" style={{ color: 'var(--primary)', fontSize: '24px', marginTop: '2px' }}>science</span>
+          <div style={{ flex: 1 }}>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="badge badge-primary" style={{ fontSize: '10px' }}>SYNTHETIC STRESS-TEST FIXTURE ACTIVE</span>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--on-surface)' }}>Benchmark Verification Mode ({speeches.length.toLocaleString()} Records)</span>
+            </div>
+            <p className="text-body-sm" style={{ color: 'var(--on-surface-variant)', lineHeight: '1.5' }}>
+              {archiveData.disclaimer || "This dataset is a synthetic stress-test fixture generated to validate pipeline mechanics (OCR cleaning, topic modeling, 4-dimensional composite polarization scoring, and NetworkX graph clustering) before live legislative scraping. Quotes, names, and statistics are simulated."}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Top Banner & Control Bar */}
       <div className="card" style={{ backgroundColor: 'var(--surface-container-low)', border: '1px solid var(--primary-fixed)' }}>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="badge badge-primary">STAGE 2 CORE TARGET ARCHIVE</span>
-              <span className="text-label-sm" style={{ color: 'var(--on-surface-variant)' }}>PRS Legislative & Sansad TV Transcripts ({speeches.length.toLocaleString()} Records)</span>
+              <span className="badge badge-primary">
+                {archiveData?.is_simulated ? 'SYNTHETIC BENCHMARK FIXTURE' : 'STAGE 2 CORE ARCHIVE'}
+              </span>
+              <span className="text-label-sm" style={{ color: 'var(--on-surface-variant)' }}>
+                {archiveData?.is_simulated ? `Simulated Stress-Test Corpus (${speeches.length.toLocaleString()} Records)` : `PRS Legislative & Sansad TV Transcripts (${speeches.length.toLocaleString()} Records)`}
+              </span>
             </div>
             <h2 className="text-headline-lg" style={{ fontWeight: 800 }}>Global Parliamentary Debate Archive</h2>
             <p className="text-body-md" style={{ color: 'var(--on-surface-variant)' }}>
-              Explore how our NLP text-cleaning engine transforms noisy, multilingual, PDF-locked transcripts into structured polarization data across 12 major bills.
+              Explore how our NLP text-cleaning engine transforms noisy, multilingual transcripts into structured polarization data across 12 major policy categories.
             </p>
           </div>
           

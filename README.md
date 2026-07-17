@@ -1,5 +1,11 @@
 # LokaSent: Parliamentary Debate Polarization Tracker
 
+> [!IMPORTANT]
+> **⚠️ SYSTEM STATUS: SYNTHETIC BENCHMARK FIXTURE ACTIVE (`9,620 Records`)**  
+> To demonstrate and stress-test the NLP cleaning pipeline (`cleaner.py`), our 4-dimensional composite polarization math (`polarization_engine.py`), and NetworkX alignment graph rendering without waiting on slow PDF OCR ingestion, the repository currently includes a **Synthetic Stress-Test Fixture (`synthetic_fixture_generator.py`)**.  
+> *All quotes, MP identifiers, and statistics in the current live demo are simulated test fixtures and do not represent real political statements or public attendance records.*  
+> **Stage 1 Pilot & Stage 2 Real Data Ingestion** (scraping authentic debate transcripts and MP Track data from `sansad.in` / PRS Legislative Research) is under active development.
+
 An end-to-end NLP & data engineering portfolio project analyzing legislative sentiment, topic distribution, and political polarization across four Indian Parliamentary terms (**15th, 16th, 17th, and 18th Lok Sabha**).
 
 ---
@@ -59,7 +65,7 @@ The Python data processing backend lives in [`/pipeline`](file:///Users/achintya
 * **[cleaner.py](file:///Users/achintyarai/Desktop/political-data/pipeline/cleaner.py#L18)**: Contains [ParliamentaryTranscriptCleaner](file:///Users/achintyarai/Desktop/political-data/pipeline/cleaner.py#L18) for OCR normalization, procedural noise removal, and party mapping.
 * **[topic_modeler.py](file:///Users/achintyarai/Desktop/political-data/pipeline/topic_modeler.py#L14)**: Contains [LegislativeTopicModeler](file:///Users/achintyarai/Desktop/political-data/pipeline/topic_modeler.py#L14), classifying speeches into 12 key policy categories and extracting keywords.
 * **[polarization_engine.py](file:///Users/achintyarai/Desktop/political-data/pipeline/polarization_engine.py#L15)**: Contains [PolarizationEngine](file:///Users/achintyarai/Desktop/political-data/pipeline/polarization_engine.py#L15), computing the proprietary **Parliamentary Polarization Index (PPI)** using stance classification and sentiment differential between ruling and opposition benches.
-* **[corpus_generator.py](file:///Users/achintyarai/Desktop/political-data/pipeline/corpus_generator.py#L11)**: Generates and formats the 9,620+ authentic parliamentary speeches across 15 years.
+* **[synthetic_fixture_generator.py](file:///Users/achintyarai/Desktop/political-data/pipeline/synthetic_fixture_generator.py#L11)**: Generates our **9,620-record Synthetic Stress-Test Fixture** (`is_simulated: true`) used for algorithmic benchmarking and graph stress-testing.
 
 ---
 

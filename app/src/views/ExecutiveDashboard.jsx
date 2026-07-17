@@ -42,6 +42,32 @@ const ExecutiveDashboard = ({ summaryData, onSelectCategory, onNavigate }) => {
 
   return (
     <div className="space-y-6">
+      {/* Synthetic Benchmark Disclaimer Banner */}
+      {(summaryData?.is_simulated || summaryData?.data_source === 'SYNTHETIC_TEST_FIXTURE') && (
+        <div style={{
+          backgroundColor: 'var(--surface-container-high)',
+          border: '1px solid var(--primary)',
+          borderLeft: '5px solid var(--primary)',
+          borderRadius: 'var(--radius-md)',
+          padding: '16px 20px',
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '14px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
+        }}>
+          <span className="material-symbols-outlined" style={{ color: 'var(--primary)', fontSize: '24px', marginTop: '2px' }}>science</span>
+          <div style={{ flex: 1 }}>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="badge badge-primary" style={{ fontSize: '10px' }}>SYNTHETIC STRESS-TEST FIXTURE ACTIVE</span>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--on-surface)' }}>Benchmark Verification Mode (9,620 Records)</span>
+            </div>
+            <p className="text-body-sm" style={{ color: 'var(--on-surface-variant)', lineHeight: '1.5' }}>
+              {summaryData.disclaimer || "This application currently runs on a 9,600-record Synthetic Stress-Test Fixture used to validate our OCR text-cleaning pipeline (cleaner.py), 4-dimensional composite polarization math (polarization_engine.py), and NetworkX graph rendering at scale. Quotes, names, and statistics are simulated and do not reflect real political statements. Real data ingestion (Stage 1 Pilot) is under active deployment."}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Page Header */}
       <div className="flex justify-between items-end mb-4">
         <div>

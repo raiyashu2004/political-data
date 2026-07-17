@@ -1,4 +1,7 @@
 {
+  "data_source": "SYNTHETIC_TEST_FIXTURE",
+  "is_simulated": true,
+  "disclaimer": "This dataset is a synthetic stress-test fixture generated to validate pipeline mechanics (OCR cleaning, topic modeling, 4-dimensional composite polarization scoring, and NetworkX graph clustering) before live legislative scraping. Quotes, names, and statistics are simulated and do not represent real political statements or actual parliamentary attendance.",
   "metadata": {
     "total_parties_analyzed": 15,
     "total_mps_analyzed": 35,
@@ -10,8 +13,8 @@
       {
         "id": "BJP",
         "label": "BJP",
-        "speech_count": 1224,
-        "avg_polarity": 29.4,
+        "speech_count": 1211,
+        "avg_polarity": 27.7,
         "bench_alignment": "Ruling Coalition",
         "color": "#f97316",
         "degree_centrality": 0.571,
@@ -21,8 +24,8 @@
       {
         "id": "SHS",
         "label": "SHS",
-        "speech_count": 981,
-        "avg_polarity": 42.1,
+        "speech_count": 1031,
+        "avg_polarity": 41.8,
         "bench_alignment": "Ruling Coalition",
         "color": "#f59e0b",
         "degree_centrality": 0.5,
@@ -32,30 +35,30 @@
       {
         "id": "INC",
         "label": "INC",
-        "speech_count": 912,
-        "avg_polarity": -1.6,
+        "speech_count": 939,
+        "avg_polarity": -1.2,
         "bench_alignment": "Opposition Benches",
         "color": "#3b82f6",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.026,
+        "betweenness_centrality": 0.0,
         "community": "Alliance Cluster 1"
       },
       {
         "id": "JD(U)",
         "label": "JD(U)",
-        "speech_count": 881,
-        "avg_polarity": 25.6,
+        "speech_count": 892,
+        "avg_polarity": 25.3,
         "bench_alignment": "Ruling Coalition",
         "color": "#14b8a6",
-        "degree_centrality": 0.571,
-        "betweenness_centrality": 0.0,
+        "degree_centrality": 0.643,
+        "betweenness_centrality": 0.044,
         "community": "Alliance Cluster 1"
       },
       {
         "id": "SP",
         "label": "SP",
-        "speech_count": 720,
-        "avg_polarity": -34.5,
+        "speech_count": 716,
+        "avg_polarity": -39.1,
         "bench_alignment": "Opposition Benches",
         "color": "#dc2626",
         "degree_centrality": 0.643,
@@ -65,41 +68,30 @@
       {
         "id": "DMK",
         "label": "DMK",
-        "speech_count": 701,
-        "avg_polarity": 3.9,
+        "speech_count": 696,
+        "avg_polarity": 4.5,
         "bench_alignment": "Opposition Benches",
         "color": "#ef4444",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.196,
+        "betweenness_centrality": 0.066,
         "community": "Alliance Cluster 1"
       },
       {
         "id": "SAD",
         "label": "SAD",
-        "speech_count": 660,
-        "avg_polarity": 1.8,
+        "speech_count": 673,
+        "avg_polarity": -0.5,
         "bench_alignment": "Ruling Coalition",
         "color": "#06b6d4",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.103,
-        "community": "Alliance Cluster 1"
-      },
-      {
-        "id": "TDP",
-        "label": "TDP",
-        "speech_count": 599,
-        "avg_polarity": 41.2,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
+        "betweenness_centrality": 0.121,
         "community": "Alliance Cluster 1"
       },
       {
         "id": "BJD",
         "label": "BJD",
-        "speech_count": 582,
-        "avg_polarity": -36.8,
+        "speech_count": 578,
+        "avg_polarity": -38.7,
         "bench_alignment": "Opposition Benches",
         "color": "#16a34a",
         "degree_centrality": 0.643,
@@ -107,10 +99,32 @@
         "community": "Alliance Cluster 2"
       },
       {
+        "id": "TDP",
+        "label": "TDP",
+        "speech_count": 557,
+        "avg_polarity": 41.1,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#eab308",
+        "degree_centrality": 0.5,
+        "betweenness_centrality": 0.0,
+        "community": "Alliance Cluster 1"
+      },
+      {
+        "id": "AIMIM",
+        "label": "AIMIM",
+        "speech_count": 536,
+        "avg_polarity": -34.3,
+        "bench_alignment": "Opposition Benches",
+        "color": "#10b981",
+        "degree_centrality": 0.857,
+        "betweenness_centrality": 0.044,
+        "community": "Alliance Cluster 2"
+      },
+      {
         "id": "TMC",
         "label": "TMC",
-        "speech_count": 521,
-        "avg_polarity": -36.1,
+        "speech_count": 530,
+        "avg_polarity": -37.0,
         "bench_alignment": "Opposition Benches",
         "color": "#22c55e",
         "degree_centrality": 0.643,
@@ -118,32 +132,10 @@
         "community": "Alliance Cluster 2"
       },
       {
-        "id": "AIMIM",
-        "label": "AIMIM",
-        "speech_count": 517,
-        "avg_polarity": -30.7,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.857,
-        "betweenness_centrality": 0.005,
-        "community": "Alliance Cluster 2"
-      },
-      {
-        "id": "CPI(M)",
-        "label": "CPI(M)",
-        "speech_count": 431,
-        "avg_polarity": -38.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#b91c1c",
-        "degree_centrality": 0.643,
-        "betweenness_centrality": 0.0,
-        "community": "Alliance Cluster 2"
-      },
-      {
         "id": "NCP",
         "label": "NCP",
-        "speech_count": 409,
-        "avg_polarity": 42.8,
+        "speech_count": 408,
+        "avg_polarity": 41.0,
         "bench_alignment": "Opposition Benches",
         "color": "#64748b",
         "degree_centrality": 0.571,
@@ -151,10 +143,21 @@
         "community": "Alliance Cluster 1"
       },
       {
+        "id": "CPI(M)",
+        "label": "CPI(M)",
+        "speech_count": 352,
+        "avg_polarity": -34.2,
+        "bench_alignment": "Opposition Benches",
+        "color": "#b91c1c",
+        "degree_centrality": 0.714,
+        "betweenness_centrality": 0.044,
+        "community": "Alliance Cluster 2"
+      },
+      {
         "id": "AAP",
         "label": "AAP",
-        "speech_count": 311,
-        "avg_polarity": -39.3,
+        "speech_count": 326,
+        "avg_polarity": -36.6,
         "bench_alignment": "Opposition Benches",
         "color": "#0284c7",
         "degree_centrality": 0.643,
@@ -164,8 +167,8 @@
       {
         "id": "RJD",
         "label": "RJD",
-        "speech_count": 171,
-        "avg_polarity": -41.6,
+        "speech_count": 175,
+        "avg_polarity": -39.9,
         "bench_alignment": "Opposition Benches",
         "color": "#64748b",
         "degree_centrality": 0.643,
@@ -177,32 +180,32 @@
       {
         "source": "INC",
         "target": "BJP",
-        "weight": 0.84,
-        "value": 8.4
+        "weight": 0.864,
+        "value": 8.6
       },
       {
         "source": "INC",
         "target": "SAD",
-        "weight": 0.969,
-        "value": 9.7
-      },
-      {
-        "source": "INC",
-        "target": "AIMIM",
-        "weight": 0.948,
+        "weight": 0.952,
         "value": 9.5
       },
       {
         "source": "INC",
+        "target": "AIMIM",
+        "weight": 0.9169999999999999,
+        "value": 9.2
+      },
+      {
+        "source": "INC",
         "target": "TMC",
-        "weight": 0.7689999999999999,
-        "value": 7.7
+        "weight": 0.738,
+        "value": 7.4
       },
       {
         "source": "INC",
         "target": "SP",
-        "weight": 0.875,
-        "value": 8.8
+        "weight": 0.845,
+        "value": 8.4
       },
       {
         "source": "INC",
@@ -213,74 +216,74 @@
       {
         "source": "INC",
         "target": "AAP",
-        "weight": 0.869,
-        "value": 8.7
-      },
-      {
-        "source": "INC",
-        "target": "CPI(M)",
-        "weight": 0.868,
-        "value": 8.7
+        "weight": 0.842,
+        "value": 8.4
       },
       {
         "source": "INC",
         "target": "NCP",
-        "weight": 0.871,
-        "value": 8.7
-      },
-      {
-        "source": "INC",
-        "target": "BJD",
         "weight": 0.877,
         "value": 8.8
       },
       {
         "source": "INC",
+        "target": "BJD",
+        "weight": 0.87,
+        "value": 8.7
+      },
+      {
+        "source": "INC",
+        "target": "CPI(M)",
+        "weight": 0.874,
+        "value": 8.7
+      },
+      {
+        "source": "INC",
         "target": "JD(U)",
-        "weight": 0.849,
-        "value": 8.5
+        "weight": 0.877,
+        "value": 8.8
       },
       {
         "source": "INC",
         "target": "TDP",
-        "weight": 0.778,
-        "value": 7.8
+        "weight": 0.794,
+        "value": 7.9
       },
       {
         "source": "INC",
         "target": "SHS",
-        "weight": 0.779,
-        "value": 7.8
+        "weight": 0.792,
+        "value": 7.9
       },
       {
         "source": "INC",
         "target": "RJD",
-        "weight": 0.855,
-        "value": 8.6
+        "weight": 0.87,
+        "value": 8.7
       },
       {
         "source": "BJP",
         "target": "SAD",
-        "weight": 0.9259999999999999,
+        "weight": 0.9269999999999999,
         "value": 9.3
       },
       {
         "source": "BJP",
         "target": "AIMIM",
-        "weight": 0.714,
-        "value": 7.1
+        "weight": 0.679,
+        "value": 6.8
       },
       {
         "source": "BJP",
         "target": "DMK",
-        "weight": 0.866,
+        "weight": 0.873,
         "value": 8.7
       },
       {
         "source": "BJP",
         "target": "NCP",
-        "weight": 0.934,
-        "value": 9.3
+        "weight": 0.919,
+        "value": 9.2
       },
       {
         "source": "BJP",
@@ -303,74 +306,74 @@
       {
         "source": "SAD",
         "target": "AIMIM",
-        "weight": 0.856,
-        "value": 8.6
+        "weight": 0.834,
+        "value": 8.3
       },
       {
         "source": "SAD",
         "target": "TMC",
-        "weight": 0.686,
-        "value": 6.9
+        "weight": 0.667,
+        "value": 6.7
       },
       {
         "source": "SAD",
         "target": "SP",
-        "weight": 0.788,
-        "value": 7.9
+        "weight": 0.777,
+        "value": 7.8
       },
       {
         "source": "SAD",
         "target": "DMK",
-        "weight": 0.974,
-        "value": 9.7
+        "weight": 0.96,
+        "value": 9.6
       },
       {
         "source": "SAD",
         "target": "AAP",
-        "weight": 0.781,
-        "value": 7.8
-      },
-      {
-        "source": "SAD",
-        "target": "CPI(M)",
-        "weight": 0.781,
-        "value": 7.8
+        "weight": 0.774,
+        "value": 7.7
       },
       {
         "source": "SAD",
         "target": "NCP",
-        "weight": 0.797,
-        "value": 8.0
+        "weight": 0.781,
+        "value": 7.8
       },
       {
         "source": "SAD",
         "target": "BJD",
+        "weight": 0.796,
+        "value": 8.0
+      },
+      {
+        "source": "SAD",
+        "target": "CPI(M)",
         "weight": 0.789,
         "value": 7.9
       },
       {
         "source": "SAD",
         "target": "JD(U)",
-        "weight": 0.947,
+        "weight": 0.946,
         "value": 9.5
       },
       {
         "source": "SAD",
         "target": "TDP",
-        "weight": 0.863,
+        "weight": 0.857,
         "value": 8.6
       },
       {
         "source": "SAD",
         "target": "SHS",
-        "weight": 0.862,
+        "weight": 0.857,
         "value": 8.6
       },
       {
         "source": "SAD",
         "target": "RJD",
-        "weight": 0.75,
-        "value": 7.5
+        "weight": 0.803,
+        "value": 8.0
       },
       {
         "source": "AIMIM",
@@ -387,12 +390,24 @@
       {
         "source": "AIMIM",
         "target": "DMK",
-        "weight": 0.9319999999999999,
-        "value": 9.3
+        "weight": 0.8959999999999999,
+        "value": 9.0
       },
       {
         "source": "AIMIM",
         "target": "AAP",
+        "weight": 1.0,
+        "value": 10.0
+      },
+      {
+        "source": "AIMIM",
+        "target": "NCP",
+        "weight": 0.693,
+        "value": 6.9
+      },
+      {
+        "source": "AIMIM",
+        "target": "BJD",
         "weight": 1.0,
         "value": 10.0
       },
@@ -404,27 +419,15 @@
       },
       {
         "source": "AIMIM",
-        "target": "NCP",
-        "weight": 0.739,
-        "value": 7.4
-      },
-      {
-        "source": "AIMIM",
-        "target": "BJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "AIMIM",
         "target": "JD(U)",
-        "weight": 0.739,
-        "value": 7.4
+        "weight": 0.695,
+        "value": 6.9
       },
       {
         "source": "AIMIM",
         "target": "RJD",
-        "weight": 0.992,
-        "value": 9.9
+        "weight": 1.0,
+        "value": 10.0
       },
       {
         "source": "TMC",
@@ -435,8 +438,8 @@
       {
         "source": "TMC",
         "target": "DMK",
-        "weight": 0.746,
-        "value": 7.5
+        "weight": 0.728,
+        "value": 7.3
       },
       {
         "source": "TMC",
@@ -446,13 +449,13 @@
       },
       {
         "source": "TMC",
-        "target": "CPI(M)",
+        "target": "BJD",
         "weight": 1.0,
         "value": 10.0
       },
       {
         "source": "TMC",
-        "target": "BJD",
+        "target": "CPI(M)",
         "weight": 1.0,
         "value": 10.0
       },
@@ -465,18 +468,12 @@
       {
         "source": "SP",
         "target": "DMK",
-        "weight": 0.846,
-        "value": 8.5
+        "weight": 0.83,
+        "value": 8.3
       },
       {
         "source": "SP",
         "target": "AAP",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "SP",
-        "target": "CPI(M)",
         "weight": 1.0,
         "value": 10.0
       },
@@ -488,44 +485,50 @@
       },
       {
         "source": "SP",
+        "target": "CPI(M)",
+        "weight": 1.0,
+        "value": 10.0
+      },
+      {
+        "source": "SP",
         "target": "RJD",
-        "weight": 0.994,
-        "value": 9.9
+        "weight": 1.0,
+        "value": 10.0
       },
       {
         "source": "DMK",
         "target": "AAP",
-        "weight": 0.84,
-        "value": 8.4
-      },
-      {
-        "source": "DMK",
-        "target": "CPI(M)",
-        "weight": 0.839,
-        "value": 8.4
+        "weight": 0.827,
+        "value": 8.3
       },
       {
         "source": "DMK",
         "target": "NCP",
-        "weight": 0.891,
+        "weight": 0.887,
         "value": 8.9
       },
       {
         "source": "DMK",
         "target": "BJD",
-        "weight": 0.848,
-        "value": 8.5
+        "weight": 0.856,
+        "value": 8.6
+      },
+      {
+        "source": "DMK",
+        "target": "CPI(M)",
+        "weight": 0.859,
+        "value": 8.6
       },
       {
         "source": "DMK",
         "target": "JD(U)",
-        "weight": 0.869,
-        "value": 8.7
+        "weight": 0.888,
+        "value": 8.9
       },
       {
         "source": "DMK",
         "target": "TDP",
-        "weight": 0.802,
+        "weight": 0.803,
         "value": 8.0
       },
       {
@@ -537,8 +540,14 @@
       {
         "source": "DMK",
         "target": "RJD",
-        "weight": 0.826,
-        "value": 8.3
+        "weight": 0.856,
+        "value": 8.6
+      },
+      {
+        "source": "AAP",
+        "target": "BJD",
+        "weight": 1.0,
+        "value": 10.0
       },
       {
         "source": "AAP",
@@ -548,24 +557,6 @@
       },
       {
         "source": "AAP",
-        "target": "BJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "AAP",
-        "target": "RJD",
-        "weight": 0.985,
-        "value": 9.8
-      },
-      {
-        "source": "CPI(M)",
-        "target": "BJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "CPI(M)",
         "target": "RJD",
         "weight": 1.0,
         "value": 10.0
@@ -573,20 +564,26 @@
       {
         "source": "NCP",
         "target": "JD(U)",
-        "weight": 0.93,
-        "value": 9.3
+        "weight": 0.914,
+        "value": 9.1
       },
       {
         "source": "NCP",
         "target": "TDP",
-        "weight": 0.978,
-        "value": 9.8
+        "weight": 0.99,
+        "value": 9.9
       },
       {
         "source": "NCP",
         "target": "SHS",
-        "weight": 0.979,
-        "value": 9.8
+        "weight": 0.991,
+        "value": 9.9
+      },
+      {
+        "source": "BJD",
+        "target": "CPI(M)",
+        "weight": 1.0,
+        "value": 10.0
       },
       {
         "source": "BJD",
@@ -595,15 +592,27 @@
         "value": 10.0
       },
       {
+        "source": "CPI(M)",
+        "target": "JD(U)",
+        "weight": 0.651,
+        "value": 6.5
+      },
+      {
+        "source": "CPI(M)",
+        "target": "RJD",
+        "weight": 1.0,
+        "value": 10.0
+      },
+      {
         "source": "JD(U)",
         "target": "TDP",
-        "weight": 0.994,
+        "weight": 0.992,
         "value": 9.9
       },
       {
         "source": "JD(U)",
         "target": "SHS",
-        "weight": 0.994,
+        "weight": 0.991,
         "value": 9.9
       },
       {
@@ -615,48 +624,48 @@
     ],
     "bridge_parties": [
       {
-        "id": "DMK",
-        "label": "DMK",
-        "speech_count": 701,
-        "avg_polarity": 3.9,
-        "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
-        "degree_centrality": 1.0,
-        "betweenness_centrality": 0.196,
-        "community": "Alliance Cluster 1"
-      },
-      {
         "id": "SAD",
         "label": "SAD",
-        "speech_count": 660,
-        "avg_polarity": 1.8,
+        "speech_count": 673,
+        "avg_polarity": -0.5,
         "bench_alignment": "Ruling Coalition",
         "color": "#06b6d4",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.103,
+        "betweenness_centrality": 0.121,
         "community": "Alliance Cluster 1"
       },
       {
-        "id": "INC",
-        "label": "INC",
-        "speech_count": 912,
-        "avg_polarity": -1.6,
+        "id": "DMK",
+        "label": "DMK",
+        "speech_count": 696,
+        "avg_polarity": 4.5,
         "bench_alignment": "Opposition Benches",
-        "color": "#3b82f6",
+        "color": "#ef4444",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.026,
+        "betweenness_centrality": 0.066,
         "community": "Alliance Cluster 1"
       },
       {
-        "id": "BJP",
-        "label": "BJP",
-        "speech_count": 1224,
-        "avg_polarity": 29.4,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f97316",
-        "degree_centrality": 0.571,
-        "betweenness_centrality": 0.022,
-        "community": "Alliance Cluster 1"
+        "id": "AIMIM",
+        "label": "AIMIM",
+        "speech_count": 536,
+        "avg_polarity": -34.3,
+        "bench_alignment": "Opposition Benches",
+        "color": "#10b981",
+        "degree_centrality": 0.857,
+        "betweenness_centrality": 0.044,
+        "community": "Alliance Cluster 2"
+      },
+      {
+        "id": "CPI(M)",
+        "label": "CPI(M)",
+        "speech_count": 352,
+        "avg_polarity": -34.2,
+        "bench_alignment": "Opposition Benches",
+        "color": "#b91c1c",
+        "degree_centrality": 0.714,
+        "betweenness_centrality": 0.044,
+        "community": "Alliance Cluster 2"
       }
     ],
     "total_clusters": 2
@@ -664,2837 +673,2513 @@
   "mp_network": {
     "nodes": [
       {
-        "id": "Shri Prataprao Jadhav",
-        "label": "Shri Prataprao Jadhav",
-        "party": "SHS",
-        "house": "Lok Sabha",
-        "speech_count": 349,
-        "avg_polarity": 42.2,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Rahul Shewale",
-        "label": "Shri Rahul Shewale",
-        "party": "SHS",
-        "house": "Lok Sabha",
-        "speech_count": 326,
-        "avg_polarity": 40.2,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
         "id": "Shri Member of Parliament",
         "label": "Shri Member of Parliament",
         "party": "SAD",
-        "house": "Lok Sabha",
-        "speech_count": 317,
-        "avg_polarity": 41.2,
+        "house": "Rajya Sabha",
+        "speech_count": 316,
+        "avg_polarity": 41.0,
         "bench_alignment": "Ruling Coalition",
         "color": "#06b6d4",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 04 - SHS]",
+        "label": "[Synthetic Alliance Speaker 04 - SHS]",
+        "party": "SHS",
+        "house": "Lok Sabha",
+        "speech_count": 278,
+        "avg_polarity": 41.1,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f59e0b",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.001,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 02 - SHS]",
+        "label": "[Synthetic Alliance Speaker 02 - SHS]",
+        "party": "SHS",
+        "house": "Lok Sabha",
+        "speech_count": 272,
+        "avg_polarity": 41.4,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f59e0b",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.012,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 01 - SHS]",
+        "label": "[Synthetic Alliance Speaker 01 - SHS]",
+        "party": "SHS",
+        "house": "Lok Sabha",
+        "speech_count": 254,
+        "avg_polarity": 42.5,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f59e0b",
+        "degree_centrality": 0.529,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 03 - SHS]",
+        "label": "[Synthetic Alliance Speaker 03 - SHS]",
+        "party": "SHS",
+        "house": "Lok Sabha",
+        "speech_count": 227,
+        "avg_polarity": 42.1,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f59e0b",
+        "degree_centrality": 0.529,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "label": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "party": "JD(U)",
+        "house": "Lok Sabha",
+        "speech_count": 163,
+        "avg_polarity": 41.0,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#14b8a6",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "label": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "party": "JD(U)",
+        "house": "Rajya Sabha",
+        "speech_count": 154,
+        "avg_polarity": 42.4,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#14b8a6",
+        "degree_centrality": 0.529,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "label": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "party": "AIMIM",
+        "house": "Lok Sabha",
+        "speech_count": 142,
+        "avg_polarity": -30.7,
+        "bench_alignment": "Opposition Benches",
+        "color": "#10b981",
         "degree_centrality": 0.559,
         "betweenness_centrality": 0.0,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Shri Shrikant Shinde",
-        "label": "Shri Shrikant Shinde",
-        "party": "SHS",
-        "house": "Rajya Sabha",
-        "speech_count": 306,
-        "avg_polarity": 44.1,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Asaduddin Owaisi",
-        "label": "Shri Asaduddin Owaisi",
-        "party": "AIMIM",
-        "house": "Lok Sabha",
-        "speech_count": 185,
-        "avg_polarity": -27.9,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.647,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Imtiaz Jaleel",
-        "label": "Shri Imtiaz Jaleel",
-        "party": "AIMIM",
-        "house": "Rajya Sabha",
-        "speech_count": 184,
-        "avg_polarity": -29.3,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.647,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Kaushalendra Kumar",
-        "label": "Shri Kaushalendra Kumar",
+        "id": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "label": "[Synthetic Alliance Speaker 02 - JD(U)]",
         "party": "JD(U)",
-        "house": "Rajya Sabha",
-        "speech_count": 182,
+        "house": "Lok Sabha",
+        "speech_count": 139,
         "avg_polarity": 40.4,
         "bench_alignment": "Ruling Coalition",
         "color": "#14b8a6",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Sunil Kumar Pintu",
-        "label": "Shri Sunil Kumar Pintu",
-        "party": "JD(U)",
-        "house": "Lok Sabha",
-        "speech_count": 175,
-        "avg_polarity": 43.3,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Lalan Singh",
-        "label": "Shri Lalan Singh",
-        "party": "JD(U)",
-        "house": "Rajya Sabha",
-        "speech_count": 172,
-        "avg_polarity": 46.7,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Dayanidhi Maran",
-        "label": "Shri Dayanidhi Maran",
-        "party": "DMK",
-        "house": "Rajya Sabha",
-        "speech_count": 162,
-        "avg_polarity": 15.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
-        "degree_centrality": 1.0,
-        "betweenness_centrality": 0.038,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Pemmasani Chandra Sekhar",
-        "label": "Shri Pemmasani Chandra Sekhar",
-        "party": "TDP",
-        "house": "Lok Sabha",
-        "speech_count": 162,
-        "avg_polarity": 40.1,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Ramprit Mandal",
-        "label": "Shri Ramprit Mandal",
-        "party": "JD(U)",
-        "house": "Rajya Sabha",
-        "speech_count": 161,
-        "avg_polarity": 42.9,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Bhartruhari Mahtab",
-        "label": "Shri Bhartruhari Mahtab",
-        "party": "BJD",
-        "house": "Lok Sabha",
-        "speech_count": 159,
-        "avg_polarity": -40.7,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.618,
+        "degree_centrality": 0.559,
         "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "Shri Pinaki Misra",
-        "label": "Shri Pinaki Misra",
-        "party": "BJD",
-        "house": "Lok Sabha",
-        "speech_count": 153,
-        "avg_polarity": -36.4,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri K. Rammohan Rao",
-        "label": "Shri K. Rammohan Rao",
-        "party": "TDP",
-        "house": "Rajya Sabha",
-        "speech_count": 152,
-        "avg_polarity": 45.4,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Syed Imtiaz Jaleel",
-        "label": "Shri Syed Imtiaz Jaleel",
+        "id": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "label": "[Synthetic Regional Speaker 03 - AIMIM]",
         "party": "AIMIM",
-        "house": "Lok Sabha",
-        "speech_count": 148,
-        "avg_polarity": -35.9,
+        "house": "Rajya Sabha",
+        "speech_count": 137,
+        "avg_polarity": -37.9,
         "bench_alignment": "Opposition Benches",
         "color": "#10b981",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.0,
+        "degree_centrality": 0.5,
+        "betweenness_centrality": 0.011,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "label": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "party": "JD(U)",
+        "house": "Lok Sabha",
+        "speech_count": 134,
+        "avg_polarity": 44.5,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#14b8a6",
+        "degree_centrality": 0.529,
+        "betweenness_centrality": 0.018,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "Shri Galla Jayadev",
-        "label": "Shri Galla Jayadev",
-        "party": "TDP",
-        "house": "Lok Sabha",
-        "speech_count": 147,
-        "avg_polarity": 42.2,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
+        "id": "[Synthetic Regional Speaker 04 - BJD]",
+        "label": "[Synthetic Regional Speaker 04 - BJD]",
+        "party": "BJD",
+        "house": "Rajya Sabha",
+        "speech_count": 133,
+        "avg_polarity": -35.9,
+        "bench_alignment": "Opposition Benches",
+        "color": "#16a34a",
         "degree_centrality": 0.5,
         "betweenness_centrality": 0.0,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Shri T.R. Baalu",
-        "label": "Shri T.R. Baalu",
-        "party": "DMK",
+        "id": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "label": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "party": "AIMIM",
         "house": "Lok Sabha",
-        "speech_count": 143,
-        "avg_polarity": 11.9,
+        "speech_count": 129,
+        "avg_polarity": -36.2,
         "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
-        "degree_centrality": 1.0,
-        "betweenness_centrality": 0.026,
+        "color": "#10b981",
+        "degree_centrality": 0.5,
+        "betweenness_centrality": 0.0,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Shri A. Raja",
-        "label": "Shri A. Raja",
-        "party": "DMK",
+        "id": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "label": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "party": "AIMIM",
         "house": "Lok Sabha",
-        "speech_count": 141,
-        "avg_polarity": 10.6,
+        "speech_count": 127,
+        "avg_polarity": -32.0,
         "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
-        "degree_centrality": 1.0,
-        "betweenness_centrality": 0.046,
+        "color": "#10b981",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.001,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Smt. Kanimozhi Karunanidhi",
-        "label": "Smt. Kanimozhi Karunanidhi",
-        "party": "DMK",
+        "id": "[Synthetic Regional Speaker 01 - BJD]",
+        "label": "[Synthetic Regional Speaker 01 - BJD]",
+        "party": "BJD",
         "house": "Lok Sabha",
-        "speech_count": 139,
-        "avg_polarity": 9.6,
+        "speech_count": 123,
+        "avg_polarity": -47.0,
         "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
-        "degree_centrality": 1.0,
-        "betweenness_centrality": 0.042,
+        "color": "#16a34a",
+        "degree_centrality": 0.471,
+        "betweenness_centrality": 0.0,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Shri Ram Mohan Naidu",
-        "label": "Shri Ram Mohan Naidu",
+        "id": "[Synthetic Alliance Speaker 04 - TDP]",
+        "label": "[Synthetic Alliance Speaker 04 - TDP]",
         "party": "TDP",
         "house": "Lok Sabha",
-        "speech_count": 138,
-        "avg_polarity": 36.7,
+        "speech_count": 123,
+        "avg_polarity": 37.1,
         "bench_alignment": "Ruling Coalition",
         "color": "#eab308",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "label": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "party": "JD(U)",
+        "house": "Lok Sabha",
+        "speech_count": 122,
+        "avg_polarity": 40.2,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#14b8a6",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.001,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 05 - BJD]",
+        "label": "[Synthetic Regional Speaker 05 - BJD]",
+        "party": "BJD",
+        "house": "Rajya Sabha",
+        "speech_count": 121,
+        "avg_polarity": -32.6,
+        "bench_alignment": "Opposition Benches",
+        "color": "#16a34a",
         "degree_centrality": 0.559,
         "betweenness_centrality": 0.0,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Smt. Sarmistha Sethi",
-        "label": "Smt. Sarmistha Sethi",
-        "party": "BJD",
-        "house": "Lok Sabha",
-        "speech_count": 137,
-        "avg_polarity": -36.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Sasmit Patra",
-        "label": "Shri Sasmit Patra",
-        "party": "BJD",
-        "house": "Rajya Sabha",
-        "speech_count": 133,
-        "avg_polarity": -33.2,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Ram Gopal Yadav",
-        "label": "Shri Ram Gopal Yadav",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 131,
-        "avg_polarity": -28.4,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.647,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Awadhesh Prasad",
-        "label": "Shri Awadhesh Prasad",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 130,
-        "avg_polarity": -42.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Akhilesh Yadav",
-        "label": "Shri Akhilesh Yadav",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 125,
-        "avg_polarity": -38.4,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Smt. Harsimrat Kaur Badal",
-        "label": "Smt. Harsimrat Kaur Badal",
-        "party": "SAD",
-        "house": "Lok Sabha",
-        "speech_count": 119,
-        "avg_polarity": -36.3,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
-        "degree_centrality": 0.765,
-        "betweenness_centrality": 0.046,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Shafiqur Rahman Barq",
-        "label": "Shri Shafiqur Rahman Barq",
-        "party": "SP",
-        "house": "Rajya Sabha",
-        "speech_count": 118,
-        "avg_polarity": -30.2,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.647,
-        "betweenness_centrality": 0.02,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Praful Patel",
-        "label": "Shri Praful Patel",
+        "id": "[Synthetic Ruling Speaker 02 - NCP]",
+        "label": "[Synthetic Ruling Speaker 02 - NCP]",
         "party": "NCP",
         "house": "Lok Sabha",
-        "speech_count": 117,
-        "avg_polarity": 46.8,
+        "speech_count": 116,
+        "avg_polarity": 43.4,
         "bench_alignment": "Opposition Benches",
         "color": "#64748b",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.077,
+        "degree_centrality": 0.647,
+        "betweenness_centrality": 0.061,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 06 - SP]",
+        "label": "[Synthetic Regional Speaker 06 - SP]",
+        "party": "SP",
+        "house": "Lok Sabha",
+        "speech_count": 116,
+        "avg_polarity": -43.0,
+        "bench_alignment": "Opposition Benches",
+        "color": "#dc2626",
+        "degree_centrality": 0.471,
+        "betweenness_centrality": 0.0,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Shri A.M. Ariff",
-        "label": "Shri A.M. Ariff",
-        "party": "CPI(M)",
+        "id": "[Synthetic Alliance Speaker 05 - TDP]",
+        "label": "[Synthetic Alliance Speaker 05 - TDP]",
+        "party": "TDP",
         "house": "Lok Sabha",
-        "speech_count": 116,
-        "avg_polarity": -38.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#b91c1c",
-        "degree_centrality": 0.618,
+        "speech_count": 113,
+        "avg_polarity": 46.3,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#eab308",
+        "degree_centrality": 0.5,
         "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "Shri Sukhbir Singh Badal",
-        "label": "Shri Sukhbir Singh Badal",
-        "party": "SAD",
-        "house": "Rajya Sabha",
-        "speech_count": 114,
-        "avg_polarity": -27.4,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
-        "degree_centrality": 0.971,
-        "betweenness_centrality": 0.051,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Smt. Dimple Yadav",
-        "label": "Smt. Dimple Yadav",
-        "party": "SP",
+        "id": "[Synthetic Regional Speaker 03 - BJD]",
+        "label": "[Synthetic Regional Speaker 03 - BJD]",
+        "party": "BJD",
         "house": "Lok Sabha",
         "speech_count": 111,
-        "avg_polarity": -29.1,
+        "avg_polarity": -43.3,
         "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.647,
+        "color": "#16a34a",
+        "degree_centrality": 0.471,
         "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
+        "community": "Voting Bloc 2"
       },
       {
-        "id": "Shri John Brittas",
-        "label": "Shri John Brittas",
-        "party": "CPI(M)",
-        "house": "Rajya Sabha",
-        "speech_count": 110,
-        "avg_polarity": -31.6,
-        "bench_alignment": "Opposition Benches",
-        "color": "#b91c1c",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri Naresh Gujral",
-        "label": "Shri Naresh Gujral",
-        "party": "SAD",
+        "id": "[Synthetic Alliance Speaker 01 - TDP]",
+        "label": "[Synthetic Alliance Speaker 01 - TDP]",
+        "party": "TDP",
         "house": "Lok Sabha",
         "speech_count": 110,
-        "avg_polarity": -40.2,
+        "avg_polarity": 39.8,
         "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
-        "degree_centrality": 0.676,
-        "betweenness_centrality": 0.027,
+        "color": "#eab308",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "Shri S.T. Hasan",
-        "label": "Shri S.T. Hasan",
+        "id": "[Synthetic Regional Speaker 03 - SP]",
+        "label": "[Synthetic Regional Speaker 03 - SP]",
         "party": "SP",
-        "house": "Rajya Sabha",
-        "speech_count": 105,
-        "avg_polarity": -38.7,
+        "house": "Lok Sabha",
+        "speech_count": 109,
+        "avg_polarity": -40.3,
         "bench_alignment": "Opposition Benches",
         "color": "#dc2626",
-        "degree_centrality": 0.618,
+        "degree_centrality": 0.471,
         "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Ruling Speaker 03 - NCP]",
+        "label": "[Synthetic Ruling Speaker 03 - NCP]",
+        "party": "NCP",
+        "house": "Lok Sabha",
+        "speech_count": 108,
+        "avg_polarity": 38.6,
+        "bench_alignment": "Opposition Benches",
+        "color": "#64748b",
+        "degree_centrality": 0.765,
+        "betweenness_centrality": 0.07,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 02 - TDP]",
+        "label": "[Synthetic Alliance Speaker 02 - TDP]",
+        "party": "TDP",
+        "house": "Lok Sabha",
+        "speech_count": 106,
+        "avg_polarity": 39.1,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#eab308",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.001,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Alliance Speaker 03 - TDP]",
+        "label": "[Synthetic Alliance Speaker 03 - TDP]",
+        "party": "TDP",
+        "house": "Lok Sabha",
+        "speech_count": 105,
+        "avg_polarity": 43.6,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#eab308",
+        "degree_centrality": 0.529,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 07 - SP]",
+        "label": "[Synthetic Regional Speaker 07 - SP]",
+        "party": "SP",
+        "house": "Lok Sabha",
+        "speech_count": 102,
+        "avg_polarity": -44.3,
+        "bench_alignment": "Opposition Benches",
+        "color": "#dc2626",
+        "degree_centrality": 0.471,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 05 - SP]",
+        "label": "[Synthetic Regional Speaker 05 - SP]",
+        "party": "SP",
+        "house": "Rajya Sabha",
+        "speech_count": 100,
+        "avg_polarity": -33.1,
+        "bench_alignment": "Opposition Benches",
+        "color": "#dc2626",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.031,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 01 - SP]",
+        "label": "[Synthetic Regional Speaker 01 - SP]",
+        "party": "SP",
+        "house": "Lok Sabha",
+        "speech_count": 98,
+        "avg_polarity": -41.4,
+        "bench_alignment": "Opposition Benches",
+        "color": "#dc2626",
+        "degree_centrality": 0.471,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 02 - SP]",
+        "label": "[Synthetic Regional Speaker 02 - SP]",
+        "party": "SP",
+        "house": "Lok Sabha",
+        "speech_count": 97,
+        "avg_polarity": -32.6,
+        "bench_alignment": "Opposition Benches",
+        "color": "#dc2626",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 04 - SAD]",
+        "label": "[Synthetic Regional Speaker 04 - SAD]",
+        "party": "SAD",
+        "house": "Rajya Sabha",
+        "speech_count": 96,
+        "avg_polarity": -35.7,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#06b6d4",
+        "degree_centrality": 0.735,
+        "betweenness_centrality": 0.119,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 03 - SAD]",
+        "label": "[Synthetic Regional Speaker 03 - SAD]",
+        "party": "SAD",
+        "house": "Rajya Sabha",
+        "speech_count": 94,
+        "avg_polarity": -32.5,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#06b6d4",
+        "degree_centrality": 0.882,
+        "betweenness_centrality": 0.154,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 04 - SP]",
+        "label": "[Synthetic Regional Speaker 04 - SP]",
+        "party": "SP",
+        "house": "Lok Sabha",
+        "speech_count": 93,
+        "avg_polarity": -37.8,
+        "bench_alignment": "Opposition Benches",
+        "color": "#dc2626",
+        "degree_centrality": 0.5,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Ruling Speaker 04 - NCP]",
+        "label": "[Synthetic Ruling Speaker 04 - NCP]",
+        "party": "NCP",
+        "house": "Rajya Sabha",
+        "speech_count": 92,
+        "avg_polarity": 43.0,
+        "bench_alignment": "Opposition Benches",
+        "color": "#64748b",
+        "degree_centrality": 0.647,
+        "betweenness_centrality": 0.002,
         "community": "Voting Bloc 1"
       }
     ],
     "links": [
       {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Rahul Shewale",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Member of Parliament",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Shrikant Shinde",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Kaushalendra Kumar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Sunil Kumar Pintu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Lalan Singh",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.849,
-        "value": 6.8
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Pemmasani Chandra Sekhar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Ramprit Mandal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.832,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri A. Raja",
-        "weight": 0.824,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.819,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Praful Patel",
-        "weight": 0.974,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Prataprao Jadhav",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.693,
-        "value": 5.5
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Member of Parliament",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Shrikant Shinde",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Kaushalendra Kumar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Sunil Kumar Pintu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Lalan Singh",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.86,
-        "value": 6.9
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Pemmasani Chandra Sekhar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Ramprit Mandal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.843,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri A. Raja",
-        "weight": 0.836,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.83,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.655,
-        "value": 5.2
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Praful Patel",
-        "weight": 0.963,
-        "value": 7.7
-      },
-      {
-        "source": "Shri Rahul Shewale",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.704,
-        "value": 5.6
-      },
-      {
         "source": "Shri Member of Parliament",
-        "target": "Shri Shrikant Shinde",
+        "target": "[Synthetic Alliance Speaker 04 - SHS]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri Kaushalendra Kumar",
+        "target": "[Synthetic Alliance Speaker 02 - SHS]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri Sunil Kumar Pintu",
+        "target": "[Synthetic Alliance Speaker 01 - SHS]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri Lalan Singh",
+        "target": "[Synthetic Alliance Speaker 03 - SHS]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.854,
-        "value": 6.8
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "Shri Pemmasani Chandra Sekhar",
+        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri Ramprit Mandal",
+        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri K. Rammohan Rao",
+        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri Galla Jayadev",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.837,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "Shri A. Raja",
-        "weight": 0.83,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.824,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "Shri Ram Mohan Naidu",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
         "weight": 1.0,
         "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.719,
-        "value": 5.8
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
       },
       {
         "source": "Shri Member of Parliament",
-        "target": "Shri Praful Patel",
-        "weight": 0.969,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.769,
-        "value": 6.2
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.698,
-        "value": 5.6
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Kaushalendra Kumar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Sunil Kumar Pintu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Lalan Singh",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.838,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Pemmasani Chandra Sekhar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Ramprit Mandal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.821,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri A. Raja",
-        "weight": 0.814,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.808,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Praful Patel",
-        "weight": 0.985,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Shrikant Shinde",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.683,
-        "value": 5.5
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Imtiaz Jaleel",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.842,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Bhartruhari Mahtab",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Pinaki Misra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Syed Imtiaz Jaleel",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.859,
-        "value": 6.9
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri A. Raja",
-        "weight": 0.866,
-        "value": 6.9
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.872,
-        "value": 7.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Sasmit Patra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.953,
-        "value": 7.6
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Praful Patel",
-        "weight": 0.665,
-        "value": 5.3
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.932,
-        "value": 7.5
-      },
-      {
-        "source": "Shri Asaduddin Owaisi",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.834,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Bhartruhari Mahtab",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Pinaki Misra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Syed Imtiaz Jaleel",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.851,
-        "value": 6.8
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri A. Raja",
-        "weight": 0.858,
-        "value": 6.9
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.864,
-        "value": 6.9
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Sasmit Patra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.961,
-        "value": 7.7
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Praful Patel",
-        "weight": 0.657,
-        "value": 5.3
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.989,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.939,
-        "value": 7.5
-      },
-      {
-        "source": "Shri Imtiaz Jaleel",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Sunil Kumar Pintu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Lalan Singh",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.859,
-        "value": 6.9
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Pemmasani Chandra Sekhar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Ramprit Mandal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.842,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri A. Raja",
-        "weight": 0.834,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.829,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.654,
-        "value": 5.2
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Praful Patel",
-        "weight": 0.964,
-        "value": 7.7
-      },
-      {
-        "source": "Shri Kaushalendra Kumar",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.703,
-        "value": 5.6
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Lalan Singh",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.843,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Pemmasani Chandra Sekhar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Ramprit Mandal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.826,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri A. Raja",
-        "weight": 0.818,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.813,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Praful Patel",
-        "weight": 0.981,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Sunil Kumar Pintu",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.687,
-        "value": 5.5
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri Dayanidhi Maran",
-        "weight": 0.824,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri Pemmasani Chandra Sekhar",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri Ramprit Mandal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.807,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri A. Raja",
-        "weight": 0.799,
-        "value": 6.4
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.794,
-        "value": 6.4
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri Praful Patel",
-        "weight": 0.999,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Lalan Singh",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.668,
-        "value": 5.3
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Pemmasani Chandra Sekhar",
-        "weight": 0.861,
-        "value": 6.9
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Ramprit Mandal",
-        "weight": 0.845,
-        "value": 6.8
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Bhartruhari Mahtab",
-        "weight": 0.771,
-        "value": 6.2
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Pinaki Misra",
-        "weight": 0.794,
-        "value": 6.4
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 0.831,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Syed Imtiaz Jaleel",
-        "weight": 0.797,
-        "value": 6.4
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Galla Jayadev",
-        "weight": 0.849,
-        "value": 6.8
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri T.R. Baalu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri A. Raja",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 0.879,
-        "value": 7.0
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 0.797,
-        "value": 6.4
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Sasmit Patra",
-        "weight": 0.812,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 0.839,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 0.763,
-        "value": 6.1
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 0.783,
-        "value": 6.3
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.715,
-        "value": 5.7
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 0.829,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Praful Patel",
-        "weight": 0.903,
-        "value": 7.2
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri A.M. Ariff",
-        "weight": 0.786,
-        "value": 6.3
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.764,
-        "value": 6.1
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Smt. Dimple Yadav",
-        "weight": 0.835,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri John Brittas",
-        "weight": 0.821,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.693,
-        "value": 5.5
-      },
-      {
-        "source": "Shri Dayanidhi Maran",
-        "target": "Shri S.T. Hasan",
-        "weight": 0.782,
-        "value": 6.3
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri Ramprit Mandal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.843,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri A. Raja",
-        "weight": 0.836,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.831,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.656,
-        "value": 5.2
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri Praful Patel",
-        "weight": 0.963,
-        "value": 7.7
-      },
-      {
-        "source": "Shri Pemmasani Chandra Sekhar",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.705,
-        "value": 5.6
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Shri K. Rammohan Rao",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.828,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Shri A. Raja",
-        "weight": 0.821,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.815,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Shri Praful Patel",
-        "weight": 0.978,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Ramprit Mandal",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.689,
-        "value": 5.5
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Pinaki Misra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Syed Imtiaz Jaleel",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.788,
-        "value": 6.3
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri A. Raja",
-        "weight": 0.795,
-        "value": 6.4
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.801,
-        "value": 6.4
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Sasmit Patra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.976,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.926,
-        "value": 7.4
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Bhartruhari Mahtab",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Syed Imtiaz Jaleel",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.812,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri A. Raja",
-        "weight": 0.819,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.824,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Sasmit Patra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.999,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.95,
-        "value": 7.6
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.979,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Pinaki Misra",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri K. Rammohan Rao",
-        "target": "Shri Galla Jayadev",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri K. Rammohan Rao",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.814,
-        "value": 6.5
-      },
-      {
-        "source": "Shri K. Rammohan Rao",
-        "target": "Shri A. Raja",
-        "weight": 0.807,
-        "value": 6.5
-      },
-      {
-        "source": "Shri K. Rammohan Rao",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.801,
-        "value": 6.4
-      },
-      {
-        "source": "Shri K. Rammohan Rao",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri K. Rammohan Rao",
-        "target": "Shri Praful Patel",
-        "weight": 0.992,
-        "value": 7.9
-      },
-      {
-        "source": "Shri K. Rammohan Rao",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.676,
-        "value": 5.4
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.814,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri A. Raja",
-        "weight": 0.822,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.827,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri Sasmit Patra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.998,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.953,
-        "value": 7.6
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.976,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Syed Imtiaz Jaleel",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Galla Jayadev",
-        "target": "Shri T.R. Baalu",
-        "weight": 0.832,
-        "value": 6.7
-      },
-      {
-        "source": "Shri Galla Jayadev",
-        "target": "Shri A. Raja",
-        "weight": 0.824,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Galla Jayadev",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 0.819,
-        "value": 6.6
-      },
-      {
-        "source": "Shri Galla Jayadev",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Galla Jayadev",
-        "target": "Shri Praful Patel",
-        "weight": 0.974,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Galla Jayadev",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.693,
-        "value": 5.5
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri A. Raja",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 0.862,
-        "value": 6.9
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 0.814,
-        "value": 6.5
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Sasmit Patra",
-        "weight": 0.829,
-        "value": 6.6
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 0.856,
-        "value": 6.8
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 0.781,
-        "value": 6.2
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 0.801,
-        "value": 6.4
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.732,
-        "value": 5.9
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 0.846,
-        "value": 6.8
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Praful Patel",
-        "weight": 0.886,
-        "value": 7.1
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri A.M. Ariff",
-        "weight": 0.803,
-        "value": 6.4
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.782,
-        "value": 6.3
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Smt. Dimple Yadav",
-        "weight": 0.852,
-        "value": 6.8
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri John Brittas",
-        "weight": 0.838,
-        "value": 6.7
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.711,
-        "value": 5.7
-      },
-      {
-        "source": "Shri T.R. Baalu",
-        "target": "Shri S.T. Hasan",
-        "weight": 0.799,
-        "value": 6.4
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Smt. Kanimozhi Karunanidhi",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 0.855,
-        "value": 6.8
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 0.821,
-        "value": 6.6
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Sasmit Patra",
-        "weight": 0.837,
-        "value": 6.7
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 0.863,
-        "value": 6.9
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 0.788,
-        "value": 6.3
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 0.808,
-        "value": 6.5
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.739,
-        "value": 5.9
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 0.853,
-        "value": 6.8
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Praful Patel",
-        "weight": 0.879,
-        "value": 7.0
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri A.M. Ariff",
-        "weight": 0.81,
-        "value": 6.5
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.789,
-        "value": 6.3
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Smt. Dimple Yadav",
-        "weight": 0.859,
-        "value": 6.9
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri John Brittas",
-        "weight": 0.846,
-        "value": 6.8
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.718,
-        "value": 5.7
-      },
-      {
-        "source": "Shri A. Raja",
-        "target": "Shri S.T. Hasan",
-        "weight": 0.806,
-        "value": 6.4
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Ram Mohan Naidu",
-        "weight": 0.849,
-        "value": 6.8
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Smt. Sarmistha Sethi",
-        "weight": 0.827,
-        "value": 6.6
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Sasmit Patra",
-        "weight": 0.842,
-        "value": 6.7
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 0.869,
-        "value": 7.0
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 0.793,
-        "value": 6.3
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 0.813,
-        "value": 6.5
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.745,
-        "value": 6.0
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 0.859,
-        "value": 6.9
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Praful Patel",
-        "weight": 0.873,
-        "value": 7.0
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri A.M. Ariff",
-        "weight": 0.816,
-        "value": 6.5
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.794,
-        "value": 6.4
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Smt. Dimple Yadav",
-        "weight": 0.865,
-        "value": 6.9
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri John Brittas",
-        "weight": 0.851,
-        "value": 6.8
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.723,
-        "value": 5.8
-      },
-      {
-        "source": "Smt. Kanimozhi Karunanidhi",
-        "target": "Shri S.T. Hasan",
-        "weight": 0.812,
-        "value": 6.5
-      },
-      {
-        "source": "Shri Ram Mohan Naidu",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.674,
-        "value": 5.4
-      },
-      {
-        "source": "Shri Ram Mohan Naidu",
-        "target": "Shri Praful Patel",
-        "weight": 0.944,
-        "value": 7.6
-      },
-      {
-        "source": "Shri Ram Mohan Naidu",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.724,
-        "value": 5.8
-      },
-      {
-        "source": "Shri Ram Mohan Naidu",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.653,
-        "value": 5.2
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri Sasmit Patra",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.998,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.952,
-        "value": 7.6
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.977,
-        "value": 7.8
-      },
-      {
-        "source": "Smt. Sarmistha Sethi",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri Ram Gopal Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.983,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.968,
-        "value": 7.7
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.961,
-        "value": 7.7
-      },
-      {
-        "source": "Shri Sasmit Patra",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri Awadhesh Prasad",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.956,
-        "value": 7.6
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri Praful Patel",
-        "weight": 0.662,
-        "value": 5.3
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.994,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.934,
-        "value": 7.5
-      },
-      {
-        "source": "Shri Ram Gopal Yadav",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Shri Akhilesh Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.968,
-        "value": 7.7
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.919,
-        "value": 7.4
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.99,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Awadhesh Prasad",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Smt. Harsimrat Kaur Badal",
-        "weight": 0.988,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Shri A.M. Ariff",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.939,
-        "value": 7.5
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.99,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Akhilesh Yadav",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Harsimrat Kaur Badal",
-        "target": "Shri Shafiqur Rahman Barq",
-        "weight": 0.966,
-        "value": 7.7
-      },
-      {
-        "source": "Smt. Harsimrat Kaur Badal",
-        "target": "Shri A.M. Ariff",
-        "weight": 0.991,
-        "value": 7.9
-      },
-      {
-        "source": "Smt. Harsimrat Kaur Badal",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Harsimrat Kaur Badal",
-        "target": "Smt. Dimple Yadav",
-        "weight": 0.96,
-        "value": 7.7
-      },
-      {
-        "source": "Smt. Harsimrat Kaur Badal",
-        "target": "Shri John Brittas",
-        "weight": 0.974,
-        "value": 7.8
-      },
-      {
-        "source": "Smt. Harsimrat Kaur Badal",
-        "target": "Shri Naresh Gujral",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Smt. Harsimrat Kaur Badal",
-        "target": "Shri S.T. Hasan",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
         "weight": 0.987,
         "value": 7.9
       },
       {
-        "source": "Shri Shafiqur Rahman Barq",
-        "target": "Shri Praful Patel",
-        "weight": 0.652,
-        "value": 5.2
-      },
-      {
-        "source": "Shri Shafiqur Rahman Barq",
-        "target": "Shri A.M. Ariff",
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "Shri Shafiqur Rahman Barq",
-        "target": "Shri Sukhbir Singh Badal",
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.987,
+        "value": 7.9
+      },
+      {
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.724,
+        "value": 5.8
+      },
+      {
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.742,
+        "value": 5.9
+      },
+      {
+        "source": "Shri Member of Parliament",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.989,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - SHS]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - SHS]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - SHS]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.987,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.986,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.653,
+        "value": 5.2
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.671,
+        "value": 5.4
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - SHS]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.989,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - SHS]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - SHS]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.989,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
         "weight": 0.984,
         "value": 7.9
       },
       {
-        "source": "Shri Shafiqur Rahman Barq",
-        "target": "Smt. Dimple Yadav",
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "Shri Shafiqur Rahman Barq",
-        "target": "Shri John Brittas",
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "Shri Shafiqur Rahman Barq",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.944,
-        "value": 7.6
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.652,
+        "value": 5.2
       },
       {
-        "source": "Shri Shafiqur Rahman Barq",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.669,
+        "value": 5.4
       },
       {
-        "source": "Shri Praful Patel",
-        "target": "Smt. Dimple Yadav",
-        "weight": 0.658,
-        "value": 5.3
-      },
-      {
-        "source": "Shri A.M. Ariff",
-        "target": "Shri Sukhbir Singh Badal",
-        "weight": 0.941,
-        "value": 7.5
-      },
-      {
-        "source": "Shri A.M. Ariff",
-        "target": "Smt. Dimple Yadav",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri A.M. Ariff",
-        "target": "Shri John Brittas",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri A.M. Ariff",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.988,
-        "value": 7.9
-      },
-      {
-        "source": "Shri A.M. Ariff",
-        "target": "Shri S.T. Hasan",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Sukhbir Singh Badal",
-        "target": "Smt. Dimple Yadav",
+        "source": "[Synthetic Alliance Speaker 02 - SHS]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
         "weight": 0.991,
         "value": 7.9
       },
       {
-        "source": "Shri Sukhbir Singh Badal",
-        "target": "Shri John Brittas",
-        "weight": 0.977,
-        "value": 7.8
-      },
-      {
-        "source": "Shri Sukhbir Singh Badal",
-        "target": "Shri Naresh Gujral",
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - SHS]",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "Shri Sukhbir Singh Badal",
-        "target": "Shri S.T. Hasan",
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.995,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.978,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.663,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - SHS]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.993,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.981,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.666,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - SHS]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.995,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.987,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.987,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.654,
+        "value": 5.2
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.672,
+        "value": 5.4
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.989,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.994,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.979,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.664,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - BJD]",
+        "weight": 0.989,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.668,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 06 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.695,
+        "value": 5.6
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.972,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.99,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.671,
+        "value": 5.4
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.983,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.99,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.657,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.675,
+        "value": 5.4
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.986,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 06 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.655,
+        "value": 5.2
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.988,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.97,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 04 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.994,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.967,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.652,
+        "value": 5.2
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.992,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 01 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 05 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 06 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.666,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.999,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.981,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 06 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.664,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.979,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - BJD]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.661,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 06 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.688,
+        "value": 5.5
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.979,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.663,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 05 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 06 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
         "weight": 0.937,
         "value": 7.5
       },
       {
-        "source": "Smt. Dimple Yadav",
-        "target": "Shri John Brittas",
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.919,
+        "value": 7.4
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "Smt. Dimple Yadav",
-        "target": "Shri Naresh Gujral",
-        "weight": 0.938,
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.965,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.992,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.676,
+        "value": 5.4
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.693,
+        "value": 5.5
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 04 - TDP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.967,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.982,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.991,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.658,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.676,
+        "value": 5.4
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.984,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Ruling Speaker 02 - NCP]",
+        "weight": 0.658,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 06 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.684,
+        "value": 5.5
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.983,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.999,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - BJD]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.66,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Alliance Speaker 05 - TDP]",
+        "weight": 0.984,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 0.98,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 0.976,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 0.999,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 0.655,
+        "value": 5.2
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 0.658,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 02 - NCP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - BJD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.959,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.942,
         "value": 7.5
       },
       {
-        "source": "Smt. Dimple Yadav",
-        "target": "Shri S.T. Hasan",
+        "source": "[Synthetic Regional Speaker 06 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "Shri John Brittas",
-        "target": "Shri Naresh Gujral",
+        "source": "[Synthetic Alliance Speaker 05 - TDP]",
+        "target": "[Synthetic Alliance Speaker 01 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - TDP]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.957,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - TDP]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - TDP]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 05 - TDP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.982,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.958,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.94,
+        "value": 7.5
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - BJD]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - TDP]",
+        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "weight": 0.993,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - TDP]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - TDP]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - TDP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.661,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - TDP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.678,
+        "value": 5.4
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 01 - TDP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.982,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SP]",
+        "target": "[Synthetic Regional Speaker 07 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SP]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SP]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SP]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.974,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.957,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 03 - NCP]",
+        "target": "[Synthetic Alliance Speaker 02 - TDP]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 03 - NCP]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 0.972,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 03 - NCP]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 0.682,
+        "value": 5.5
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 03 - NCP]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 0.684,
+        "value": 5.5
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 03 - NCP]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 0.656,
+        "value": 5.2
+      },
+      {
+        "source": "[Synthetic Ruling Speaker 03 - NCP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - TDP]",
+        "target": "[Synthetic Alliance Speaker 03 - TDP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - TDP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.664,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - TDP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.682,
+        "value": 5.5
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 02 - TDP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.978,
+        "value": 7.8
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - TDP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.657,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Alliance Speaker 03 - TDP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 07 - SP]",
+        "target": "[Synthetic Regional Speaker 05 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 07 - SP]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 07 - SP]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 07 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
         "weight": 0.952,
         "value": 7.6
       },
       {
-        "source": "Shri John Brittas",
-        "target": "Shri S.T. Hasan",
+        "source": "[Synthetic Regional Speaker 07 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.934,
+        "value": 7.5
+      },
+      {
+        "source": "[Synthetic Regional Speaker 07 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "Shri Naresh Gujral",
-        "target": "Shri S.T. Hasan",
-        "weight": 0.992,
+        "source": "[Synthetic Regional Speaker 05 - SP]",
+        "target": "[Synthetic Regional Speaker 01 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - SP]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.986,
         "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.997,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 05 - SP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.657,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - SP]",
+        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.968,
+        "value": 7.7
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.951,
+        "value": 7.6
+      },
+      {
+        "source": "[Synthetic Regional Speaker 01 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SAD]",
+        "weight": 0.983,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - SP]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 0.999,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - SP]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 02 - SP]",
+        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "weight": 0.66,
+        "value": 5.3
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - SAD]",
+        "target": "[Synthetic Regional Speaker 03 - SAD]",
+        "weight": 1.0,
+        "value": 8.0
+      },
+      {
+        "source": "[Synthetic Regional Speaker 04 - SAD]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 0.988,
+        "value": 7.9
+      },
+      {
+        "source": "[Synthetic Regional Speaker 03 - SAD]",
+        "target": "[Synthetic Regional Speaker 04 - SP]",
+        "weight": 0.971,
+        "value": 7.8
       }
     ],
     "ideological_bridges": [
       {
-        "id": "Shri Praful Patel",
-        "label": "Shri Praful Patel",
-        "party": "NCP",
-        "house": "Lok Sabha",
-        "speech_count": 117,
-        "avg_polarity": 46.8,
-        "bench_alignment": "Opposition Benches",
-        "color": "#64748b",
-        "degree_centrality": 0.618,
-        "betweenness_centrality": 0.077,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "Shri Sukhbir Singh Badal",
-        "label": "Shri Sukhbir Singh Badal",
+        "id": "[Synthetic Regional Speaker 03 - SAD]",
+        "label": "[Synthetic Regional Speaker 03 - SAD]",
         "party": "SAD",
         "house": "Rajya Sabha",
-        "speech_count": 114,
-        "avg_polarity": -27.4,
+        "speech_count": 94,
+        "avg_polarity": -32.5,
         "bench_alignment": "Ruling Coalition",
         "color": "#06b6d4",
-        "degree_centrality": 0.971,
-        "betweenness_centrality": 0.051,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "Shri A. Raja",
-        "label": "Shri A. Raja",
-        "party": "DMK",
-        "house": "Lok Sabha",
-        "speech_count": 141,
-        "avg_polarity": 10.6,
-        "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
-        "degree_centrality": 1.0,
-        "betweenness_centrality": 0.046,
+        "degree_centrality": 0.882,
+        "betweenness_centrality": 0.154,
         "community": "Voting Bloc 2"
       },
       {
-        "id": "Smt. Harsimrat Kaur Badal",
-        "label": "Smt. Harsimrat Kaur Badal",
+        "id": "[Synthetic Regional Speaker 04 - SAD]",
+        "label": "[Synthetic Regional Speaker 04 - SAD]",
         "party": "SAD",
-        "house": "Lok Sabha",
-        "speech_count": 119,
-        "avg_polarity": -36.3,
+        "house": "Rajya Sabha",
+        "speech_count": 96,
+        "avg_polarity": -35.7,
         "bench_alignment": "Ruling Coalition",
         "color": "#06b6d4",
+        "degree_centrality": 0.735,
+        "betweenness_centrality": 0.119,
+        "community": "Voting Bloc 2"
+      },
+      {
+        "id": "[Synthetic Ruling Speaker 03 - NCP]",
+        "label": "[Synthetic Ruling Speaker 03 - NCP]",
+        "party": "NCP",
+        "house": "Lok Sabha",
+        "speech_count": 108,
+        "avg_polarity": 38.6,
+        "bench_alignment": "Opposition Benches",
+        "color": "#64748b",
         "degree_centrality": 0.765,
-        "betweenness_centrality": 0.046,
+        "betweenness_centrality": 0.07,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "Smt. Kanimozhi Karunanidhi",
-        "label": "Smt. Kanimozhi Karunanidhi",
-        "party": "DMK",
+        "id": "[Synthetic Ruling Speaker 02 - NCP]",
+        "label": "[Synthetic Ruling Speaker 02 - NCP]",
+        "party": "NCP",
         "house": "Lok Sabha",
-        "speech_count": 139,
-        "avg_polarity": 9.6,
+        "speech_count": 116,
+        "avg_polarity": 43.4,
         "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
-        "degree_centrality": 1.0,
-        "betweenness_centrality": 0.042,
+        "color": "#64748b",
+        "degree_centrality": 0.647,
+        "betweenness_centrality": 0.061,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "[Synthetic Regional Speaker 05 - SP]",
+        "label": "[Synthetic Regional Speaker 05 - SP]",
+        "party": "SP",
+        "house": "Rajya Sabha",
+        "speech_count": 100,
+        "avg_polarity": -33.1,
+        "bench_alignment": "Opposition Benches",
+        "color": "#dc2626",
+        "degree_centrality": 0.559,
+        "betweenness_centrality": 0.031,
         "community": "Voting Bloc 2"
       }
     ],
@@ -3504,68 +3189,68 @@
     {
       "category": "Agriculture & Farm Reform",
       "short_category": "Agriculture & Reform",
-      "BJP": 61.1,
-      "INC": 6.0,
-      "TMC": -60.6,
-      "DMK": -4.2,
-      "JD(U)": 45.7,
-      "SP": -66.9,
-      "AIMIM": -49.0
+      "BJP": 53.7,
+      "INC": -0.9,
+      "TMC": -71.8,
+      "DMK": -0.5,
+      "JD(U)": 50.5,
+      "SP": -74.7,
+      "AIMIM": -65.3
     },
     {
       "category": "Data Privacy & Digital India",
       "short_category": "Data Privacy",
-      "BJP": 44.7,
-      "INC": -29.7,
-      "TMC": -87.6,
-      "DMK": -7.9,
-      "JD(U)": 33.3,
-      "SP": -88.9,
-      "AIMIM": -89.8
+      "BJP": 38.3,
+      "INC": -22.6,
+      "TMC": -86.5,
+      "DMK": 3.1,
+      "JD(U)": 33.7,
+      "SP": -87.6,
+      "AIMIM": -89.4
     },
     {
       "category": "Union Budget & Fiscal Policy",
       "short_category": "Union Budget",
-      "BJP": 51.6,
-      "INC": -19.0,
-      "TMC": -83.8,
-      "DMK": -9.1,
-      "JD(U)": 42.9,
-      "SP": -82.7,
-      "AIMIM": -84.7
+      "BJP": 45.5,
+      "INC": -19.1,
+      "TMC": -84.4,
+      "DMK": 4.7,
+      "JD(U)": 46.1,
+      "SP": -84.5,
+      "AIMIM": -83.7
     },
     {
       "category": "National Security & Defence",
       "short_category": "National Security",
-      "BJP": 41.0,
-      "INC": 8.3,
-      "TMC": -32.6,
-      "DMK": 21.2,
-      "JD(U)": 32.6,
-      "SP": -30.6,
-      "AIMIM": -29.0
+      "BJP": 38.0,
+      "INC": 9.1,
+      "TMC": -30.6,
+      "DMK": 21.1,
+      "JD(U)": 39.8,
+      "SP": -25.9,
+      "AIMIM": -24.3
     },
     {
       "category": "Judicial Reforms & Constitution",
       "short_category": "Judicial & Reform",
-      "BJP": 16.7,
-      "INC": -38.7,
-      "TMC": -86.5,
-      "DMK": -20.7,
-      "JD(U)": 19.6,
-      "SP": -85.1,
-      "AIMIM": -84.8
+      "BJP": 11.1,
+      "INC": -22.3,
+      "TMC": -85.0,
+      "DMK": -17.5,
+      "JD(U)": 16.8,
+      "SP": -85.2,
+      "AIMIM": -84.4
     },
     {
       "category": "Health, Education & Welfare",
       "short_category": "Health, Welfare",
-      "BJP": 45.6,
-      "INC": 33.3,
-      "TMC": -1.2,
-      "DMK": 34.8,
-      "JD(U)": 28.8,
-      "SP": -10.3,
-      "AIMIM": 16.5
+      "BJP": 44.2,
+      "INC": 25.8,
+      "TMC": -7.0,
+      "DMK": 18.4,
+      "JD(U)": 40.1,
+      "SP": -26.1,
+      "AIMIM": -11.8
     }
   ]
 }
