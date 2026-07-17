@@ -1,110 +1,197 @@
 {
   "platform_title": "LokaSent Executive Dashboard",
-  "generated_at": "2026-07-06T21:32:38.930587",
-  "total_speeches_analyzed": 260,
+  "generated_at": "2026-07-17T16:27:37.808817",
+  "total_speeches_analyzed": 9620,
   "total_terms_covered": 4,
   "overall_ppi": {
-    "ppi_score": 88.3,
-    "status": "Hyper-Polarized Gridlock",
-    "status_color": "#ba1a1a",
-    "mean_ruling_sentiment": 61.7,
-    "mean_opposition_sentiment": -62.0,
-    "ideological_gap": 123.6,
-    "ruling_speech_count": 129,
-    "opposition_speech_count": 131
+    "ppi_score": 40.5,
+    "composite_pi": 40.5,
+    "lds_score": 33.4,
+    "sds_score": 55.9,
+    "tas_score": 22.7,
+    "stds_score": 50.2,
+    "status": "Moderate Legislative Debate",
+    "status_color": "#2563eb",
+    "mean_ruling_sentiment": 42.1,
+    "mean_opposition_sentiment": -36.2,
+    "ideological_gap": 78.3,
+    "ruling_speech_count": 4809,
+    "opposition_speech_count": 4811,
+    "submetric_weights": {
+      "lds": 0.25,
+      "sds": 0.25,
+      "tas": 0.25,
+      "stds": 0.25
+    }
   },
   "term_evolution": [
     {
       "term": "15th Lok Sabha (2009-2014)",
       "short_term": "15th LS",
       "years": "2009-2014",
-      "ppi_score": 84.4,
-      "status": "Hyper-Polarized Gridlock",
-      "status_color": "#ba1a1a",
-      "mean_ruling": 60.9,
-      "mean_opp": -57.3,
-      "speech_count": 63
+      "ppi_score": 40.6,
+      "composite_pi": 40.6,
+      "lds_score": 35.9,
+      "sds_score": 54.9,
+      "tas_score": 22.2,
+      "stds_score": 49.5,
+      "status": "Moderate Legislative Debate",
+      "status_color": "#2563eb",
+      "mean_ruling": 42.2,
+      "mean_opp": -34.7,
+      "speech_count": 2403
     },
     {
       "term": "16th Lok Sabha (2014-2019)",
       "short_term": "16th LS",
       "years": "2014-2019",
-      "ppi_score": 90.6,
-      "status": "Hyper-Polarized Gridlock",
-      "status_color": "#ba1a1a",
-      "mean_ruling": 65.6,
-      "mean_opp": -61.2,
-      "speech_count": 63
+      "ppi_score": 41.1,
+      "composite_pi": 41.1,
+      "lds_score": 34.7,
+      "sds_score": 56.8,
+      "tas_score": 22.0,
+      "stds_score": 50.8,
+      "status": "Moderate Legislative Debate",
+      "status_color": "#2563eb",
+      "mean_ruling": 41.8,
+      "mean_opp": -37.6,
+      "speech_count": 2403
     },
     {
       "term": "17th Lok Sabha (2019-2024)",
       "short_term": "17th LS",
       "years": "2019-2024",
-      "ppi_score": 85.1,
-      "status": "Hyper-Polarized Gridlock",
-      "status_color": "#ba1a1a",
-      "mean_ruling": 56.5,
-      "mean_opp": -62.6,
-      "speech_count": 67
+      "ppi_score": 42.1,
+      "composite_pi": 42.1,
+      "lds_score": 34.6,
+      "sds_score": 57.1,
+      "tas_score": 25.5,
+      "stds_score": 51.3,
+      "status": "Moderate Legislative Debate",
+      "status_color": "#2563eb",
+      "mean_ruling": 42.2,
+      "mean_opp": -37.7,
+      "speech_count": 2407
     },
     {
       "term": "18th Lok Sabha (2024-Present)",
       "short_term": "18th LS",
       "years": "2024-Present",
-      "ppi_score": 92.8,
-      "status": "Hyper-Polarized Gridlock",
-      "status_color": "#ba1a1a",
-      "mean_ruling": 63.8,
-      "mean_opp": -66.2,
-      "speech_count": 67
+      "ppi_score": 40.1,
+      "composite_pi": 40.1,
+      "lds_score": 34.0,
+      "sds_score": 54.9,
+      "tas_score": 22.3,
+      "stds_score": 49.3,
+      "status": "Moderate Legislative Debate",
+      "status_color": "#2563eb",
+      "mean_ruling": 42.0,
+      "mean_opp": -35.0,
+      "speech_count": 2407
     }
   ],
   "topic_distribution": [
     {
       "topic": "Data Privacy & Digital India",
-      "speech_count": 90,
-      "avg_coherence": 63.3,
+      "speech_count": 2428,
+      "avg_coherence": 56.2,
       "top_keywords": [
         "ai",
+        "ed",
         "privacy",
         "surveillance",
-        "data protection",
-        "personal data"
+        "data protection"
       ],
       "color": "#2563eb",
       "icon": "ShieldCheck"
     },
     {
+      "topic": "No-Confidence Motions & Governance",
+      "speech_count": 2325,
+      "avg_coherence": 68.8,
+      "top_keywords": [
+        "ed",
+        "ai",
+        "no-confidence motion",
+        "terrorism",
+        "armed forces"
+      ],
+      "color": "#4f46e5",
+      "icon": "AlertTriangle"
+    },
+    {
       "topic": "Agriculture & Farm Reform",
-      "speech_count": 44,
-      "avg_coherence": 77.8,
+      "speech_count": 863,
+      "avg_coherence": 72.7,
       "top_keywords": [
         "farmer",
         "agricultural",
-        "ai",
         "msp",
-        "apmc"
+        "ai",
+        "ed"
       ],
       "color": "#16a34a",
       "icon": "Tractor"
     },
     {
-      "topic": "Health, Education & Welfare",
-      "speech_count": 38,
-      "avg_coherence": 74.2,
+      "topic": "Environmental Protection & Clean Energy",
+      "speech_count": 705,
+      "avg_coherence": 67.1,
       "top_keywords": [
+        "green hydrogen",
+        "ai",
+        "pollution",
+        "forest conservation",
+        "climate change"
+      ],
+      "color": "#15803d",
+      "icon": "Globe"
+    },
+    {
+      "topic": "Health, Education & Welfare",
+      "speech_count": 678,
+      "avg_coherence": 69.7,
+      "top_keywords": [
+        "ed",
         "health",
         "education",
-        "ai",
-        "pds",
-        "nep"
+        "nep",
+        "ration"
       ],
       "color": "#0891b2",
       "icon": "HeartHandshake"
     },
     {
+      "topic": "Citizenship Amendment & Internal Security",
+      "speech_count": 531,
+      "avg_coherence": 74.9,
+      "top_keywords": [
+        "citizenship amendment",
+        "caa",
+        "refugees",
+        "illegal immigrants",
+        "internal security"
+      ],
+      "color": "#e11d48",
+      "icon": "Flag"
+    },
+    {
+      "topic": "National Security & Defence",
+      "speech_count": 504,
+      "avg_coherence": 65.2,
+      "top_keywords": [
+        "ed",
+        "national security",
+        "terrorism",
+        "armed forces",
+        "border defence"
+      ],
+      "color": "#dc2626",
+      "icon": "ShieldAlert"
+    },
+    {
       "topic": "General Parliamentary Debate",
-      "speech_count": 35,
+      "speech_count": 362,
       "avg_coherence": 50.0,
       "top_keywords": [
         "parliament",
@@ -116,90 +203,219 @@
       "icon": "FileText"
     },
     {
-      "topic": "National Security & Defence",
-      "speech_count": 29,
-      "avg_coherence": 70.9,
+      "topic": "Uniform Civil Code & Civil Law",
+      "speech_count": 320,
+      "avg_coherence": 76.7,
       "top_keywords": [
-        "terrorism",
-        "ai",
-        "armed forces",
-        "national security",
-        "border defence"
+        "gender justice",
+        "uniform civil code",
+        "ed",
+        "personal laws",
+        "ucc"
       ],
-      "color": "#dc2626",
-      "icon": "ShieldAlert"
+      "color": "#9333ea",
+      "icon": "BookOpen"
     },
     {
-      "topic": "Union Budget & Fiscal Policy",
-      "speech_count": 13,
-      "avg_coherence": 78.3,
+      "topic": "Women's Reservation & Representation",
+      "speech_count": 272,
+      "avg_coherence": 77.2,
       "top_keywords": [
-        "inflation",
-        "fiscal deficit",
-        "union budget",
-        "ai",
-        "unemployment"
+        "nari shakti",
+        "vandan adhiniyam",
+        "empowerment",
+        "ed",
+        "female participation"
       ],
-      "color": "#d97706",
-      "icon": "TrendingUp"
+      "color": "#db2777",
+      "icon": "Users"
     },
     {
       "topic": "Judicial Reforms & Constitution",
-      "speech_count": 11,
-      "avg_coherence": 50.4,
+      "speech_count": 251,
+      "avg_coherence": 48.3,
       "top_keywords": [
         "penal code",
+        "ed",
         "ai",
-        "lac",
-        "ration",
         "federalism"
       ],
       "color": "#7c3aed",
       "icon": "Scale"
+    },
+    {
+      "topic": "Telecommunications & Broadcasting Reforms",
+      "speech_count": 249,
+      "avg_coherence": 97.1,
+      "top_keywords": [
+        "telecommunications bill",
+        "digital infrastructure",
+        "telecom",
+        "spectrum allocation",
+        "satellite communication"
+      ],
+      "color": "#0284c7",
+      "icon": "Radio"
+    },
+    {
+      "topic": "Union Budget & Fiscal Policy",
+      "speech_count": 132,
+      "avg_coherence": 99.5,
+      "top_keywords": [
+        "inflation",
+        "union budget",
+        "fiscal deficit",
+        "ai",
+        "ed"
+      ],
+      "color": "#d97706",
+      "icon": "TrendingUp"
     }
   ],
   "active_bill_categories": [
     {
       "category": "Agriculture & Farm Reform",
-      "ppi_score": 100,
-      "status": "Hyper-Polarized Gridlock",
+      "ppi_score": 64.6,
+      "composite_pi": 64.6,
+      "lds_score": 56.6,
+      "sds_score": 100.0,
+      "tas_score": 10.0,
+      "stds_score": 91.7,
+      "status": "High Partisan Divergence",
       "last_debated": "18th LS",
-      "speech_count": 44
+      "speech_count": 804
     },
     {
       "category": "Data Privacy & Digital India",
-      "ppi_score": 100,
+      "ppi_score": 75.6,
+      "composite_pi": 75.6,
+      "lds_score": 63.2,
+      "sds_score": 100.0,
+      "tas_score": 48.4,
+      "stds_score": 90.7,
       "status": "Hyper-Polarized Gridlock",
       "last_debated": "18th LS",
-      "speech_count": 44
+      "speech_count": 804
     },
     {
       "category": "Union Budget & Fiscal Policy",
-      "ppi_score": 100,
+      "ppi_score": 78.8,
+      "composite_pi": 78.8,
+      "lds_score": 60.6,
+      "sds_score": 100.0,
+      "tas_score": 62.2,
+      "stds_score": 92.4,
       "status": "Hyper-Polarized Gridlock",
       "last_debated": "18th LS",
-      "speech_count": 43
+      "speech_count": 803
     },
     {
       "category": "National Security & Defence",
-      "ppi_score": 57.9,
+      "ppi_score": 60.1,
+      "composite_pi": 60.1,
+      "lds_score": 65.0,
+      "sds_score": 60.1,
+      "tas_score": 60.1,
+      "stds_score": 55.2,
       "status": "High Partisan Divergence",
       "last_debated": "18th LS",
-      "speech_count": 42
+      "speech_count": 802
     },
     {
       "category": "Judicial Reforms & Constitution",
-      "ppi_score": 98.1,
-      "status": "Hyper-Polarized Gridlock",
+      "ppi_score": 70.1,
+      "composite_pi": 70.1,
+      "lds_score": 64.5,
+      "sds_score": 89.6,
+      "tas_score": 51.3,
+      "stds_score": 74.9,
+      "status": "High Partisan Divergence",
       "last_debated": "18th LS",
-      "speech_count": 44
+      "speech_count": 804
     },
     {
       "category": "Health, Education & Welfare",
-      "ppi_score": 48.9,
+      "ppi_score": 48.2,
+      "composite_pi": 48.2,
+      "lds_score": 64.1,
+      "sds_score": 38.1,
+      "tas_score": 47.3,
+      "stds_score": 43.4,
       "status": "Moderate Legislative Debate",
       "last_debated": "18th LS",
-      "speech_count": 43
+      "speech_count": 803
+    },
+    {
+      "category": "Citizenship Amendment & Internal Security",
+      "ppi_score": 66.9,
+      "composite_pi": 66.9,
+      "lds_score": 64.3,
+      "sds_score": 61.6,
+      "tas_score": 82.2,
+      "stds_score": 59.4,
+      "status": "High Partisan Divergence",
+      "last_debated": "18th LS",
+      "speech_count": 800
+    },
+    {
+      "category": "No-Confidence Motions & Governance",
+      "ppi_score": 27.6,
+      "composite_pi": 27.6,
+      "lds_score": 64.1,
+      "sds_score": 2.5,
+      "tas_score": 25.7,
+      "stds_score": 18.0,
+      "status": "Bipartisan Consensus",
+      "last_debated": "18th LS",
+      "speech_count": 800
+    },
+    {
+      "category": "Women's Reservation & Representation",
+      "ppi_score": 49.1,
+      "composite_pi": 49.1,
+      "lds_score": 69.0,
+      "sds_score": 21.0,
+      "tas_score": 83.0,
+      "stds_score": 23.6,
+      "status": "Moderate Legislative Debate",
+      "last_debated": "18th LS",
+      "speech_count": 800
+    },
+    {
+      "category": "Uniform Civil Code & Civil Law",
+      "ppi_score": 42.0,
+      "composite_pi": 42.0,
+      "lds_score": 55.7,
+      "sds_score": 50.2,
+      "tas_score": 10.0,
+      "stds_score": 51.9,
+      "status": "Moderate Legislative Debate",
+      "last_debated": "18th LS",
+      "speech_count": 800
+    },
+    {
+      "category": "Telecommunications & Broadcasting Reforms",
+      "ppi_score": 41.6,
+      "composite_pi": 41.6,
+      "lds_score": 72.9,
+      "sds_score": 21.4,
+      "tas_score": 47.0,
+      "stds_score": 25.2,
+      "status": "Moderate Legislative Debate",
+      "last_debated": "18th LS",
+      "speech_count": 800
+    },
+    {
+      "category": "Environmental Protection & Clean Energy",
+      "ppi_score": 26.6,
+      "composite_pi": 26.6,
+      "lds_score": 71.1,
+      "sds_score": 7.5,
+      "tas_score": 16.7,
+      "stds_score": 11.1,
+      "status": "Bipartisan Consensus",
+      "last_debated": "18th LS",
+      "speech_count": 800
     }
   ]
 }

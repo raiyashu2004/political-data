@@ -4,6 +4,7 @@ import Header from './components/Header';
 import ExecutiveDashboard from './views/ExecutiveDashboard';
 import HistoricalArchive from './views/HistoricalArchive';
 import MemberAnalysis from './views/MemberAnalysis';
+import NetworkAnalysisView from './views/NetworkAnalysisView';
 import BriefingGenerator from './views/BriefingGenerator';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import LoginModal from './components/LoginModal';
@@ -26,6 +27,7 @@ function MainApp() {
   const [archiveData, setArchiveData] = useState(null);
   const [memberData, setMemberData] = useState(null);
   const [briefingData, setBriefingData] = useState(null);
+  const [networkData, setNetworkData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -39,17 +41,19 @@ function MainApp() {
   useEffect(() => {
     async function loadData() {
       try {
-        const [sumRes, arcRes, memRes, brfRes] = await Promise.all([
+        const [sumRes, arcRes, memRes, brfRes, netRes] = await Promise.all([
           fetch(`${import.meta.env.BASE_URL}data/executive_summary.json`).then(r => r.json()).catch(() => null),
           fetch(`${import.meta.env.BASE_URL}data/historical_debates.json`).then(r => r.json()).catch(() => null),
           fetch(`${import.meta.env.BASE_URL}data/member_profiles.json`).then(r => r.json()).catch(() => null),
-          fetch(`${import.meta.env.BASE_URL}data/strategic_briefings.json`).then(r => r.json()).catch(() => null)
+          fetch(`${import.meta.env.BASE_URL}data/strategic_briefings.json`).then(r => r.json()).catch(() => null),
+          fetch(`${import.meta.env.BASE_URL}data/network_graph.json`).then(r => r.json()).catch(() => null)
         ]);
 
         setSummaryData(sumRes);
         setArchiveData(arcRes);
         setMemberData(memRes);
         setBriefingData(brfRes);
+        setNetworkData(netRes);
       } catch (err) {
         console.error("Error loading LokaSent datasets:", err);
       } finally {
@@ -136,6 +140,13 @@ function MainApp() {
               {activeTab === 'member' && (
                 <MemberAnalysis 
                   memberData={memberData}
+                />
+              )}
+
+              {activeTab === 'network' && (
+                <NetworkAnalysisView 
+                  networkData={networkData}
+                  onNavigate={(tab) => setActiveTab(tab)}
                 />
               )}
 

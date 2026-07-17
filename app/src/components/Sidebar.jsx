@@ -5,6 +5,7 @@ const Sidebar = ({ activeTab, setActiveTab, selectedHouse, setSelectedHouse, sel
     { id: 'dashboard', label: 'Dashboard', icon: 'dashboard' },
     { id: 'archive', label: 'Global Archive', icon: 'inventory_2', badge: 'Moat Demo' },
     { id: 'member', label: 'Member Analysis', icon: 'groups' },
+    { id: 'network', label: 'Network & Heatmap', icon: 'hub', badge: 'NEW' },
     { id: 'briefing', label: 'Briefing Room', icon: 'description' },
   ];
 

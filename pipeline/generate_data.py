@@ -13,6 +13,7 @@ from datetime import datetime
 from cleaner import ParliamentaryTranscriptCleaner
 from topic_modeler import LegislativeTopicModeler
 from polarization_engine import PolarizationEngine
+from network_analyzer import LegislativeNetworkAnalyzer
 from corpus_generator import get_full_corpus
 
 def run_pipeline():
@@ -57,6 +58,11 @@ def run_pipeline():
             "short_term": t.split(" ")[0] + " LS",
             "years": t.split("(")[1].replace(")", ""),
             "ppi_score": ppi_data["ppi_score"],
+            "composite_pi": ppi_data.get("composite_pi", ppi_data["ppi_score"]),
+            "lds_score": ppi_data.get("lds_score", 65.0),
+            "sds_score": ppi_data.get("sds_score", 65.0),
+            "tas_score": ppi_data.get("tas_score", 45.0),
+            "stds_score": ppi_data.get("stds_score", 60.0),
             "status": ppi_data["status"],
             "status_color": ppi_data["status_color"],
             "mean_ruling": ppi_data["mean_ruling_sentiment"],
@@ -73,7 +79,13 @@ def run_pipeline():
         "Union Budget & Fiscal Policy",
         "National Security & Defence",
         "Judicial Reforms & Constitution",
-        "Health, Education & Welfare"
+        "Health, Education & Welfare",
+        "Citizenship Amendment & Internal Security",
+        "No-Confidence Motions & Governance",
+        "Women's Reservation & Representation",
+        "Uniform Civil Code & Civil Law",
+        "Telecommunications & Broadcasting Reforms",
+        "Environmental Protection & Clean Energy"
     ]
     active_bill_categories = []
     for cat in categories_list:
@@ -83,6 +95,11 @@ def run_pipeline():
             active_bill_categories.append({
                 "category": cat,
                 "ppi_score": ppi_data["ppi_score"],
+                "composite_pi": ppi_data.get("composite_pi", ppi_data["ppi_score"]),
+                "lds_score": ppi_data.get("lds_score", 65.0),
+                "sds_score": ppi_data.get("sds_score", 65.0),
+                "tas_score": ppi_data.get("tas_score", 45.0),
+                "stds_score": ppi_data.get("stds_score", 60.0),
                 "status": ppi_data["status"],
                 "last_debated": cat_speeches[-1]["term"].split(" ")[0] + " LS",
                 "speech_count": len(cat_speeches)
@@ -202,6 +219,11 @@ def run_pipeline():
         ]
     }
     
+    # --- Generate Dataset 5: network_graph.json ---
+    print("Generating NetworkX alignment graphs & centralities...")
+    net_analyzer = LegislativeNetworkAnalyzer(edge_threshold=0.65)
+    network_graph = net_analyzer.analyze_network(processed_speeches)
+    
     # Write files to public directory
     out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "app", "public", "data")
     os.makedirs(out_dir, exist_ok=True)
@@ -214,8 +236,10 @@ def run_pipeline():
         json.dump(member_profiles, f, indent=2)
     with open(os.path.join(out_dir, "strategic_briefings.json"), "w", encoding="utf-8") as f:
         json.dump(strategic_briefings, f, indent=2)
+    with open(os.path.join(out_dir, "network_graph.json"), "w", encoding="utf-8") as f:
+        json.dump(network_graph, f, indent=2)
         
-    print(f"Successfully generated all 4 JSON datasets in: {out_dir}")
+    print(f"Successfully generated all 5 JSON datasets in: {out_dir}")
 
 if __name__ == "__main__":
     run_pipeline()

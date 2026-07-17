@@ -42,6 +42,36 @@ class LegislativeTopicModeler:
                 "keywords": ["welfare scheme", "subsidies", "education", "nep", "ayushman bharat", "health", "hospital", "berojgari", "pds", "ration", "women empowerment"],
                 "color": "#0891b2", # Cyan
                 "icon": "HeartHandshake"
+            },
+            "Citizenship Amendment & Internal Security": {
+                "keywords": ["caa", "citizenship amendment", "nrc", "illegal immigrants", "internal security", "refugees", "persecuted minorities", "assam accord", "demographic change"],
+                "color": "#e11d48", # Rose/Red
+                "icon": "Flag"
+            },
+            "No-Confidence Motions & Governance": {
+                "keywords": ["no-confidence motion", "trust vote", "governance failure", "parliamentary accountability", "floor test", "democratic norms", "corruption", "cbi", "ed"],
+                "color": "#4f46e5", # Indigo
+                "icon": "AlertTriangle"
+            },
+            "Women's Reservation & Representation": {
+                "keywords": ["nari shakti", "women reservation bill", "gender equality", "panchayati raj", "lok sabha seats", "female participation", "empowerment", "vandan adhiniyam"],
+                "color": "#db2777", # Pink
+                "icon": "Users"
+            },
+            "Uniform Civil Code & Civil Law": {
+                "keywords": ["uniform civil code", "ucc", "personal laws", "secular civil code", "marriage act", "inheritance rights", "codified law", "gender justice"],
+                "color": "#9333ea", # Violet
+                "icon": "BookOpen"
+            },
+            "Telecommunications & Broadcasting Reforms": {
+                "keywords": ["telecommunications bill", "spectrum allocation", "broadcasting bill", "trai", "satellite communication", "digital infrastructure", "license fee"],
+                "color": "#0284c7", # Light Blue
+                "icon": "Radio"
+            },
+            "Environmental Protection & Clean Energy": {
+                "keywords": ["forest conservation", "climate change", "net zero", "renewable energy", "green hydrogen", "wildlife protection", "solar mission", "pollution"],
+                "color": "#15803d", # Deep Green
+                "icon": "Globe"
             }
         }
 

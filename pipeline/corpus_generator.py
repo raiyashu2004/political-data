@@ -241,33 +241,40 @@ def generate_parametric_speeches():
         "Union Budget & Fiscal Policy",
         "National Security & Defence",
         "Judicial Reforms & Constitution",
-        "Health, Education & Welfare"
+        "Health, Education & Welfare",
+        "Citizenship Amendment & Internal Security",
+        "No-Confidence Motions & Governance",
+        "Women's Reservation & Representation",
+        "Uniform Civil Code & Civil Law",
+        "Telecommunications & Broadcasting Reforms",
+        "Environmental Protection & Clean Energy"
     ]
     
     # Speaker pools
     ruling_mps = {
-        "BJP": ["Shri Narendra Modi", "Shri Amit Shah", "Smt. Nirmala Sitharaman", "Shri Rajnath Singh", "Shri Nitin Gadkari", "Shri Piyush Goyal", "Shri Ashwini Vaishnaw", "Shri Kiren Rijiju", "Shri Anurag Thakur", "Smt. Smriti Irani"],
-        "INC": ["Shri Manmohan Singh", "Shri Pranab Mukherjee", "Shri P. Chidambaram", "Shri A.K. Antony", "Shri Kamal Nath", "Shri Salman Khurshid", "Shri Jairam Ramesh"],
-        "TDP": ["Shri Ram Mohan Naidu", "Shri Galla Jayadev", "Shri K. Rammohan Rao"],
-        "JD(U)": ["Shri Lalan Singh", "Shri Kaushalendra Kumar", "Shri Ramprit Mandal"],
-        "SHS": ["Shri Shrikant Shinde", "Shri Rahul Shewale"],
-        "DMK": ["Shri T.R. Baalu", "Shri Dayanidhi Maran", "Shri A. Raja"],
-        "NCP": ["Shri Sharad Pawar", "Shri Praful Patel"]
+        "BJP": ["Shri Narendra Modi", "Shri Amit Shah", "Smt. Nirmala Sitharaman", "Shri Rajnath Singh", "Shri Nitin Gadkari", "Shri Piyush Goyal", "Shri Ashwini Vaishnaw", "Shri Kiren Rijiju", "Shri Anurag Thakur", "Smt. Smriti Irani", "Shri Bhupender Yadav", "Shri Dharmendra Pradhan", "Shri S. Jaishankar", "Shri Hardeep Singh Puri"],
+        "INC": ["Shri Manmohan Singh", "Shri Pranab Mukherjee", "Shri P. Chidambaram", "Shri A.K. Antony", "Shri Kamal Nath", "Shri Salman Khurshid", "Shri Jairam Ramesh", "Shri Kapil Sibal", "Smt. Ambika Soni"],
+        "TDP": ["Shri Ram Mohan Naidu", "Shri Galla Jayadev", "Shri K. Rammohan Rao", "Shri Pemmasani Chandra Sekhar"],
+        "JD(U)": ["Shri Lalan Singh", "Shri Kaushalendra Kumar", "Shri Ramprit Mandal", "Shri Sunil Kumar Pintu"],
+        "SHS": ["Shri Shrikant Shinde", "Shri Rahul Shewale", "Shri Prataprao Jadhav"],
+        "DMK": ["Shri T.R. Baalu", "Shri Dayanidhi Maran", "Shri A. Raja", "Smt. Kanimozhi Karunanidhi"],
+        "NCP": ["Shri Sharad Pawar", "Shri Praful Patel", "Smt. Supriya Sule", "Shri Sunil Tatkare"]
     }
     
     opp_mps = {
-        "INC": ["Shri Rahul Gandhi", "Shri Mallikarjun Kharge", "Shri Shashi Tharoor", "Shri Adhir Ranjan Chowdhury", "Shri Gaurav Gogoi", "Shri Manish Tewari", "Shri Digvijaya Singh", "Smt. Priyanka Gandhi"],
-        "BJP": ["Smt. Sushma Swaraj", "Shri Arun Jaitley", "Shri L.K. Advani", "Shri Yashwant Sinha", "Shri Ravi Shankar Prasad"],
-        "TMC": ["Smt. Mahua Moitra", "Shri Derek O'Brien", "Shri Kalyan Banerjee", "Shri Saugata Roy", "Shri Abhishek Banerjee", "Smt. Kakoli Ghosh Dastidar"],
-        "DMK": ["Shri T.R. Baalu", "Smt. Kanimozhi Karunanidhi", "Shri Tiruchi Siva", "Shri A. Raja", "Shri Dayanidhi Maran"],
-        "SP": ["Shri Akhilesh Yadav", "Shri Ram Gopal Yadav", "Smt. Dimple Yadav", "Shri Shafiqur Rahman Barq"],
-        "SAD": ["Smt. Harsimrat Kaur Badal", "Shri Sukhbir Singh Badal"],
-        "AIMIM": ["Shri Asaduddin Owaisi", "Shri Imtiaz Jaleel"],
-        "AAP": ["Shri Raghav Chadha", "Shri Sanjay Singh", "Shri Bhagwant Mann"],
-        "BJD": ["Shri Bhartruhari Mahtab", "Shri Pinaki Misra", "Shri Sasmit Patra"],
-        "CPI(M)": ["Shri Sitaram Yechury", "Shri Elamaram Kareem", "Shri John Brittas"],
-        "RJD": ["Shri Manoj Jha", "Shri Misa Bharti"],
-        "JD(U)": ["Shri Sharad Yadav", "Shri R.C.P. Singh"]
+        "INC": ["Shri Rahul Gandhi", "Shri Mallikarjun Kharge", "Shri Shashi Tharoor", "Shri Adhir Ranjan Chowdhury", "Shri Gaurav Gogoi", "Shri Manish Tewari", "Shri Digvijaya Singh", "Smt. Priyanka Gandhi", "Shri K.C. Venugopal", "Shri Ravneet Singh Bittu"],
+        "BJP": ["Smt. Sushma Swaraj", "Shri Arun Jaitley", "Shri L.K. Advani", "Shri Yashwant Sinha", "Shri Ravi Shankar Prasad", "Shri Ananth Kumar"],
+        "TMC": ["Smt. Mahua Moitra", "Shri Derek O'Brien", "Shri Kalyan Banerjee", "Shri Saugata Roy", "Shri Abhishek Banerjee", "Smt. Kakoli Ghosh Dastidar", "Shri Sukhendu Sekhar Roy", "Smt. Satabdi Roy"],
+        "DMK": ["Shri T.R. Baalu", "Smt. Kanimozhi Karunanidhi", "Shri Tiruchi Siva", "Shri A. Raja", "Shri Dayanidhi Maran", "Shri K. Kanimozhi"],
+        "SP": ["Shri Akhilesh Yadav", "Shri Ram Gopal Yadav", "Smt. Dimple Yadav", "Shri Shafiqur Rahman Barq", "Shri S.T. Hasan", "Shri Awadhesh Prasad"],
+        "SAD": ["Smt. Harsimrat Kaur Badal", "Shri Sukhbir Singh Badal", "Shri Naresh Gujral"],
+        "AIMIM": ["Shri Asaduddin Owaisi", "Shri Imtiaz Jaleel", "Shri Syed Imtiaz Jaleel"],
+        "AAP": ["Shri Raghav Chadha", "Shri Sanjay Singh", "Shri Bhagwant Mann", "Shri Sandeep Pathak"],
+        "BJD": ["Shri Bhartruhari Mahtab", "Shri Pinaki Misra", "Shri Sasmit Patra", "Smt. Sarmistha Sethi"],
+        "CPI(M)": ["Shri Sitaram Yechury", "Shri Elamaram Kareem", "Shri John Brittas", "Shri A.M. Ariff"],
+        "RJD": ["Shri Manoj Jha", "Shri Misa Bharti", "Shri Abhay Kumar Sinha"],
+        "JD(U)": ["Shri Sharad Yadav", "Shri R.C.P. Singh", "Shri Harivansh Narayan Singh"],
+        "YSRCP": ["Shri V. Vijayasai Reddy", "Shri P.V. Midhun Reddy", "Shri Margani Bharat"]
     }
     
     # Vocabulary & template pools with OCR artifacts and Hindi terms
@@ -301,6 +308,36 @@ def generate_parametric_speeches():
             "Hon. Speaker Sir, our landmark healthcare and welfare legislation guarantees subsidized food security and universal medical insurance under Ayushman Bharat. We are eradicating poverty and elevating health standards nationwide.",
             "Sabhapati Mahodaya, the National Education Policy (NEP) and public health investments empower our youth with world-class skills. We allocate unprecedented resources to rural health centers and nutrition programs.",
             "Sir, social welfare is a constitutional commitment. By leveraging direct benefit transfers, we eliminate leakage and ensure subsidized grains and medical aid reach the most vulnerable families in our country."
+        ],
+        "Citizenship Amendment & Internal Security": [
+            "Hon. Speaker Sir, the Citizenship Amendment Act (CAA) provides humanitarian relief and constitutional dignity to persecuted minorities from neighboring countries. It does not take away any Indian citizen's rights regardless of religion.",
+            "Adhyaksh Mahodaya, protecting internal security and safeguarding borders against illegal immigrants while granting asylum to religious refugees is our moral duty. We reject the opposition's divisive scaremongering across our desh.",
+            "Sir, national sovereignty requires distinct protocols for legal citizenship and illegal migration. The NRC and CAA frameworks ensure accurate population registers while upholding every fundamental right of legitimate citizens."
+        ],
+        "No-Confidence Motions & Governance": [
+            "Hon. Speaker Sir, the opposition's no-confidence motion is a politically motivated stunt masking their lack of constructive policy alternatives. Our governance model has lifted 25 crore citizens out of multidimensional poverty.",
+            "Sabhapati Mahodaya, floor tests repeatedly reaffirm the nation's overwhelming trust in our clean, transparent administration. We fight corruption transparently through independent investigative agencies without political bias.",
+            "Sir, parliamentary democracy thrives on debate, not obstructionism. While the opposition stalls proceedings, our government remains totally dedicated to nation-building, economic stability, and democratic accountability."
+        ],
+        "Women's Reservation & Representation": [
+            "Hon. Speaker Sir, the Nari Shakti Vandan Adhiniyam is a watershed constitutional reform reserving one-third of Lok Sabha and Assembly seats for women. True democracy requires equal empowerment and leadership across every forum.",
+            "Adhyaksh Mahodaya, women led development is the cornerstone of our policy vision. From rural self-help groups to parliamentary benches, empowering mothers and daughters strengthens the democratic fabric of India.",
+            "Sir, bipartisan support for women's representation marks an unforgettable epoch in parliamentary history. This legislation dismantles patriarchal barriers and elevates female participation in national decision making."
+        ],
+        "Uniform Civil Code & Civil Law": [
+            "Hon. Speaker Sir, Article 44 of our Constitution directs the State to secure a Uniform Civil Code (UCC) for all citizens across the territory of India. Codified secular personal laws guarantee gender justice and equality before kanoon.",
+            "Sabhapati Mahodaya, personal law reform ensures that discriminatory practices in inheritance, marriage, and adoption are replaced by progressive human rights standards. We seek national consensus on this vital constitutional pledge.",
+            "Sir, a modern democratic republic cannot maintain fragmented personal codes that disadvantage women. Implementing secular civil reforms fosters national cohesion and equal legal protection across all communities."
+        ],
+        "Telecommunications & Broadcasting Reforms": [
+            "Hon. Speaker Sir, the Telecommunications Bill replaces century-old colonial laws with a modern, dynamic framework for 5G spectrum allocation and satellite communications. It accelerates digital infrastructure growth across rural and urban India.",
+            "Adhyaksh Mahodaya, regulating broadcasting and digital networks protects citizens from fraudulent cyber syndicates and national security breaches. We simplify licensing regimes to attract massive global technology investments.",
+            "Sir, secure telecommunication networks are vital for economic sovereignty. By reforming right-of-way rules and spectrum management, we ensure reliable connectivity for schools, hospitals, and enterprises nationwide."
+        ],
+        "Environmental Protection & Clean Energy": [
+            "Hon. Speaker Sir, our Forest Conservation and Renewable Energy initiatives balance rapid industrial development with rigorous wildlife protection and net-zero climate goals. India is now a global leader in green hydrogen and solar capacity.",
+            "Sabhapati Mahodaya, through the National Green Hydrogen Mission and strict pollution monitoring, we protect natural habitats while powering industrial growth. Sustainable development is embedded in our civilizational values.",
+            "Sir, addressing climate change requires proactive legislative mandates. We have significantly expanded forest cover and clean energy generation, fulfilling our international environmental commitments without sacrificing economic mobility."
         ]
     }
     
@@ -334,6 +371,36 @@ def generate_parametric_speeches():
             "Adhyaksh Mahodaya, while we support welfare intent, the government has starved public healthcare and primary education of essential funds! PDS distribution networks in rural areas are collapsing under bureaucratic apathy.",
             "Sabhapati Mahodaya, commercializing education and underfunding rural health centers harms vulnerable families! We demand increased budgetary allocations for public hospitals and subsidized nutrition schemes.",
             "Sir, centralizing welfare schemes without supporting state municipal infrastructure leads to massive delivery gaps. We protest the reduction in social security pensions and demand guaranteed food protection for the poor."
+        ],
+        "Citizenship Amendment & Internal Security": [
+            "Adhyaksh Mahodaya, linking citizenship to religion under the Citizenship Amendment Act violates Article 14 of our Constitution! We strongly reject this divisive political agenda that polarizes communities and threatens social harmony across the desh.",
+            "Sabhapati Mahodaya, combining NRC verification with discriminatory asylum criteria creates widespread panic among marginalized citizens and minorities! We demand the repeal of unconstitutional citizenship tests.",
+            "Sir, internal security is weakened when government laws alienate entire sections of the population. We protest against authoritarian immigration frameworks that erode the secular foundations of our democratic republic."
+        ],
+        "No-Confidence Motions & Governance": [
+            "Adhyaksh Mahodaya, we move this no-confidence motion because the government has totally failed on inflation, youth unemployment, and institutional integrity! Central investigative agencies like CBI and ED are weaponized against the opposition!",
+            "Sabhapati Mahodaya, parliamentary accountability is dead when the ruling dispensation evades debates on burning national crises! This trust vote exposes the deep governance deficit and erosion of democratic norms.",
+            "Sir, the nation has lost confidence in an administration that protects crony capitalists while rural farmers and workers suffer. We demand complete transparency and answers on rampant economic irregularities."
+        ],
+        "Women's Reservation & Representation": [
+            "Adhyaksh Mahodaya, while we strongly support women's reservation, delaying its implementation by linking it to future census and delimitation exercises is a cruel deception! We demand immediate quota enforcement without conditions!",
+            "Sabhapati Mahodaya, true representation requires sub-quotas for OBC and minority women within the reservation bill! Without social justice provisions, this enactment remains an incomplete promise to rural nari shakti.",
+            "Sir, we welcome gender representation but condemn the political posturing around implementation timelines. Empowering women requires immediate seat allocation across state assemblies and parliament right now!"
+        ],
+        "Uniform Civil Code & Civil Law": [
+            "Adhyaksh Mahodaya, imposing a Uniform Civil Code without building consensus among diverse religious and tribal communities threatens India's pluralistic fabric! We reject majoritarian uniformity disguised as legal reform.",
+            "Sabhapati Mahodaya, personal law reforms must originate from within communities through internal dialogue and gender justice reviews, not state mandate! This draft infringes upon constitutional freedom of religion under Article 25.",
+            "Sir, before talking about civil code uniformity, the government must ensure equal economic rights and protection for women across existing statutory laws. We oppose polarizing personal law debates for electoral gains."
+        ],
+        "Telecommunications & Broadcasting Reforms": [
+            "Adhyaksh Mahodaya, the new Telecommunications Bill gives government agencies unbridled powers to intercept digital communications and suspend internet services! It turns digital infrastructure into an instrument of state surveillance.",
+            "Sabhapati Mahodaya, allocating spectrum through administrative discretion rather than transparent auction risks massive revenue loss and corporate favoritism! We demand independent regulatory oversight by TRAI.",
+            "Sir, broadcasting regulations must protect press freedom and journalistic independence. We strongly oppose vague national security clauses that threaten independent media platforms and digital freedom of speech."
+        ],
+        "Environmental Protection & Clean Energy": [
+            "Adhyaksh Mahodaya, amending the Forest Conservation Act exempts massive border and industrial projects from environmental scrutiny! This bill destroys indigenous tribal rights and accelerates deforestation across ecologically fragile zones.",
+            "Sabhapati Mahodaya, while talking about green hydrogen, the government is diluting pollution control norms for thermal power plants and mining conglomerates! We protest the sacrifice of environmental safeguards for corporate profit.",
+            "Sir, climate change targets cannot be met by displacing traditional forest dwellers and weakening environmental impact assessments. We demand strong protection for biodiversity and statutory rights for tribal communities."
         ]
     }
     
@@ -346,8 +413,8 @@ def generate_parametric_speeches():
         end_y = term_info["end_year"]
         
         for cat in categories:
-            # Generate 10 speeches per term-category pair (5 ruling, 5 opp)
-            for i in range(10):
+            # Generate 200 speeches per term-category pair across the 12 bills (100 ruling, 100 opp) -> 9,600 speeches total
+            for i in range(200):
                 is_ruling = (i % 2 == 0)
                 party_pool = term_info["ruling_parties"] if is_ruling else term_info["opp_parties"]
                 party = random.choice(party_pool)
@@ -390,7 +457,7 @@ def generate_parametric_speeches():
                 
                 raw_text = f"{header}{speaker.upper()} ({party}): {base_text}{noise}"
                 
-                sp_id = f"DEB-{start_y}-{cat[:3].upper()}-{speech_counter:03d}"
+                sp_id = f"DEB-{start_y}-{cat[:3].upper()}-{speech_counter:05d}"
                 speech_counter += 1
                 
                 generated_speeches.append({
