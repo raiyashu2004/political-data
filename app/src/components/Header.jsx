@@ -51,39 +51,35 @@ const Header = ({ searchQuery, setSearchQuery, selectedHouse, selectedTerm, dark
 
         <div style={{ height: 32, width: 1, backgroundColor: 'var(--outline-variant)' }} />
 
-        {/* Authentication Section */}
+        {/* Academic Project Status & Student Profile Section */}
         <div style={{ position: 'relative' }}>
           {user ? (
-            /* Logged In User Headshot & Menu Trigger */
+            /* Logged In Student / Researcher Profile */
             <div>
               <div 
                 className="flex items-center gap-3 auth-user-trigger" 
                 onClick={() => setShowMenu(!showMenu)}
-                style={{ cursor: 'pointer', padding: '4px 8px', borderRadius: 'var(--radius-md)' }}
+                style={{ cursor: 'pointer', padding: '4px 10px', borderRadius: 'var(--radius-md)', backgroundColor: 'var(--surface-container)' }}
               >
                 <div style={{ textAlign: 'right' }}>
                   <div className="flex items-center justify-end gap-1.5 mb-0.5">
                     <span 
-                      className="auth-clearance-pill"
-                      style={{ backgroundColor: user.badgeColor || 'var(--primary)', color: '#fff' }}
+                      className="badge"
+                      style={{ backgroundColor: 'var(--primary)', color: '#fff', fontSize: 10, padding: '2px 6px', borderRadius: 4, fontWeight: 700 }}
                     >
-                      L{user.clearance} {user.clearance === 4 ? 'EXEC' : user.clearance === 3 ? 'ANALYST' : 'STAFF'}
+                      STUDENT LEAD
                     </span>
-                    <p className="text-label-md font-bold" style={{ color: 'var(--on-surface)', margin: 0 }}>{user.name.split(' ')[0]}</p>
+                    <p className="text-label-md font-bold" style={{ color: 'var(--on-surface)', margin: 0 }}>Achintya Rai</p>
                   </div>
-                  <p style={{ fontSize: 10, color: 'var(--outline)', textTransform: 'uppercase', margin: 0, letterSpacing: '0.5px' }}>
-                    {user.role}
+                  <p style={{ fontSize: 10, color: 'var(--outline)', textTransform: 'uppercase', margin: 0, letterSpacing: '0.5px', fontWeight: 600 }}>
+                    B.Tech Final Year CS • Roll: 2026-CS
                   </p>
                 </div>
-                <div style={{ position: 'relative', width: 40, height: 40 }}>
-                  <div style={{ width: 40, height: 40, borderRadius: 'var(--radius-full)', overflow: 'hidden', border: '2px solid var(--primary)', backgroundColor: 'var(--secondary-container)' }}>
-                    <img 
-                      src={user.avatar || "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80"} 
-                      alt="Profile" 
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                    />
+                <div style={{ position: 'relative', width: 38, height: 38 }}>
+                  <div style={{ width: 38, height: 38, borderRadius: 'var(--radius-full)', overflow: 'hidden', border: '2px solid var(--primary)', backgroundColor: 'var(--secondary-container)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span className="material-symbols-outlined" style={{ color: 'var(--primary)', fontSize: 22 }}>person</span>
                   </div>
-                  <span className="auth-online-dot" />
+                  <span className="auth-online-dot" style={{ backgroundColor: '#16a34a' }} />
                 </div>
               </div>
 
@@ -91,49 +87,49 @@ const Header = ({ searchQuery, setSearchQuery, selectedHouse, selectedTerm, dark
               {showMenu && (
                 <>
                   <div className="auth-menu-backdrop" onClick={() => setShowMenu(false)} />
-                  <div className="auth-user-dropdown">
-                    <div className="auth-dropdown-header">
-                      <p className="text-label-md font-bold" style={{ color: 'var(--on-surface)' }}>{user.name}</p>
-                      <p className="text-label-sm" style={{ color: 'var(--on-surface-variant)' }}>{user.email}</p>
+                  <div className="auth-user-dropdown" style={{ width: 280 }}>
+                    <div className="auth-dropdown-header" style={{ padding: '14px 16px', borderBottom: '1px solid var(--outline-variant)' }}>
+                      <p className="text-label-md font-bold" style={{ color: 'var(--on-surface)', fontSize: 14 }}>Achintya Rai & Project Team</p>
+                      <p className="text-label-sm" style={{ color: 'var(--on-surface-variant)', fontSize: 11 }}>Department of Computer Science & Engineering</p>
                       <div className="flex items-center gap-2 mt-2">
-                        <span className="auth-clearance-pill" style={{ backgroundColor: user.badgeColor || 'var(--primary)', color: '#fff' }}>
-                          Level {user.clearance} Clearance
+                        <span className="badge" style={{ backgroundColor: '#16a34a', color: '#fff', fontSize: 10, padding: '2px 6px', borderRadius: 4, fontWeight: 700 }}>
+                          Major Project Thesis
                         </span>
-                        <span className="text-label-sm" style={{ color: 'var(--outline)' }}>{user.sessionId}</span>
+                        <span className="text-label-sm" style={{ color: 'var(--outline)' }}>Session 2025-26</span>
                       </div>
                     </div>
 
-                    <div className="auth-dropdown-body">
-                      <div className="auth-info-row">
-                        <span className="material-symbols-outlined text-label-sm">domain</span>
-                        <span className="text-body-sm">{user.department}</span>
+                    <div className="auth-dropdown-body" style={{ padding: '12px 16px' }}>
+                      <div className="auth-info-row flex items-center gap-2 mb-2">
+                        <span className="material-symbols-outlined text-label-sm" style={{ fontSize: 16, color: 'var(--primary)' }}>school</span>
+                        <span className="text-body-sm" style={{ fontSize: 12 }}>Faculty Guide: Dr. Assessment Panel</span>
                       </div>
-                      {lastLoginTime && (
-                        <div className="auth-info-row">
-                          <span className="material-symbols-outlined text-label-sm">schedule</span>
-                          <span className="text-body-sm">Logged: {lastLoginTime}</span>
-                        </div>
-                      )}
-                      <div className="auth-info-row">
-                        <span className="material-symbols-outlined text-label-sm" style={{ color: 'var(--success)' }}>verified</span>
-                        <span className="text-body-sm" style={{ color: 'var(--success)' }}>TLS 1.3 Active • Audited</span>
+                      <div className="auth-info-row flex items-center gap-2 mb-2">
+                        <span className="material-symbols-outlined text-label-sm" style={{ fontSize: 16, color: 'var(--primary)' }}>terminal</span>
+                        <span className="text-body-sm" style={{ fontSize: 12 }}>Stack: Python 3.14 + React + NetworkX</span>
+                      </div>
+                      <div className="auth-info-row flex items-center gap-2">
+                        <span className="material-symbols-outlined text-label-sm" style={{ fontSize: 16, color: '#16a34a' }}>verified</span>
+                        <span className="text-body-sm" style={{ fontSize: 12, color: '#16a34a', fontWeight: 600 }}>Stage 1/2 Live Scraper Active</span>
                       </div>
                     </div>
 
-                    <div className="auth-dropdown-actions">
+                    <div className="auth-dropdown-actions" style={{ padding: '10px 16px', borderTop: '1px solid var(--outline-variant)' }}>
                       <button 
-                        className="auth-switch-role-btn"
+                        className="btn btn-secondary w-full text-left flex items-center gap-2"
+                        style={{ padding: '8px 12px', fontSize: 12, borderRadius: 6, marginBottom: 6, width: '100%' }}
                         onClick={() => { setShowMenu(false); onOpenLoginModal(); }}
                       >
-                        <span className="material-symbols-outlined" style={{ fontSize: 18 }}>switch_account</span>
-                        Switch Clearance Tier
+                        <span className="material-symbols-outlined" style={{ fontSize: 16 }}>manage_accounts</span>
+                        Faculty / Examiner Mode Demo
                       </button>
                       <button 
-                        className="auth-logout-btn"
+                        className="btn w-full text-left flex items-center gap-2"
+                        style={{ padding: '8px 12px', fontSize: 12, borderRadius: 6, color: 'var(--error)', width: '100%', border: '1px solid var(--outline-variant)' }}
                         onClick={() => { setShowMenu(false); logout(); }}
                       >
-                        <span className="material-symbols-outlined" style={{ fontSize: 18 }}>logout</span>
-                        Sign Out / Terminate
+                        <span className="material-symbols-outlined" style={{ fontSize: 16 }}>logout</span>
+                        Reset Session
                       </button>
                     </div>
                   </div>
@@ -141,17 +137,18 @@ const Header = ({ searchQuery, setSearchQuery, selectedHouse, selectedTerm, dark
               )}
             </div>
           ) : (
-            /* Logged Out Login Button */
+            /* Logged Out / Examiner Mode Button */
             <button 
-              className="auth-login-trigger-btn"
+              className="flex items-center gap-2.5 px-3 py-1.5 rounded-md border"
+              style={{ borderColor: 'var(--primary)', backgroundColor: 'var(--surface-container)', cursor: 'pointer' }}
               onClick={onOpenLoginModal}
             >
-              <div className="auth-lock-circle">
-                <span className="material-symbols-outlined" style={{ fontSize: 18 }}>lock</span>
+              <div style={{ width: 28, height: 28, borderRadius: '50%', backgroundColor: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <span className="material-symbols-outlined" style={{ fontSize: 16, color: '#fff' }}>school</span>
               </div>
               <div style={{ textAlign: 'left' }}>
-                <p className="text-label-md font-bold" style={{ margin: 0, lineHeight: 1.2 }}>Security Login</p>
-                <p style={{ fontSize: 10, color: 'var(--outline)', margin: 0, textTransform: 'uppercase' }}>Level 1 Public</p>
+                <p className="text-label-md font-bold" style={{ margin: 0, lineHeight: 1.2, fontSize: 12, color: 'var(--on-surface)' }}>Project Demo Mode</p>
+                <p style={{ fontSize: 9, color: 'var(--primary)', margin: 0, fontWeight: 700 }}>Faculty / Examiner Access</p>
               </div>
             </button>
           )}

@@ -2,11 +2,11 @@ import React from 'react';
 
 const Sidebar = ({ activeTab, setActiveTab, selectedHouse, setSelectedHouse, selectedTerm, setSelectedTerm }) => {
   const navItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: 'dashboard' },
-    { id: 'archive', label: 'Global Archive', icon: 'inventory_2', badge: 'Moat Demo' },
-    { id: 'member', label: 'Member Analysis', icon: 'groups' },
-    { id: 'network', label: 'Network & Heatmap', icon: 'hub', badge: 'NEW' },
-    { id: 'briefing', label: 'Briefing Room', icon: 'description' },
+    { id: 'dashboard', label: 'System Overview & Polarization Index', icon: 'dashboard' },
+    { id: 'archive', label: 'Scraped Corpus & OCR Transcripts', icon: 'inventory_2', badge: 'Stage 1/2' },
+    { id: 'member', label: 'MP Stance & Attendance Tracker', icon: 'groups' },
+    { id: 'network', label: 'NetworkX Alignment & Heatmaps', icon: 'hub', badge: 'Graph ML' },
+    { id: 'briefing', label: 'Methodology & Report Export', icon: 'description' },
   ];
 
   const terms = [
@@ -21,19 +21,19 @@ const Sidebar = ({ activeTab, setActiveTab, selectedHouse, setSelectedHouse, sel
     <aside className="sidebar">
       {/* Brand Header */}
       <div className="flex items-center gap-3 px-4 mb-6">
-        <div style={{ width: 40, height: 40, backgroundColor: 'var(--primary)', borderRadius: 'var(--radius-sm)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <span className="material-symbols-outlined filled" style={{ color: '#ffffff', fontSize: 24 }}>account_balance</span>
+        <div style={{ width: 42, height: 42, backgroundColor: 'var(--primary)', borderRadius: 'var(--radius-sm)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+          <span className="material-symbols-outlined filled" style={{ color: '#ffffff', fontSize: 26 }}>school</span>
         </div>
         <div>
-          <h1 className="text-headline-md" style={{ color: 'var(--primary)', fontWeight: 800 }}>LokaSent</h1>
-          <p className="text-label-sm" style={{ color: 'var(--outline)', fontSize: 10, letterSpacing: '0.1em' }}>PARLIAMENTARY INTEL</p>
+          <h1 className="text-headline-md" style={{ color: 'var(--primary)', fontWeight: 800, lineHeight: 1.1 }}>LokaSent: PDPT</h1>
+          <p className="text-label-sm" style={{ color: 'var(--outline)', fontSize: 9, fontWeight: 700, letterSpacing: '0.08em', marginTop: 2 }}>FINAL YEAR CS MAJOR PROJECT</p>
         </div>
       </div>
 
       {/* House & Term Selectors (Institutional Filter) */}
       <div style={{ padding: '0 16px', marginBottom: 24 }}>
         <div style={{ backgroundColor: 'var(--surface-container-low)', padding: 12, borderRadius: 'var(--radius-md)', border: '1px solid var(--outline-variant)' }}>
-          <label className="text-label-sm" style={{ color: 'var(--on-surface-variant)', display: 'block', marginBottom: 6, textTransform: 'uppercase', fontSize: 10 }}>
+          <label className="text-label-sm" style={{ color: 'var(--on-surface-variant)', display: 'block', marginBottom: 6, textTransform: 'uppercase', fontSize: 10, fontWeight: 700 }}>
             Legislative House
           </label>
           <div className="flex gap-1 mb-3">
@@ -59,8 +59,8 @@ const Sidebar = ({ activeTab, setActiveTab, selectedHouse, setSelectedHouse, sel
             </button>
           </div>
 
-          <label className="text-label-sm" style={{ color: 'var(--on-surface-variant)', display: 'block', marginBottom: 4, textTransform: 'uppercase', fontSize: 10 }}>
-            Parliamentary Term
+          <label className="text-label-sm" style={{ color: 'var(--on-surface-variant)', display: 'block', marginBottom: 4, textTransform: 'uppercase', fontSize: 10, fontWeight: 700 }}>
+            Parliamentary Term Filter
           </label>
           <select 
             value={selectedTerm}
@@ -87,14 +87,14 @@ const Sidebar = ({ activeTab, setActiveTab, selectedHouse, setSelectedHouse, sel
               className={`nav-item ${isActive ? 'active' : ''}`}
               onClick={() => setActiveTab(item.id)}
             >
-              <span className={`material-symbols-outlined ${isActive ? 'filled' : ''}`} style={{ marginRight: 16 }}>
+              <span className={`material-symbols-outlined ${isActive ? 'filled' : ''}`} style={{ marginRight: 14 }}>
                 {item.icon}
               </span>
-              <span className="text-body-md" style={{ flex: 1, fontWeight: isActive ? 700 : 500 }}>
+              <span className="text-body-md" style={{ flex: 1, fontWeight: isActive ? 700 : 500, fontSize: 13 }}>
                 {item.label}
               </span>
               {item.badge && (
-                <span className="badge badge-primary" style={{ fontSize: 10, padding: '2px 6px' }}>
+                <span className="badge badge-primary" style={{ fontSize: 9, padding: '2px 6px', fontWeight: 700 }}>
                   {item.badge}
                 </span>
               )}
@@ -103,19 +103,21 @@ const Sidebar = ({ activeTab, setActiveTab, selectedHouse, setSelectedHouse, sel
         })}
       </nav>
 
-      {/* Footer Action Button */}
-      <div style={{ padding: '16px 24px', marginTop: 'auto' }}>
+      {/* Footer Academic Notice & Action Button */}
+      <div style={{ padding: '16px 24px', marginTop: 'auto', borderTop: '1px solid var(--outline-variant)' }}>
         <button 
           onClick={() => setActiveTab('briefing')}
           className="btn btn-primary w-full"
-          style={{ padding: '12px', fontSize: 14, boxShadow: 'var(--shadow-sm)' }}
+          style={{ padding: '10px 12px', fontSize: 13, fontWeight: 700, boxShadow: 'var(--shadow-sm)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}
         >
-          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>add</span>
-          New Analysis
+          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>summarize</span>
+          View Project Report
         </button>
-        <p style={{ textAlign: 'center', fontSize: 11, color: 'var(--outline)', marginTop: 12 }}>
-          LokaSent Engine v2.4 • Moat Verified
-        </p>
+        <div style={{ textAlign: 'center', fontSize: 10, color: 'var(--on-surface-variant)', marginTop: 12, lineHeight: 1.4 }}>
+          <p style={{ fontWeight: 700, margin: 0, color: 'var(--primary)' }}>B.Tech Final Year Thesis</p>
+          <p style={{ margin: 0, opacity: 0.8 }}>Dept. of Computer Science & Engg.</p>
+          <p style={{ margin: 0, opacity: 0.7 }}>NLP • Graph Theory • Full Stack</p>
+        </div>
       </div>
     </aside>
   );

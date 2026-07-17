@@ -126,15 +126,15 @@ const HistoricalArchive = ({ archiveData, selectedCategory, setSelectedCategory,
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="badge badge-primary">
-                {archiveData?.is_simulated ? 'SYNTHETIC BENCHMARK FIXTURE' : 'STAGE 2 CORE ARCHIVE'}
+                {archiveData?.is_simulated ? 'BENCHMARK STRESS-TEST CORPUS' : 'STAGE 1/2 VERIFIED CORPUS'}
               </span>
-              <span className="text-label-sm" style={{ color: 'var(--on-surface-variant)' }}>
-                {archiveData?.is_simulated ? `Simulated Stress-Test Corpus (${speeches.length.toLocaleString()} Records)` : `PRS Legislative & Sansad TV Transcripts (${speeches.length.toLocaleString()} Records)`}
+              <span className="text-label-sm" style={{ color: 'var(--on-surface-variant)', fontWeight: 600 }}>
+                {archiveData?.is_simulated ? `Simulated Stress-Test Corpus (${speeches.length.toLocaleString()} Records)` : `PRS India & Official Verbatim Transcripts (${speeches.length.toLocaleString()} Records)`}
               </span>
             </div>
-            <h2 className="text-headline-lg" style={{ fontWeight: 800 }}>Global Parliamentary Debate Archive</h2>
+            <h2 className="text-headline-lg" style={{ fontWeight: 800 }}>Scraped Corpus & OCR Preprocessing Verification</h2>
             <p className="text-body-md" style={{ color: 'var(--on-surface-variant)' }}>
-              Explore how our NLP text-cleaning engine transforms noisy, multilingual transcripts into structured polarization data across 12 major policy categories.
+              Inspect raw parliamentary transcripts side-by-side with our NLP dehyphenated, clean outputs across 12 target legislative categories.
             </p>
           </div>
           
@@ -143,20 +143,20 @@ const HistoricalArchive = ({ archiveData, selectedCategory, setSelectedCategory,
               <button 
                 onClick={handleBackToStandard}
                 className="btn btn-primary"
-                style={{ padding: '8px 16px', fontSize: 13 }}
+                style={{ padding: '8px 16px', fontSize: 13, fontWeight: 600 }}
               >
                 <span className="material-symbols-outlined" style={{ fontSize: 18 }}>arrow_back</span>
-                Back to Standard Archive
+                Back to Full Table View
               </button>
             ) : (
               <div className="flex gap-2">
                 <button 
                   onClick={() => handleOpenMoat(filteredSpeeches[0] || speeches[0])}
                   className="btn btn-primary"
-                  style={{ padding: '8px 16px', fontSize: 13 }}
+                  style={{ padding: '8px 16px', fontSize: 13, fontWeight: 600 }}
                 >
-                  <span className="material-symbols-outlined" style={{ fontSize: 18 }}>auto_awesome</span>
-                  Launch Side-by-Side Moat Viewer
+                  <span className="material-symbols-outlined" style={{ fontSize: 18 }}>compare_arrows</span>
+                  Launch OCR Dehyphenation Verification Viewer
                 </button>
                 <div className="flex items-center bg-surface-container border border-outline-variant rounded-lg p-1">
                   <button 

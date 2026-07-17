@@ -76,12 +76,12 @@ const NetworkAnalysisView = ({ networkData, onNavigate }) => {
             </span>
             <span className="text-label-sm text-on-surface-variant">Threshold: similarity ≥ {data.metadata?.edge_similarity_threshold || 0.65}</span>
           </div>
-          <h2 className="text-headline-lg font-extrabold text-on-surface">
-            Legislative Alignment & Ideological Bridge Network
+          <h2 className="text-headline-lg font-extrabold text-on-surface mb-1">
+            NetworkX Graph ML & Ideological Heatmap Analysis
           </h2>
           <p className="text-body-md text-on-surface-variant max-w-3xl">
-            Explore multi-relational graphs linking parties and MPs who share cross-topic stance trajectories. 
-            High <strong>Betweenness Centrality</strong> identifies critical consensus-builders and cross-bench ideological bridges.
+            Explore bipartite and projected graphs linking parties and MPs who share cross-topic stance trajectories. 
+            Graph Theory module computes <strong>Louvain Modularity</strong> communities and <strong>Betweenness Centrality</strong> to isolate consensus-builders and cross-bench ideological bridges.
           </p>
         </div>
 

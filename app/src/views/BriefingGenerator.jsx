@@ -34,9 +34,9 @@ const BriefingGenerator = ({ briefingData }) => {
       {/* Top Stepper Banner (Stitch Style) */}
       <div className="card flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6" style={{ padding: '28px 32px', backgroundColor: 'var(--surface-container-low)', border: '1px solid var(--outline-variant)', borderRadius: 'var(--radius-lg)', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
         <div>
-          <h2 className="text-headline-lg mb-2" style={{ fontWeight: 800, fontSize: 24, color: 'var(--on-surface)' }}>Strategic Briefing Generator</h2>
+          <h2 className="text-headline-lg mb-2" style={{ fontWeight: 800, fontSize: 24, color: 'var(--on-surface)' }}>Project Methodology & Automated Report Export</h2>
           <p className="text-body-md" style={{ color: 'var(--on-surface-variant)', fontSize: 14.5, lineHeight: 1.6 }}>
-            Synthesize OCR-cleaned debate corpora into high-density executive intelligence briefings and alignment matrices.
+            Synthesize dehyphenated debate corpora and 4-dimensional math outputs into structured academic thesis reports and empirical alignment tables.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3 flex-shrink-0">

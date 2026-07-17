@@ -76,10 +76,6 @@ function MainApp() {
       <Sidebar 
         activeTab={activeTab} 
         setActiveTab={(tab) => {
-          // Check if restricted tab
-          if (tab === 'briefing' && (!user || user.clearance < 3)) {
-            triggerLogin(3, "The Strategic AI Briefing Generator is classified for Level 3+ Parliamentary Analysts & Executive Directors.");
-          }
           setActiveTab(tab);
         }}
         selectedHouse={selectedHouse}

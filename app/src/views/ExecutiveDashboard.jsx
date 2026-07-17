@@ -94,34 +94,59 @@ const ExecutiveDashboard = ({ summaryData, onSelectCategory, onNavigate }) => {
         </div>
       )}
 
-      {/* Page Header */}
-      <div className="flex justify-between items-end mb-4">
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="badge badge-primary">COMPOSITE METHODOLOGY</span>
-            <span className="text-label-sm" style={{ color: 'var(--on-surface-variant)' }}>LDS + SDS + TAS + StDS Multi-Metric Evaluation</span>
+      {/* Page Header - Academic Project Thesis Bar */}
+      <div className="card" style={{ backgroundColor: 'var(--surface-container-low)', border: '1px solid var(--outline-variant)', padding: '20px 24px', marginBottom: 20 }}>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-3">
+          <div>
+            <div className="flex items-center gap-2 mb-1.5">
+              <span className="badge" style={{ backgroundColor: 'var(--primary)', color: '#fff', fontSize: 11, fontWeight: 700, padding: '3px 8px', borderRadius: 4 }}>B.TECH FINAL YEAR MAJOR PROJECT</span>
+              <span className="text-label-sm" style={{ color: 'var(--on-surface-variant)', fontWeight: 600 }}>Domain: Natural Language Processing & Legislative Data Engineering</span>
+            </div>
+            <h2 className="text-headline-lg mb-1" style={{ fontWeight: 800, color: 'var(--on-surface)' }}>Parliamentary Discourse Polarization Tracker (PDPT)</h2>
+            <p className="text-body-md" style={{ color: 'var(--on-surface-variant)' }}>
+              Quantifying ideological divergence across 4 Lok Sabha terms (2009–Present) using automated OCR dehyphenation, TF-IDF lexical distance, and NetworkX graph ML.
+            </p>
           </div>
-          <h2 className="text-headline-lg mb-1" style={{ fontWeight: 800 }}>Parliamentary Intelligence Overview</h2>
-          <p className="text-body-md" style={{ color: 'var(--on-surface-variant)' }}>
-            Real-time legislative tracking, topic modeling, and multi-dimensional ideological divergence across party benches.
-          </p>
+          <div className="flex gap-2.5 shrink-0">
+            <button 
+              onClick={() => onNavigate('network')}
+              className="btn btn-secondary text-label-md flex items-center gap-1.5"
+              style={{ borderColor: 'var(--primary)', color: 'var(--primary)', fontWeight: 600 }}
+            >
+              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>hub</span>
+              View Graph ML Network
+            </button>
+            <button 
+              onClick={() => onNavigate('briefing')}
+              className="btn btn-primary text-label-md flex items-center gap-1.5"
+              style={{ fontWeight: 600 }}
+            >
+              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>summarize</span>
+              Export Project Report
+            </button>
+          </div>
         </div>
-        <div className="flex gap-3">
-          <button 
-            onClick={() => onNavigate('network')}
-            className="btn btn-secondary text-label-md flex items-center gap-1.5"
-            style={{ borderColor: 'var(--primary)', color: 'var(--primary)' }}
-          >
-            <span className="material-symbols-outlined" style={{ fontSize: 18 }}>hub</span>
-            Network & Heatmap Analysis
-          </button>
-          <button 
-            onClick={() => onNavigate('briefing')}
-            className="btn btn-primary text-label-md"
-          >
-            <span className="material-symbols-outlined" style={{ fontSize: 18 }}>download</span>
-            Export AI Intel
-          </button>
+
+        {/* System Architecture Flow Banner for Evaluators */}
+        <div style={{ backgroundColor: 'var(--surface-container-lowest)', padding: '12px 16px', borderRadius: 6, border: '1px dashed var(--outline-variant)', marginTop: 14 }}>
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="material-symbols-outlined" style={{ fontSize: 16, color: 'var(--primary)' }}>architecture</span>
+            <span style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--on-surface)' }}>System Pipeline Architecture (End-to-End Implementation)</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-2 text-label-sm" style={{ fontSize: 11, color: 'var(--on-surface-variant)' }}>
+            <div style={{ padding: '6px 10px', backgroundColor: 'var(--surface-container)', borderRadius: 4, borderLeft: '3px solid var(--primary)' }}>
+              <strong>1. Scraper & Parser:</strong> `prs_scraper.py` & `sansad_pdf_parser.py` pull real transcripts & MP Track data.
+            </div>
+            <div style={{ padding: '6px 10px', backgroundColor: 'var(--surface-container)', borderRadius: 4, borderLeft: '3px solid #0284c7' }}>
+              <strong>2. OCR Preprocessing:</strong> `cleaner.py` strips procedural noise & dehyphenates line breaks.
+            </div>
+            <div style={{ padding: '6px 10px', backgroundColor: 'var(--surface-container)', borderRadius: 4, borderLeft: '3px solid #9333ea' }}>
+              <strong>3. Multi-Dim Math:</strong> `polarization_engine.py` computes $PI = 0.25(LDS+SDS+TAS+StDS)$.
+            </div>
+            <div style={{ padding: '6px 10px', backgroundColor: 'var(--surface-container)', borderRadius: 4, borderLeft: '3px solid #16a34a' }}>
+              <strong>4. Graph ML Dashboard:</strong> React 19 + Recharts + NetworkX bipartite community detection.
+            </div>
+          </div>
         </div>
       </div>
 
