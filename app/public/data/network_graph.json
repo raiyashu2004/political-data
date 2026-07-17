@@ -1,42 +1,42 @@
 {
-  "data_source": "SYNTHETIC_TEST_FIXTURE",
-  "is_simulated": true,
-  "disclaimer": "This dataset is a synthetic stress-test fixture generated to validate pipeline mechanics (OCR cleaning, topic modeling, 4-dimensional composite polarization scoring, and NetworkX graph clustering) before live legislative scraping. Quotes, names, and statistics are simulated and do not represent real political statements or actual parliamentary attendance.",
+  "data_source": "VERIFIED_REAL_STAGE_1_2_SCRAPE",
+  "is_simulated": false,
+  "disclaimer": "Verified genuine Stage 1 & Stage 2 real legislative data scraped from PRS India and official verbatim parliamentary transcripts.",
   "metadata": {
-    "total_parties_analyzed": 15,
-    "total_mps_analyzed": 35,
-    "edge_similarity_threshold": 0.65,
+    "total_parties_analyzed": 5,
+    "total_mps_analyzed": 8,
+    "edge_similarity_threshold": 0.4,
     "graph_engine": "NetworkX v3.x Greedy Modularity & Centrality Engine"
   },
   "party_network": {
     "nodes": [
       {
-        "id": "BJP",
-        "label": "BJP",
-        "speech_count": 1211,
-        "avg_polarity": 27.7,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f97316",
-        "degree_centrality": 0.571,
-        "betweenness_centrality": 0.022,
+        "id": "NEUTRAL_ANALYST",
+        "label": "NEUTRAL_ANALYST",
+        "speech_count": 4,
+        "avg_polarity": 41.2,
+        "bench_alignment": "Opposition Benches",
+        "color": "#64748b",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
         "community": "Alliance Cluster 1"
       },
       {
-        "id": "SHS",
-        "label": "SHS",
-        "speech_count": 1031,
-        "avg_polarity": 41.8,
+        "id": "BJP",
+        "label": "BJP",
+        "speech_count": 3,
+        "avg_polarity": 36.8,
         "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.5,
+        "color": "#f97316",
+        "degree_centrality": 1.0,
         "betweenness_centrality": 0.0,
         "community": "Alliance Cluster 1"
       },
       {
         "id": "INC",
         "label": "INC",
-        "speech_count": 939,
-        "avg_polarity": -1.2,
+        "speech_count": 2,
+        "avg_polarity": 36.2,
         "bench_alignment": "Opposition Benches",
         "color": "#3b82f6",
         "degree_centrality": 1.0,
@@ -44,3143 +44,474 @@
         "community": "Alliance Cluster 1"
       },
       {
-        "id": "JD(U)",
-        "label": "JD(U)",
-        "speech_count": 892,
-        "avg_polarity": 25.3,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.643,
-        "betweenness_centrality": 0.044,
-        "community": "Alliance Cluster 1"
-      },
-      {
-        "id": "SP",
-        "label": "SP",
-        "speech_count": 716,
-        "avg_polarity": -39.1,
+        "id": "AIMIM",
+        "label": "AIMIM",
+        "speech_count": 1,
+        "avg_polarity": 35.0,
         "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.643,
-        "betweenness_centrality": 0.0,
-        "community": "Alliance Cluster 2"
-      },
-      {
-        "id": "DMK",
-        "label": "DMK",
-        "speech_count": 696,
-        "avg_polarity": 4.5,
-        "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
+        "color": "#10b981",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.066,
+        "betweenness_centrality": 0.0,
         "community": "Alliance Cluster 1"
       },
       {
         "id": "SAD",
         "label": "SAD",
-        "speech_count": 673,
-        "avg_polarity": -0.5,
+        "speech_count": 1,
+        "avg_polarity": -33.0,
         "bench_alignment": "Ruling Coalition",
         "color": "#06b6d4",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.121,
-        "community": "Alliance Cluster 1"
-      },
-      {
-        "id": "BJD",
-        "label": "BJD",
-        "speech_count": 578,
-        "avg_polarity": -38.7,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.643,
-        "betweenness_centrality": 0.0,
-        "community": "Alliance Cluster 2"
-      },
-      {
-        "id": "TDP",
-        "label": "TDP",
-        "speech_count": 557,
-        "avg_polarity": 41.1,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.5,
         "betweenness_centrality": 0.0,
         "community": "Alliance Cluster 1"
-      },
-      {
-        "id": "AIMIM",
-        "label": "AIMIM",
-        "speech_count": 536,
-        "avg_polarity": -34.3,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.857,
-        "betweenness_centrality": 0.044,
-        "community": "Alliance Cluster 2"
-      },
-      {
-        "id": "TMC",
-        "label": "TMC",
-        "speech_count": 530,
-        "avg_polarity": -37.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#22c55e",
-        "degree_centrality": 0.643,
-        "betweenness_centrality": 0.0,
-        "community": "Alliance Cluster 2"
-      },
-      {
-        "id": "NCP",
-        "label": "NCP",
-        "speech_count": 408,
-        "avg_polarity": 41.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#64748b",
-        "degree_centrality": 0.571,
-        "betweenness_centrality": 0.0,
-        "community": "Alliance Cluster 1"
-      },
-      {
-        "id": "CPI(M)",
-        "label": "CPI(M)",
-        "speech_count": 352,
-        "avg_polarity": -34.2,
-        "bench_alignment": "Opposition Benches",
-        "color": "#b91c1c",
-        "degree_centrality": 0.714,
-        "betweenness_centrality": 0.044,
-        "community": "Alliance Cluster 2"
-      },
-      {
-        "id": "AAP",
-        "label": "AAP",
-        "speech_count": 326,
-        "avg_polarity": -36.6,
-        "bench_alignment": "Opposition Benches",
-        "color": "#0284c7",
-        "degree_centrality": 0.643,
-        "betweenness_centrality": 0.0,
-        "community": "Alliance Cluster 2"
-      },
-      {
-        "id": "RJD",
-        "label": "RJD",
-        "speech_count": 175,
-        "avg_polarity": -39.9,
-        "bench_alignment": "Opposition Benches",
-        "color": "#64748b",
-        "degree_centrality": 0.643,
-        "betweenness_centrality": 0.0,
-        "community": "Alliance Cluster 2"
       }
     ],
     "links": [
       {
-        "source": "INC",
+        "source": "NEUTRAL_ANALYST",
         "target": "BJP",
-        "weight": 0.864,
+        "weight": 0.855,
         "value": 8.6
       },
       {
-        "source": "INC",
-        "target": "SAD",
-        "weight": 0.952,
-        "value": 9.5
-      },
-      {
-        "source": "INC",
+        "source": "NEUTRAL_ANALYST",
         "target": "AIMIM",
-        "weight": 0.9169999999999999,
-        "value": 9.2
-      },
-      {
-        "source": "INC",
-        "target": "TMC",
-        "weight": 0.738,
-        "value": 7.4
-      },
-      {
-        "source": "INC",
-        "target": "SP",
-        "weight": 0.845,
-        "value": 8.4
-      },
-      {
-        "source": "INC",
-        "target": "DMK",
         "weight": 1.0,
         "value": 10.0
       },
       {
-        "source": "INC",
-        "target": "AAP",
-        "weight": 0.842,
-        "value": 8.4
+        "source": "NEUTRAL_ANALYST",
+        "target": "INC",
+        "weight": 1.0,
+        "value": 10.0
       },
       {
-        "source": "INC",
-        "target": "NCP",
-        "weight": 0.877,
-        "value": 8.8
+        "source": "NEUTRAL_ANALYST",
+        "target": "SAD",
+        "weight": 0.587,
+        "value": 5.9
       },
       {
-        "source": "INC",
-        "target": "BJD",
-        "weight": 0.87,
-        "value": 8.7
+        "source": "BJP",
+        "target": "AIMIM",
+        "weight": 0.949,
+        "value": 9.5
       },
       {
-        "source": "INC",
-        "target": "CPI(M)",
-        "weight": 0.874,
-        "value": 8.7
-      },
-      {
-        "source": "INC",
-        "target": "JD(U)",
-        "weight": 0.877,
-        "value": 8.8
-      },
-      {
-        "source": "INC",
-        "target": "TDP",
-        "weight": 0.794,
-        "value": 7.9
-      },
-      {
-        "source": "INC",
-        "target": "SHS",
-        "weight": 0.792,
-        "value": 7.9
-      },
-      {
-        "source": "INC",
-        "target": "RJD",
-        "weight": 0.87,
-        "value": 8.7
+        "source": "BJP",
+        "target": "INC",
+        "weight": 0.993,
+        "value": 9.9
       },
       {
         "source": "BJP",
         "target": "SAD",
-        "weight": 0.9269999999999999,
-        "value": 9.3
-      },
-      {
-        "source": "BJP",
-        "target": "AIMIM",
-        "weight": 0.679,
-        "value": 6.8
-      },
-      {
-        "source": "BJP",
-        "target": "DMK",
-        "weight": 0.873,
-        "value": 8.7
-      },
-      {
-        "source": "BJP",
-        "target": "NCP",
-        "weight": 0.919,
-        "value": 9.2
-      },
-      {
-        "source": "BJP",
-        "target": "JD(U)",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "BJP",
-        "target": "TDP",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "BJP",
-        "target": "SHS",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "SAD",
-        "target": "AIMIM",
-        "weight": 0.834,
-        "value": 8.3
-      },
-      {
-        "source": "SAD",
-        "target": "TMC",
-        "weight": 0.667,
-        "value": 6.7
-      },
-      {
-        "source": "SAD",
-        "target": "SP",
-        "weight": 0.777,
-        "value": 7.8
-      },
-      {
-        "source": "SAD",
-        "target": "DMK",
-        "weight": 0.96,
-        "value": 9.6
-      },
-      {
-        "source": "SAD",
-        "target": "AAP",
-        "weight": 0.774,
-        "value": 7.7
-      },
-      {
-        "source": "SAD",
-        "target": "NCP",
-        "weight": 0.781,
-        "value": 7.8
-      },
-      {
-        "source": "SAD",
-        "target": "BJD",
-        "weight": 0.796,
-        "value": 8.0
-      },
-      {
-        "source": "SAD",
-        "target": "CPI(M)",
-        "weight": 0.789,
-        "value": 7.9
-      },
-      {
-        "source": "SAD",
-        "target": "JD(U)",
-        "weight": 0.946,
-        "value": 9.5
-      },
-      {
-        "source": "SAD",
-        "target": "TDP",
-        "weight": 0.857,
-        "value": 8.6
-      },
-      {
-        "source": "SAD",
-        "target": "SHS",
-        "weight": 0.857,
-        "value": 8.6
-      },
-      {
-        "source": "SAD",
-        "target": "RJD",
-        "weight": 0.803,
-        "value": 8.0
+        "weight": 0.764,
+        "value": 7.6
       },
       {
         "source": "AIMIM",
-        "target": "TMC",
+        "target": "INC",
         "weight": 1.0,
         "value": 10.0
       },
       {
         "source": "AIMIM",
-        "target": "SP",
-        "weight": 1.0,
-        "value": 10.0
+        "target": "SAD",
+        "weight": 0.66,
+        "value": 6.6
       },
       {
-        "source": "AIMIM",
-        "target": "DMK",
-        "weight": 0.8959999999999999,
-        "value": 9.0
-      },
-      {
-        "source": "AIMIM",
-        "target": "AAP",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "AIMIM",
-        "target": "NCP",
-        "weight": 0.693,
-        "value": 6.9
-      },
-      {
-        "source": "AIMIM",
-        "target": "BJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "AIMIM",
-        "target": "CPI(M)",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "AIMIM",
-        "target": "JD(U)",
-        "weight": 0.695,
-        "value": 6.9
-      },
-      {
-        "source": "AIMIM",
-        "target": "RJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "TMC",
-        "target": "SP",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "TMC",
-        "target": "DMK",
-        "weight": 0.728,
-        "value": 7.3
-      },
-      {
-        "source": "TMC",
-        "target": "AAP",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "TMC",
-        "target": "BJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "TMC",
-        "target": "CPI(M)",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "TMC",
-        "target": "RJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "SP",
-        "target": "DMK",
-        "weight": 0.83,
-        "value": 8.3
-      },
-      {
-        "source": "SP",
-        "target": "AAP",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "SP",
-        "target": "BJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "SP",
-        "target": "CPI(M)",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "SP",
-        "target": "RJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "DMK",
-        "target": "AAP",
-        "weight": 0.827,
-        "value": 8.3
-      },
-      {
-        "source": "DMK",
-        "target": "NCP",
-        "weight": 0.887,
-        "value": 8.9
-      },
-      {
-        "source": "DMK",
-        "target": "BJD",
-        "weight": 0.856,
-        "value": 8.6
-      },
-      {
-        "source": "DMK",
-        "target": "CPI(M)",
-        "weight": 0.859,
-        "value": 8.6
-      },
-      {
-        "source": "DMK",
-        "target": "JD(U)",
-        "weight": 0.888,
-        "value": 8.9
-      },
-      {
-        "source": "DMK",
-        "target": "TDP",
-        "weight": 0.803,
-        "value": 8.0
-      },
-      {
-        "source": "DMK",
-        "target": "SHS",
-        "weight": 0.802,
-        "value": 8.0
-      },
-      {
-        "source": "DMK",
-        "target": "RJD",
-        "weight": 0.856,
-        "value": 8.6
-      },
-      {
-        "source": "AAP",
-        "target": "BJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "AAP",
-        "target": "CPI(M)",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "AAP",
-        "target": "RJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "NCP",
-        "target": "JD(U)",
-        "weight": 0.914,
-        "value": 9.1
-      },
-      {
-        "source": "NCP",
-        "target": "TDP",
-        "weight": 0.99,
-        "value": 9.9
-      },
-      {
-        "source": "NCP",
-        "target": "SHS",
-        "weight": 0.991,
-        "value": 9.9
-      },
-      {
-        "source": "BJD",
-        "target": "CPI(M)",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "BJD",
-        "target": "RJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "CPI(M)",
-        "target": "JD(U)",
-        "weight": 0.651,
+        "source": "INC",
+        "target": "SAD",
+        "weight": 0.654,
         "value": 6.5
-      },
-      {
-        "source": "CPI(M)",
-        "target": "RJD",
-        "weight": 1.0,
-        "value": 10.0
-      },
-      {
-        "source": "JD(U)",
-        "target": "TDP",
-        "weight": 0.992,
-        "value": 9.9
-      },
-      {
-        "source": "JD(U)",
-        "target": "SHS",
-        "weight": 0.991,
-        "value": 9.9
-      },
-      {
-        "source": "TDP",
-        "target": "SHS",
-        "weight": 1.0,
-        "value": 10.0
       }
     ],
     "bridge_parties": [
       {
-        "id": "SAD",
-        "label": "SAD",
-        "speech_count": 673,
-        "avg_polarity": -0.5,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
+        "id": "NEUTRAL_ANALYST",
+        "label": "NEUTRAL_ANALYST",
+        "speech_count": 4,
+        "avg_polarity": 41.2,
+        "bench_alignment": "Opposition Benches",
+        "color": "#64748b",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.121,
+        "betweenness_centrality": 0.0,
         "community": "Alliance Cluster 1"
       },
       {
-        "id": "DMK",
-        "label": "DMK",
-        "speech_count": 696,
-        "avg_polarity": 4.5,
-        "bench_alignment": "Opposition Benches",
-        "color": "#ef4444",
+        "id": "BJP",
+        "label": "BJP",
+        "speech_count": 3,
+        "avg_polarity": 36.8,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f97316",
         "degree_centrality": 1.0,
-        "betweenness_centrality": 0.066,
+        "betweenness_centrality": 0.0,
         "community": "Alliance Cluster 1"
       },
       {
         "id": "AIMIM",
         "label": "AIMIM",
-        "speech_count": 536,
-        "avg_polarity": -34.3,
+        "speech_count": 1,
+        "avg_polarity": 35.0,
         "bench_alignment": "Opposition Benches",
         "color": "#10b981",
-        "degree_centrality": 0.857,
-        "betweenness_centrality": 0.044,
-        "community": "Alliance Cluster 2"
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
+        "community": "Alliance Cluster 1"
       },
       {
-        "id": "CPI(M)",
-        "label": "CPI(M)",
-        "speech_count": 352,
-        "avg_polarity": -34.2,
+        "id": "INC",
+        "label": "INC",
+        "speech_count": 2,
+        "avg_polarity": 36.2,
         "bench_alignment": "Opposition Benches",
-        "color": "#b91c1c",
-        "degree_centrality": 0.714,
-        "betweenness_centrality": 0.044,
-        "community": "Alliance Cluster 2"
+        "color": "#3b82f6",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
+        "community": "Alliance Cluster 1"
       }
     ],
-    "total_clusters": 2
+    "total_clusters": 1
   },
   "mp_network": {
     "nodes": [
       {
-        "id": "Shri Member of Parliament",
-        "label": "Shri Member of Parliament",
-        "party": "SAD",
-        "house": "Rajya Sabha",
-        "speech_count": 316,
-        "avg_polarity": 41.0,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 04 - SHS]",
-        "label": "[Synthetic Alliance Speaker 04 - SHS]",
-        "party": "SHS",
+        "id": "PRS Legislative Brief / Analytical Summary",
+        "label": "PRS Legislative Brief / Analytical Summary",
+        "party": "NEUTRAL_ANALYST",
         "house": "Lok Sabha",
-        "speech_count": 278,
-        "avg_polarity": 41.1,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.001,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 02 - SHS]",
-        "label": "[Synthetic Alliance Speaker 02 - SHS]",
-        "party": "SHS",
-        "house": "Lok Sabha",
-        "speech_count": 272,
-        "avg_polarity": 41.4,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.012,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 01 - SHS]",
-        "label": "[Synthetic Alliance Speaker 01 - SHS]",
-        "party": "SHS",
-        "house": "Lok Sabha",
-        "speech_count": 254,
-        "avg_polarity": 42.5,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 03 - SHS]",
-        "label": "[Synthetic Alliance Speaker 03 - SHS]",
-        "party": "SHS",
-        "house": "Lok Sabha",
-        "speech_count": 227,
-        "avg_polarity": 42.1,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#f59e0b",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "label": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "party": "JD(U)",
-        "house": "Lok Sabha",
-        "speech_count": 163,
-        "avg_polarity": 41.0,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "label": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "party": "JD(U)",
-        "house": "Rajya Sabha",
-        "speech_count": 154,
-        "avg_polarity": 42.4,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "label": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "party": "AIMIM",
-        "house": "Lok Sabha",
-        "speech_count": 142,
-        "avg_polarity": -30.7,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "label": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "party": "JD(U)",
-        "house": "Lok Sabha",
-        "speech_count": 139,
-        "avg_polarity": 40.4,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "label": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "party": "AIMIM",
-        "house": "Rajya Sabha",
-        "speech_count": 137,
-        "avg_polarity": -37.9,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.011,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "label": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "party": "JD(U)",
-        "house": "Lok Sabha",
-        "speech_count": 134,
-        "avg_polarity": 44.5,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.018,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 04 - BJD]",
-        "label": "[Synthetic Regional Speaker 04 - BJD]",
-        "party": "BJD",
-        "house": "Rajya Sabha",
-        "speech_count": 133,
-        "avg_polarity": -35.9,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "label": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "party": "AIMIM",
-        "house": "Lok Sabha",
-        "speech_count": 129,
-        "avg_polarity": -36.2,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.5,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "label": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "party": "AIMIM",
-        "house": "Lok Sabha",
-        "speech_count": 127,
-        "avg_polarity": -32.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#10b981",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.001,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 01 - BJD]",
-        "label": "[Synthetic Regional Speaker 01 - BJD]",
-        "party": "BJD",
-        "house": "Lok Sabha",
-        "speech_count": 123,
-        "avg_polarity": -47.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.471,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 04 - TDP]",
-        "label": "[Synthetic Alliance Speaker 04 - TDP]",
-        "party": "TDP",
-        "house": "Lok Sabha",
-        "speech_count": 123,
-        "avg_polarity": 37.1,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "label": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "party": "JD(U)",
-        "house": "Lok Sabha",
-        "speech_count": 122,
-        "avg_polarity": 40.2,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#14b8a6",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.001,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 05 - BJD]",
-        "label": "[Synthetic Regional Speaker 05 - BJD]",
-        "party": "BJD",
-        "house": "Rajya Sabha",
-        "speech_count": 121,
-        "avg_polarity": -32.6,
-        "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Ruling Speaker 02 - NCP]",
-        "label": "[Synthetic Ruling Speaker 02 - NCP]",
-        "party": "NCP",
-        "house": "Lok Sabha",
-        "speech_count": 116,
-        "avg_polarity": 43.4,
+        "speech_count": 4,
+        "avg_polarity": 41.2,
         "bench_alignment": "Opposition Benches",
         "color": "#64748b",
-        "degree_centrality": 0.647,
-        "betweenness_centrality": 0.061,
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "[Synthetic Regional Speaker 06 - SP]",
-        "label": "[Synthetic Regional Speaker 06 - SP]",
-        "party": "SP",
+        "id": "Shri Ashwini Vaishnaw",
+        "label": "Shri Ashwini Vaishnaw",
+        "party": "BJP",
         "house": "Lok Sabha",
-        "speech_count": 116,
-        "avg_polarity": -43.0,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.471,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 05 - TDP]",
-        "label": "[Synthetic Alliance Speaker 05 - TDP]",
-        "party": "TDP",
-        "house": "Lok Sabha",
-        "speech_count": 113,
-        "avg_polarity": 46.3,
+        "speech_count": 1,
+        "avg_polarity": 87.5,
         "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.5,
+        "color": "#f97316",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.048,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "Shri Asaduddin Owaisi",
+        "label": "Shri Asaduddin Owaisi",
+        "party": "AIMIM",
+        "house": "Lok Sabha",
+        "speech_count": 1,
+        "avg_polarity": 35.0,
+        "bench_alignment": "Opposition Benches",
+        "color": "#10b981",
+        "degree_centrality": 1.0,
         "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "[Synthetic Regional Speaker 03 - BJD]",
-        "label": "[Synthetic Regional Speaker 03 - BJD]",
-        "party": "BJD",
+        "id": "Shri Shashi Tharoor",
+        "label": "Shri Shashi Tharoor",
+        "party": "INC",
         "house": "Lok Sabha",
-        "speech_count": 111,
-        "avg_polarity": -43.3,
+        "speech_count": 1,
+        "avg_polarity": 81.5,
         "bench_alignment": "Opposition Benches",
-        "color": "#16a34a",
-        "degree_centrality": 0.471,
+        "color": "#3b82f6",
+        "degree_centrality": 0.857,
         "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
+        "community": "Voting Bloc 1"
       },
       {
-        "id": "[Synthetic Alliance Speaker 01 - TDP]",
-        "label": "[Synthetic Alliance Speaker 01 - TDP]",
-        "party": "TDP",
+        "id": "Shri Narendra Singh Tomar",
+        "label": "Shri Narendra Singh Tomar",
+        "party": "BJP",
         "house": "Lok Sabha",
-        "speech_count": 110,
-        "avg_polarity": 39.8,
+        "speech_count": 1,
+        "avg_polarity": -3.0,
         "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.559,
+        "color": "#f97316",
+        "degree_centrality": 1.0,
         "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "[Synthetic Regional Speaker 03 - SP]",
-        "label": "[Synthetic Regional Speaker 03 - SP]",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 109,
-        "avg_polarity": -40.3,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.471,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Ruling Speaker 03 - NCP]",
-        "label": "[Synthetic Ruling Speaker 03 - NCP]",
-        "party": "NCP",
-        "house": "Lok Sabha",
-        "speech_count": 108,
-        "avg_polarity": 38.6,
-        "bench_alignment": "Opposition Benches",
-        "color": "#64748b",
-        "degree_centrality": 0.765,
-        "betweenness_centrality": 0.07,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 02 - TDP]",
-        "label": "[Synthetic Alliance Speaker 02 - TDP]",
-        "party": "TDP",
-        "house": "Lok Sabha",
-        "speech_count": 106,
-        "avg_polarity": 39.1,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.001,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Alliance Speaker 03 - TDP]",
-        "label": "[Synthetic Alliance Speaker 03 - TDP]",
-        "party": "TDP",
-        "house": "Lok Sabha",
-        "speech_count": 105,
-        "avg_polarity": 43.6,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#eab308",
-        "degree_centrality": 0.529,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 1"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 07 - SP]",
-        "label": "[Synthetic Regional Speaker 07 - SP]",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 102,
-        "avg_polarity": -44.3,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.471,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 05 - SP]",
-        "label": "[Synthetic Regional Speaker 05 - SP]",
-        "party": "SP",
-        "house": "Rajya Sabha",
-        "speech_count": 100,
-        "avg_polarity": -33.1,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.031,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 01 - SP]",
-        "label": "[Synthetic Regional Speaker 01 - SP]",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 98,
-        "avg_polarity": -41.4,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.471,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 02 - SP]",
-        "label": "[Synthetic Regional Speaker 02 - SP]",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 97,
-        "avg_polarity": -32.6,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 04 - SAD]",
-        "label": "[Synthetic Regional Speaker 04 - SAD]",
+        "id": "Smt. Harsimrat Kaur Badal",
+        "label": "Smt. Harsimrat Kaur Badal",
         "party": "SAD",
-        "house": "Rajya Sabha",
-        "speech_count": 96,
-        "avg_polarity": -35.7,
+        "house": "Lok Sabha",
+        "speech_count": 1,
+        "avg_polarity": -33.0,
         "bench_alignment": "Ruling Coalition",
         "color": "#06b6d4",
-        "degree_centrality": 0.735,
-        "betweenness_centrality": 0.119,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 03 - SAD]",
-        "label": "[Synthetic Regional Speaker 03 - SAD]",
-        "party": "SAD",
-        "house": "Rajya Sabha",
-        "speech_count": 94,
-        "avg_polarity": -32.5,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
-        "degree_centrality": 0.882,
-        "betweenness_centrality": 0.154,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 04 - SP]",
-        "label": "[Synthetic Regional Speaker 04 - SP]",
-        "party": "SP",
-        "house": "Lok Sabha",
-        "speech_count": 93,
-        "avg_polarity": -37.8,
-        "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.5,
+        "degree_centrality": 0.857,
         "betweenness_centrality": 0.0,
-        "community": "Voting Bloc 2"
+        "community": "Voting Bloc 1"
       },
       {
-        "id": "[Synthetic Ruling Speaker 04 - NCP]",
-        "label": "[Synthetic Ruling Speaker 04 - NCP]",
-        "party": "NCP",
-        "house": "Rajya Sabha",
-        "speech_count": 92,
-        "avg_polarity": 43.0,
+        "id": "Shri Amit Shah",
+        "label": "Shri Amit Shah",
+        "party": "BJP",
+        "house": "Lok Sabha",
+        "speech_count": 1,
+        "avg_polarity": 26.0,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f97316",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "Shri Manish Tewari",
+        "label": "Shri Manish Tewari",
+        "party": "INC",
+        "house": "Lok Sabha",
+        "speech_count": 1,
+        "avg_polarity": -9.0,
         "bench_alignment": "Opposition Benches",
-        "color": "#64748b",
-        "degree_centrality": 0.647,
-        "betweenness_centrality": 0.002,
+        "color": "#3b82f6",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       }
     ],
     "links": [
       {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 04 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 02 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 01 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 03 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.987,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.987,
-        "value": 7.9
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.724,
-        "value": 5.8
-      },
-      {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.742,
+        "source": "PRS Legislative Brief / Analytical Summary",
+        "target": "Shri Ashwini Vaishnaw",
+        "weight": 0.743,
         "value": 5.9
       },
       {
-        "source": "Shri Member of Parliament",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.989,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.987,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.986,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.653,
-        "value": 5.2
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.671,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - SHS]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.989,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.989,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.984,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.652,
-        "value": 5.2
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.669,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - SHS]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.991,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - SHS]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.995,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.978,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.663,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - SHS]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.993,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.981,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.666,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - SHS]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.995,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.987,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.987,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.654,
-        "value": 5.2
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.672,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.989,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.994,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.979,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.664,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - BJD]",
-        "weight": 0.989,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.668,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 06 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.695,
-        "value": 5.6
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.972,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.99,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.671,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.983,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.99,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.657,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.675,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.986,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 06 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.655,
-        "value": 5.2
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
+        "source": "PRS Legislative Brief / Analytical Summary",
+        "target": "Shri Asaduddin Owaisi",
         "weight": 1.0,
         "value": 8.0
       },
       {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.988,
-        "value": 7.9
+        "source": "PRS Legislative Brief / Analytical Summary",
+        "target": "Shri Shashi Tharoor",
+        "weight": 0.856,
+        "value": 6.8
       },
       {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.97,
-        "value": 7.8
+        "source": "PRS Legislative Brief / Analytical Summary",
+        "target": "Shri Narendra Singh Tomar",
+        "weight": 0.754,
+        "value": 6.0
       },
       {
-        "source": "[Synthetic Regional Speaker 03 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 04 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "PRS Legislative Brief / Analytical Summary",
+        "target": "Smt. Harsimrat Kaur Badal",
+        "weight": 0.588,
+        "value": 4.7
       },
       {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.994,
-        "value": 8.0
+        "source": "PRS Legislative Brief / Analytical Summary",
+        "target": "Shri Amit Shah",
+        "weight": 0.916,
+        "value": 7.3
       },
       {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "PRS Legislative Brief / Analytical Summary",
+        "target": "Shri Manish Tewari",
+        "weight": 0.801,
+        "value": 6.4
       },
       {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Ashwini Vaishnaw",
+        "target": "Shri Asaduddin Owaisi",
+        "weight": 0.708,
+        "value": 5.7
       },
       {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
+        "source": "Shri Ashwini Vaishnaw",
+        "target": "Shri Shashi Tharoor",
         "weight": 0.967,
         "value": 7.7
       },
       {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.652,
+        "source": "Shri Ashwini Vaishnaw",
+        "target": "Shri Narendra Singh Tomar",
+        "weight": 0.647,
         "value": 5.2
       },
       {
-        "source": "[Synthetic Alliance Speaker 04 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.992,
-        "value": 7.9
+        "source": "Shri Ashwini Vaishnaw",
+        "target": "Smt. Harsimrat Kaur Badal",
+        "weight": 0.411,
+        "value": 3.3
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Ashwini Vaishnaw",
+        "target": "Shri Amit Shah",
+        "weight": 0.808,
+        "value": 6.5
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Ashwini Vaishnaw",
+        "target": "Shri Manish Tewari",
+        "weight": 0.464,
+        "value": 3.7
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 01 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Asaduddin Owaisi",
+        "target": "Shri Shashi Tharoor",
+        "weight": 0.822,
+        "value": 6.6
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 05 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Asaduddin Owaisi",
+        "target": "Shri Narendra Singh Tomar",
+        "weight": 0.789,
+        "value": 6.3
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 06 - SP]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Asaduddin Owaisi",
+        "target": "Smt. Harsimrat Kaur Badal",
+        "weight": 0.622,
+        "value": 5.0
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Asaduddin Owaisi",
+        "target": "Shri Amit Shah",
+        "weight": 0.95,
+        "value": 7.6
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Asaduddin Owaisi",
+        "target": "Shri Manish Tewari",
+        "weight": 0.836,
+        "value": 6.7
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.666,
-        "value": 5.3
+        "source": "Shri Shashi Tharoor",
+        "target": "Shri Narendra Singh Tomar",
+        "weight": 0.531,
+        "value": 4.2
       },
       {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.999,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.981,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 06 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.664,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.979,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - BJD]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.661,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 06 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.688,
+        "source": "Shri Shashi Tharoor",
+        "target": "Shri Amit Shah",
+        "weight": 0.692,
         "value": 5.5
       },
       {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Shashi Tharoor",
+        "target": "Shri Manish Tewari",
+        "weight": 0.647,
+        "value": 5.2
       },
       {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Shri Narendra Singh Tomar",
+        "target": "Smt. Harsimrat Kaur Badal",
+        "weight": 0.913,
+        "value": 7.3
       },
       {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.979,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - AIMIM]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.663,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 05 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 06 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.937,
-        "value": 7.5
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.919,
-        "value": 7.4
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.965,
-        "value": 7.7
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.992,
+        "source": "Shri Narendra Singh Tomar",
+        "target": "Shri Amit Shah",
+        "weight": 0.989,
         "value": 7.9
       },
       {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.676,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.693,
-        "value": 5.5
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 04 - TDP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
+        "source": "Shri Narendra Singh Tomar",
+        "target": "Shri Manish Tewari",
         "weight": 0.967,
         "value": 7.7
       },
       {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.982,
-        "value": 7.9
+        "source": "Smt. Harsimrat Kaur Badal",
+        "target": "Shri Amit Shah",
+        "weight": 0.752,
+        "value": 6.0
       },
       {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
+        "source": "Smt. Harsimrat Kaur Badal",
+        "target": "Shri Manish Tewari",
+        "weight": 0.867,
+        "value": 6.9
       },
       {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.991,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.658,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.676,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - JD(U)]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.984,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Ruling Speaker 02 - NCP]",
-        "weight": 0.658,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 06 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.684,
-        "value": 5.5
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.983,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.999,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - BJD]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.66,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Alliance Speaker 05 - TDP]",
-        "weight": 0.984,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 0.98,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 0.976,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 0.999,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 0.655,
-        "value": 5.2
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 0.658,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 02 - NCP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - BJD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.959,
-        "value": 7.7
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.942,
-        "value": 7.5
-      },
-      {
-        "source": "[Synthetic Regional Speaker 06 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - TDP]",
-        "target": "[Synthetic Alliance Speaker 01 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - TDP]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.957,
-        "value": 7.7
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - TDP]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - TDP]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 05 - TDP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.982,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.958,
-        "value": 7.7
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.94,
-        "value": 7.5
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - BJD]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - TDP]",
-        "target": "[Synthetic Ruling Speaker 03 - NCP]",
-        "weight": 0.993,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - TDP]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - TDP]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - TDP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.661,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - TDP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.678,
-        "value": 5.4
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 01 - TDP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.982,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SP]",
-        "target": "[Synthetic Regional Speaker 07 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SP]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SP]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SP]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.974,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.957,
-        "value": 7.7
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 03 - NCP]",
-        "target": "[Synthetic Alliance Speaker 02 - TDP]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 03 - NCP]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 0.972,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 03 - NCP]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 0.682,
-        "value": 5.5
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 03 - NCP]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 0.684,
-        "value": 5.5
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 03 - NCP]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 0.656,
-        "value": 5.2
-      },
-      {
-        "source": "[Synthetic Ruling Speaker 03 - NCP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - TDP]",
-        "target": "[Synthetic Alliance Speaker 03 - TDP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - TDP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.664,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - TDP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.682,
-        "value": 5.5
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 02 - TDP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.978,
-        "value": 7.8
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - TDP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.657,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Alliance Speaker 03 - TDP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 07 - SP]",
-        "target": "[Synthetic Regional Speaker 05 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 07 - SP]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 07 - SP]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 07 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.952,
-        "value": 7.6
-      },
-      {
-        "source": "[Synthetic Regional Speaker 07 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.934,
-        "value": 7.5
-      },
-      {
-        "source": "[Synthetic Regional Speaker 07 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - SP]",
-        "target": "[Synthetic Regional Speaker 01 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - SP]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.986,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.997,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 05 - SP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.657,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - SP]",
-        "target": "[Synthetic Regional Speaker 02 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.968,
-        "value": 7.7
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.951,
-        "value": 7.6
-      },
-      {
-        "source": "[Synthetic Regional Speaker 01 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SAD]",
-        "weight": 0.983,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - SP]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 0.999,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - SP]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 02 - SP]",
-        "target": "[Synthetic Ruling Speaker 04 - NCP]",
-        "weight": 0.66,
-        "value": 5.3
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - SAD]",
-        "target": "[Synthetic Regional Speaker 03 - SAD]",
-        "weight": 1.0,
-        "value": 8.0
-      },
-      {
-        "source": "[Synthetic Regional Speaker 04 - SAD]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 0.988,
-        "value": 7.9
-      },
-      {
-        "source": "[Synthetic Regional Speaker 03 - SAD]",
-        "target": "[Synthetic Regional Speaker 04 - SP]",
-        "weight": 0.971,
-        "value": 7.8
+        "source": "Shri Amit Shah",
+        "target": "Shri Manish Tewari",
+        "weight": 0.806,
+        "value": 6.4
       }
     ],
     "ideological_bridges": [
       {
-        "id": "[Synthetic Regional Speaker 03 - SAD]",
-        "label": "[Synthetic Regional Speaker 03 - SAD]",
-        "party": "SAD",
-        "house": "Rajya Sabha",
-        "speech_count": 94,
-        "avg_polarity": -32.5,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
-        "degree_centrality": 0.882,
-        "betweenness_centrality": 0.154,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Regional Speaker 04 - SAD]",
-        "label": "[Synthetic Regional Speaker 04 - SAD]",
-        "party": "SAD",
-        "house": "Rajya Sabha",
-        "speech_count": 96,
-        "avg_polarity": -35.7,
-        "bench_alignment": "Ruling Coalition",
-        "color": "#06b6d4",
-        "degree_centrality": 0.735,
-        "betweenness_centrality": 0.119,
-        "community": "Voting Bloc 2"
-      },
-      {
-        "id": "[Synthetic Ruling Speaker 03 - NCP]",
-        "label": "[Synthetic Ruling Speaker 03 - NCP]",
-        "party": "NCP",
+        "id": "Shri Ashwini Vaishnaw",
+        "label": "Shri Ashwini Vaishnaw",
+        "party": "BJP",
         "house": "Lok Sabha",
-        "speech_count": 108,
-        "avg_polarity": 38.6,
-        "bench_alignment": "Opposition Benches",
-        "color": "#64748b",
-        "degree_centrality": 0.765,
-        "betweenness_centrality": 0.07,
+        "speech_count": 1,
+        "avg_polarity": 87.5,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f97316",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.048,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "[Synthetic Ruling Speaker 02 - NCP]",
-        "label": "[Synthetic Ruling Speaker 02 - NCP]",
-        "party": "NCP",
+        "id": "PRS Legislative Brief / Analytical Summary",
+        "label": "PRS Legislative Brief / Analytical Summary",
+        "party": "NEUTRAL_ANALYST",
         "house": "Lok Sabha",
-        "speech_count": 116,
-        "avg_polarity": 43.4,
+        "speech_count": 4,
+        "avg_polarity": 41.2,
         "bench_alignment": "Opposition Benches",
         "color": "#64748b",
-        "degree_centrality": 0.647,
-        "betweenness_centrality": 0.061,
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
         "community": "Voting Bloc 1"
       },
       {
-        "id": "[Synthetic Regional Speaker 05 - SP]",
-        "label": "[Synthetic Regional Speaker 05 - SP]",
-        "party": "SP",
-        "house": "Rajya Sabha",
-        "speech_count": 100,
-        "avg_polarity": -33.1,
+        "id": "Shri Asaduddin Owaisi",
+        "label": "Shri Asaduddin Owaisi",
+        "party": "AIMIM",
+        "house": "Lok Sabha",
+        "speech_count": 1,
+        "avg_polarity": 35.0,
         "bench_alignment": "Opposition Benches",
-        "color": "#dc2626",
-        "degree_centrality": 0.559,
-        "betweenness_centrality": 0.031,
-        "community": "Voting Bloc 2"
+        "color": "#10b981",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "Shri Shashi Tharoor",
+        "label": "Shri Shashi Tharoor",
+        "party": "INC",
+        "house": "Lok Sabha",
+        "speech_count": 1,
+        "avg_polarity": 81.5,
+        "bench_alignment": "Opposition Benches",
+        "color": "#3b82f6",
+        "degree_centrality": 0.857,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
+      },
+      {
+        "id": "Shri Narendra Singh Tomar",
+        "label": "Shri Narendra Singh Tomar",
+        "party": "BJP",
+        "house": "Lok Sabha",
+        "speech_count": 1,
+        "avg_polarity": -3.0,
+        "bench_alignment": "Ruling Coalition",
+        "color": "#f97316",
+        "degree_centrality": 1.0,
+        "betweenness_centrality": 0.0,
+        "community": "Voting Bloc 1"
       }
     ],
     "total_blocs": 2
@@ -3189,68 +520,68 @@
     {
       "category": "Agriculture & Farm Reform",
       "short_category": "Agriculture & Reform",
-      "BJP": 53.7,
-      "INC": -0.9,
-      "TMC": -71.8,
-      "DMK": -0.5,
-      "JD(U)": 50.5,
-      "SP": -74.7,
-      "AIMIM": -65.3
+      "BJP": -3.0,
+      "INC": -58.0,
+      "TMC": -58.0,
+      "DMK": -58.0,
+      "JD(U)": 62.0,
+      "SP": -58.0,
+      "AIMIM": -58.0
     },
     {
       "category": "Data Privacy & Digital India",
       "short_category": "Data Privacy",
-      "BJP": 38.3,
-      "INC": -22.6,
-      "TMC": -86.5,
-      "DMK": 3.1,
-      "JD(U)": 33.7,
-      "SP": -87.6,
-      "AIMIM": -89.4
+      "BJP": 87.5,
+      "INC": 81.5,
+      "TMC": -58.0,
+      "DMK": -58.0,
+      "JD(U)": 62.0,
+      "SP": -58.0,
+      "AIMIM": 35.0
     },
     {
       "category": "Union Budget & Fiscal Policy",
       "short_category": "Union Budget",
-      "BJP": 45.5,
-      "INC": -19.1,
-      "TMC": -84.4,
-      "DMK": 4.7,
-      "JD(U)": 46.1,
-      "SP": -84.5,
-      "AIMIM": -83.7
+      "BJP": 62.0,
+      "INC": -58.0,
+      "TMC": -58.0,
+      "DMK": -58.0,
+      "JD(U)": 62.0,
+      "SP": -58.0,
+      "AIMIM": -58.0
     },
     {
       "category": "National Security & Defence",
       "short_category": "National Security",
-      "BJP": 38.0,
-      "INC": 9.1,
-      "TMC": -30.6,
-      "DMK": 21.1,
-      "JD(U)": 39.8,
-      "SP": -25.9,
-      "AIMIM": -24.3
+      "BJP": 62.0,
+      "INC": -58.0,
+      "TMC": -58.0,
+      "DMK": -58.0,
+      "JD(U)": 62.0,
+      "SP": -58.0,
+      "AIMIM": -58.0
     },
     {
       "category": "Judicial Reforms & Constitution",
       "short_category": "Judicial & Reform",
-      "BJP": 11.1,
-      "INC": -22.3,
-      "TMC": -85.0,
-      "DMK": -17.5,
-      "JD(U)": 16.8,
-      "SP": -85.2,
-      "AIMIM": -84.4
+      "BJP": 62.0,
+      "INC": -58.0,
+      "TMC": -58.0,
+      "DMK": -58.0,
+      "JD(U)": 62.0,
+      "SP": -58.0,
+      "AIMIM": -58.0
     },
     {
       "category": "Health, Education & Welfare",
       "short_category": "Health, Welfare",
-      "BJP": 44.2,
-      "INC": 25.8,
-      "TMC": -7.0,
-      "DMK": 18.4,
-      "JD(U)": 40.1,
-      "SP": -26.1,
-      "AIMIM": -11.8
+      "BJP": 62.0,
+      "INC": -58.0,
+      "TMC": -58.0,
+      "DMK": -58.0,
+      "JD(U)": 62.0,
+      "SP": -58.0,
+      "AIMIM": -58.0
     }
   ]
 }

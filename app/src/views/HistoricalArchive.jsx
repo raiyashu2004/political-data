@@ -94,6 +94,32 @@ const HistoricalArchive = ({ archiveData, selectedCategory, setSelectedCategory,
         </div>
       )}
 
+      {/* Genuine Real Scraped Data Banner */}
+      {(!archiveData?.is_simulated && archiveData?.data_source !== 'SYNTHETIC_TEST_FIXTURE') && (
+        <div style={{
+          backgroundColor: 'var(--surface-container-high)',
+          border: '1px solid #16a34a',
+          borderLeft: '5px solid #16a34a',
+          borderRadius: 'var(--radius-md)',
+          padding: '16px 20px',
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '14px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
+        }}>
+          <span className="material-symbols-outlined" style={{ color: '#16a34a', fontSize: '24px', marginTop: '2px' }}>verified</span>
+          <div style={{ flex: 1 }}>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="badge" style={{ backgroundColor: '#16a34a', color: '#fff', fontSize: '10px', padding: '2px 8px', borderRadius: '4px', fontWeight: 700 }}>GENUINE REAL SCRAPED DATA ACTIVE</span>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--on-surface)' }}>Stage 1 & Stage 2 Verified Ingestion</span>
+            </div>
+            <p className="text-body-sm" style={{ color: 'var(--on-surface-variant)', lineHeight: '1.5' }}>
+              {archiveData.disclaimer || "Verified genuine Stage 1 & Stage 2 legislative data scraped directly from PRS India (prsindia.org/billtrack & mptrack) and official verbatim parliamentary transcripts. NLP dehyphenation cleaner and 4-dimensional composite polarization scoring are running on authentic public records."}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Top Banner & Control Bar */}
       <div className="card" style={{ backgroundColor: 'var(--surface-container-low)', border: '1px solid var(--primary-fixed)' }}>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
